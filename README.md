@@ -2,6 +2,8 @@
 Data Pipeline ETL dengan topik:
 **"Azarine vs. Skinaqua:  Mengungkap Tren Preferensi Konsumen Indonesia Terhadap Brand Sunscreen Lokal dan Internasional Menggunakan Clustering Model"**
 
+## _Pipeline Architecture_
+![image](https://github.com/user-attachments/assets/0eca93f0-6805-4adb-bc9e-68fe3d48a3ce)
 
 ## Member
 
@@ -13,3 +15,7 @@ Data Pipeline ETL dengan topik:
 
 ## Link Notion Blog Post
 https://www.notion.so/End-to-End-Data-Engineering-1436080924fb8078acb2fc862763c5b1?pvs=4
+
+## Link Gdrive Demo
+https://drive.google.com/drive/folders/10lOyUo3pMAfyQwT6nLOAulwJYQHKxvqV?usp=sharing
+
