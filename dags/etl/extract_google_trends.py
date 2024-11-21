@@ -133,7 +133,7 @@ def scrape_and_process_apify(api_token, actor_id, search_terms, output_folder):
                     logging.warning(f"No data found for 'interestOverTime_timelineData' for '{term}'.")
 
 def extract_google_trends():
-    api_token = "apify_api_XFZhJOWDOXZfankLvHRWPJ3VeGpcsB46RA1g"  # Replace with your API token
+    api_token = "api token"  # Replace with your API token
     actor_id = "emastra~google-trends-scraper"  # Replace with your Apify Actor ID
     search_terms = ["sunscreen skin aqua", "sunscreen Azarine"]
     output_folder = "dags/hasil data extract"

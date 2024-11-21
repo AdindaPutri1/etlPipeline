@@ -1028,3 +1028,18 @@ airflow.exceptions.AirflowException: Tried to create relationships between tasks
 [2024-11-21T13:05:23.839+0000] {logging_mixin.py:190} INFO - [2024-11-21T13:05:23.838+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl/load.py
 [2024-11-21T13:05:23.863+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/etl/load.py
 [2024-11-21T13:05:23.878+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl/load.py took 0.047 seconds
+[2024-11-21T13:05:53.984+0000] {processor.py:186} INFO - Started process (PID=43978) to work on /opt/airflow/dags/etl/load.py
+[2024-11-21T13:05:53.985+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl/load.py for tasks to queue
+[2024-11-21T13:05:53.986+0000] {logging_mixin.py:190} INFO - [2024-11-21T13:05:53.986+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl/load.py
+[2024-11-21T13:05:54.002+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/etl/load.py
+[2024-11-21T13:05:54.013+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl/load.py took 0.033 seconds
+[2024-11-21T13:06:24.196+0000] {processor.py:186} INFO - Started process (PID=44043) to work on /opt/airflow/dags/etl/load.py
+[2024-11-21T13:06:24.197+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl/load.py for tasks to queue
+[2024-11-21T13:06:24.199+0000] {logging_mixin.py:190} INFO - [2024-11-21T13:06:24.199+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl/load.py
+[2024-11-21T13:06:24.235+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/etl/load.py
+[2024-11-21T13:06:24.247+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl/load.py took 0.055 seconds
+[2024-11-21T13:06:55.160+0000] {processor.py:186} INFO - Started process (PID=44108) to work on /opt/airflow/dags/etl/load.py
+[2024-11-21T13:06:55.161+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl/load.py for tasks to queue
+[2024-11-21T13:06:55.162+0000] {logging_mixin.py:190} INFO - [2024-11-21T13:06:55.162+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl/load.py
+[2024-11-21T13:06:55.181+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/etl/load.py
+[2024-11-21T13:06:55.191+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl/load.py took 0.036 seconds
