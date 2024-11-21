@@ -7,7 +7,7 @@ TODAY_DATE = datetime(2024, 11, 16)
 
 # Default folder (bisa diganti saat diimpor)
 DATA_FOLDER = 'dags/hasil data extract'
-PROCESSED_FOLDER = 'dags/hasil data extract'
+PROCESSED_FOLDER = 'dags/hasil data transform'
 os.makedirs(PROCESSED_FOLDER, exist_ok=True)
 
 # Dictionary untuk mapping jenis produk berdasarkan nama file
@@ -143,7 +143,7 @@ def transform_female_daily(**kwargs):
     merge_files(group_mapping)
     
     # Ambil data dari file hasil penggabungan
-    processed_folder = "dags/hasil data extract"
+    processed_folder = "dags/hasil data transform"
     output_file = os.path.join(processed_folder, "FemaleDaily_Sunscreen Azarine.csv")  # Contoh grup Azarine
     df = pd.read_csv(output_file)
     

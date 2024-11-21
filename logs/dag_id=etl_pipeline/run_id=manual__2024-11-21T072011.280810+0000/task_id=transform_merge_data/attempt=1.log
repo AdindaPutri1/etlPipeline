@@ -1,0 +1,38 @@
+[2024-11-21T07:42:03.965+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-11-21T07:42:03.992+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_pipeline.transform_merge_data manual__2024-11-21T07:20:11.280810+00:00 [queued]>
+[2024-11-21T07:42:04.009+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_pipeline.transform_merge_data manual__2024-11-21T07:20:11.280810+00:00 [queued]>
+[2024-11-21T07:42:04.011+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 1
+[2024-11-21T07:42:04.041+0000] {taskinstance.py:2889} INFO - Executing <Task(PythonOperator): transform_merge_data> on 2024-11-21 07:20:11.280810+00:00
+[2024-11-21T07:42:04.066+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=478) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-11-21T07:42:04.074+0000] {standard_task_runner.py:72} INFO - Started process 480 to run task
+[2024-11-21T07:42:04.073+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'etl_pipeline', 'transform_merge_data', 'manual__2024-11-21T07:20:11.280810+00:00', '--job-id', '130', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmpv_g7rr_d']
+[2024-11-21T07:42:04.076+0000] {standard_task_runner.py:105} INFO - Job 130: Subtask transform_merge_data
+[2024-11-21T07:42:04.161+0000] {task_command.py:467} INFO - Running <TaskInstance: etl_pipeline.transform_merge_data manual__2024-11-21T07:20:11.280810+00:00 [running]> on host 7a40aa914b11
+[2024-11-21T07:42:04.611+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='etl_pipeline' AIRFLOW_CTX_TASK_ID='transform_merge_data' AIRFLOW_CTX_EXECUTION_DATE='2024-11-21T07:20:11.280810+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-11-21T07:20:11.280810+00:00'
+[2024-11-21T07:42:04.612+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2024-11-21T07:42:04.614+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2024-11-21T07:42:04.615+0000] {logging_mixin.py:190} INFO - Current task name:transform_merge_data state:running start_date:2024-11-21 07:42:03.993569+00:00
+[2024-11-21T07:42:04.616+0000] {logging_mixin.py:190} INFO - Dag name:etl_pipeline and current dag run status:running
+[2024-11-21T07:42:04.617+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-11-21T07:42:04.618+0000] {logging_mixin.py:190} INFO - Menggabungkan: FemaleDaily_Sunscreen Azarine.csv + GoogleTrends_sunscreen Azarine
+[2024-11-21T07:42:04.623+0000] {logging_mixin.py:190} INFO - File tidak ditemukan: /opt/***/dags/etl/dags/hasil data transform/FemaleDaily_Sunscreen Azarine.csv
+[2024-11-21T07:42:04.629+0000] {logging_mixin.py:190} INFO - File tidak ditemukan: /opt/***/dags/etl/dags/hasil data transform/GoogleTrends_sunscreen Azarine
+[2024-11-21T07:42:04.630+0000] {logging_mixin.py:190} INFO - Salah satu DataFrame tidak tersedia untuk penggabungan.
+[2024-11-21T07:42:04.631+0000] {logging_mixin.py:190} INFO - Data gabungan kosong, tidak dapat menyimpan file.
+[2024-11-21T07:42:04.632+0000] {logging_mixin.py:190} INFO - Menggabungkan: FemaleDaily_Sunscreen Skinaqua.csv + GoogleTrends_sunscreen skin aqua.csv
+[2024-11-21T07:42:04.639+0000] {logging_mixin.py:190} INFO - File tidak ditemukan: /opt/***/dags/etl/dags/hasil data transform/FemaleDaily_Sunscreen Skinaqua.csv
+[2024-11-21T07:42:04.646+0000] {logging_mixin.py:190} INFO - File tidak ditemukan: /opt/***/dags/etl/dags/hasil data transform/GoogleTrends_sunscreen skin aqua.csv
+[2024-11-21T07:42:04.647+0000] {logging_mixin.py:190} INFO - Salah satu DataFrame tidak tersedia untuk penggabungan.
+[2024-11-21T07:42:04.648+0000] {logging_mixin.py:190} INFO - Data gabungan kosong, tidak dapat menyimpan file.
+[2024-11-21T07:42:04.649+0000] {python.py:240} INFO - Done. Returned value was: None
+[2024-11-21T07:42:04.664+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-11-21T07:42:04.665+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=etl_pipeline, task_id=transform_merge_data, run_id=manual__2024-11-21T07:20:11.280810+00:00, execution_date=20241121T072011, start_date=20241121T074203, end_date=20241121T074204
+[2024-11-21T07:42:04.678+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2024-11-21T07:42:04.679+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2024-11-21T07:42:04.680+0000] {logging_mixin.py:190} INFO - Dag name:etl_pipeline queued_at:2024-11-21 07:37:45.701627+00:00
+[2024-11-21T07:42:04.681+0000] {logging_mixin.py:190} INFO - Task hostname:7a40aa914b11 operator:PythonOperator
+[2024-11-21T07:42:04.736+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-11-21T07:42:04.769+0000] {taskinstance.py:3895} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-11-21T07:42:04.772+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

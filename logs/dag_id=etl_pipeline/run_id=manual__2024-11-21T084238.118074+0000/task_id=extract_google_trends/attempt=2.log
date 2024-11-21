@@ -1,0 +1,4123 @@
+[2024-11-21T08:42:43.677+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-11-21T08:42:43.693+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_pipeline.extract_google_trends manual__2024-11-21T08:42:38.118074+00:00 [queued]>
+[2024-11-21T08:42:43.700+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_pipeline.extract_google_trends manual__2024-11-21T08:42:38.118074+00:00 [queued]>
+[2024-11-21T08:42:43.701+0000] {taskinstance.py:2866} INFO - Starting attempt 2 of 2
+[2024-11-21T08:42:43.714+0000] {taskinstance.py:2889} INFO - Executing <Task(PythonOperator): extract_google_trends> on 2024-11-21 08:42:38.118074+00:00
+[2024-11-21T08:42:43.739+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=1380) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-11-21T08:42:43.741+0000] {standard_task_runner.py:72} INFO - Started process 1384 to run task
+[2024-11-21T08:42:43.741+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'etl_pipeline', 'extract_google_trends', 'manual__2024-11-21T08:42:38.118074+00:00', '--job-id', '158', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmpsd_nxzcd']
+[2024-11-21T08:42:43.742+0000] {standard_task_runner.py:105} INFO - Job 158: Subtask extract_google_trends
+[2024-11-21T08:42:43.882+0000] {task_command.py:467} INFO - Running <TaskInstance: etl_pipeline.extract_google_trends manual__2024-11-21T08:42:38.118074+00:00 [running]> on host 7a40aa914b11
+[2024-11-21T08:42:44.510+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='etl_pipeline' AIRFLOW_CTX_TASK_ID='extract_google_trends' AIRFLOW_CTX_EXECUTION_DATE='2024-11-21T08:42:38.118074+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-11-21T08:42:38.118074+00:00'
+[2024-11-21T08:42:44.511+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2024-11-21T08:42:44.512+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2024-11-21T08:42:44.512+0000] {logging_mixin.py:190} INFO - Current task name:extract_google_trends state:running start_date:2024-11-21 08:42:43.694021+00:00
+[2024-11-21T08:42:44.513+0000] {logging_mixin.py:190} INFO - Dag name:etl_pipeline and current dag run status:running
+[2024-11-21T08:42:44.514+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-11-21T08:42:44.519+0000] {logging_mixin.py:190} INFO - Processing search term: sunscreen Azarine
+[2024-11-21T08:42:46.224+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-11-21T08:42:46.233+0000] {taskinstance.py:2603} INFO - Dependencies not met for <TaskInstance: etl_pipeline.extract_google_trends manual__2024-11-21T08:42:38.118074+00:00 [running]>, dependency 'Task Instance State' FAILED: Task is in the 'running' state.
+[2024-11-21T08:42:46.240+0000] {taskinstance.py:2603} INFO - Dependencies not met for <TaskInstance: etl_pipeline.extract_google_trends manual__2024-11-21T08:42:38.118074+00:00 [running]>, dependency 'Task Instance Not Running' FAILED: Task is in the running state
+[2024-11-21T08:42:46.245+0000] {local_task_job_runner.py:166} INFO - Task is not able to be run
+[2024-11-21T08:44:26.386+0000] {logging_mixin.py:190} INFO - Error: 201 - [{
+  "inputUrlOrTerm": "sunscreen Azarine",
+  "searchTerm": "sunscreen Azarine",
+  "interestOverTime_timelineData": [
+    {
+      "time": "1724198400",
+      "formattedTime": "Aug 21, 2024",
+      "formattedAxisTime": "Aug 21",
+      "value": [
+        80
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "80"
+      ]
+    },
+    {
+      "time": "1724284800",
+      "formattedTime": "Aug 22, 2024",
+      "formattedAxisTime": "Aug 22",
+      "value": [
+        61
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "61"
+      ]
+    },
+    {
+      "time": "1724371200",
+      "formattedTime": "Aug 23, 2024",
+      "formattedAxisTime": "Aug 23",
+      "value": [
+        78
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "78"
+      ]
+    },
+    {
+      "time": "1724457600",
+      "formattedTime": "Aug 24, 2024",
+      "formattedAxisTime": "Aug 24",
+      "value": [
+        76
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "76"
+      ]
+    },
+    {
+      "time": "1724544000",
+      "formattedTime": "Aug 25, 2024",
+      "formattedAxisTime": "Aug 25",
+      "value": [
+        61
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "61"
+      ]
+    },
+    {
+      "time": "1724630400",
+      "formattedTime": "Aug 26, 2024",
+      "formattedAxisTime": "Aug 26",
+      "value": [
+        64
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "64"
+      ]
+    },
+    {
+      "time": "1724716800",
+      "formattedTime": "Aug 27, 2024",
+      "formattedAxisTime": "Aug 27",
+      "value": [
+        65
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "65"
+      ]
+    },
+    {
+      "time": "1724803200",
+      "formattedTime": "Aug 28, 2024",
+      "formattedAxisTime": "Aug 28",
+      "value": [
+        79
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "79"
+      ]
+    },
+    {
+      "time": "1724889600",
+      "formattedTime": "Aug 29, 2024",
+      "formattedAxisTime": "Aug 29",
+      "value": [
+        67
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "67"
+      ]
+    },
+    {
+      "time": "1724976000",
+      "formattedTime": "Aug 30, 2024",
+      "formattedAxisTime": "Aug 30",
+      "value": [
+        80
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "80"
+      ]
+    },
+    {
+      "time": "1725062400",
+      "formattedTime": "Aug 31, 2024",
+      "formattedAxisTime": "Aug 31",
+      "value": [
+        71
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "71"
+      ]
+    },
+    {
+      "time": "1725148800",
+      "formattedTime": "Sep 1, 2024",
+      "formattedAxisTime": "Sep 1",
+      "value": [
+        88
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "88"
+      ]
+    },
+    {
+      "time": "1725235200",
+      "formattedTime": "Sep 2, 2024",
+      "formattedAxisTime": "Sep 2",
+      "value": [
+        70
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "70"
+      ]
+    },
+    {
+      "time": "1725321600",
+      "formattedTime": "Sep 3, 2024",
+      "formattedAxisTime": "Sep 3",
+      "value": [
+        70
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "70"
+      ]
+    },
+    {
+      "time": "1725408000",
+      "formattedTime": "Sep 4, 2024",
+      "formattedAxisTime": "Sep 4",
+      "value": [
+        54
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "54"
+      ]
+    },
+    {
+      "time": "1725494400",
+      "formattedTime": "Sep 5, 2024",
+      "formattedAxisTime": "Sep 5",
+      "value": [
+        54
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "54"
+      ]
+    },
+    {
+      "time": "1725580800",
+      "formattedTime": "Sep 6, 2024",
+      "formattedAxisTime": "Sep 6",
+      "value": [
+        65
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "65"
+      ]
+    },
+    {
+      "time": "1725667200",
+      "formattedTime": "Sep 7, 2024",
+      "formattedAxisTime": "Sep 7",
+      "value": [
+        59
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "59"
+      ]
+    },
+    {
+      "time": "1725753600",
+      "formattedTime": "Sep 8, 2024",
+      "formattedAxisTime": "Sep 8",
+      "value": [
+        62
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "62"
+      ]
+    },
+    {
+      "time": "1725840000",
+      "formattedTime": "Sep 9, 2024",
+      "formattedAxisTime": "Sep 9",
+      "value": [
+        52
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "52"
+      ]
+    },
+    {
+      "time": "1725926400",
+      "formattedTime": "Sep 10, 2024",
+      "formattedAxisTime": "Sep 10",
+      "value": [
+        59
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "59"
+      ]
+    },
+    {
+      "time": "1726012800",
+      "formattedTime": "Sep 11, 2024",
+      "formattedAxisTime": "Sep 11",
+      "value": [
+        52
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "52"
+      ]
+    },
+    {
+      "time": "1726099200",
+      "formattedTime": "Sep 12, 2024",
+      "formattedAxisTime": "Sep 12",
+      "value": [
+        52
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "52"
+      ]
+    },
+    {
+      "time": "1726185600",
+      "formattedTime": "Sep 13, 2024",
+      "formattedAxisTime": "Sep 13",
+      "value": [
+        45
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "45"
+      ]
+    },
+    {
+      "time": "1726272000",
+      "formattedTime": "Sep 14, 2024",
+      "formattedAxisTime": "Sep 14",
+      "value": [
+        77
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "77"
+      ]
+    },
+    {
+      "time": "1726358400",
+      "formattedTime": "Sep 15, 2024",
+      "formattedAxisTime": "Sep 15",
+      "value": [
+        59
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "59"
+      ]
+    },
+    {
+      "time": "1726444800",
+      "formattedTime": "Sep 16, 2024",
+      "formattedAxisTime": "Sep 16",
+      "value": [
+        74
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "74"
+      ]
+    },
+    {
+      "time": "1726531200",
+      "formattedTime": "Sep 17, 2024",
+      "formattedAxisTime": "Sep 17",
+      "value": [
+        57
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "57"
+      ]
+    },
+    {
+      "time": "1726617600",
+      "formattedTime": "Sep 18, 2024",
+      "formattedAxisTime": "Sep 18",
+      "value": [
+        63
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "63"
+      ]
+    },
+    {
+      "time": "1726704000",
+      "formattedTime": "Sep 19, 2024",
+      "formattedAxisTime": "Sep 19",
+      "value": [
+        65
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "65"
+      ]
+    },
+    {
+      "time": "1726790400",
+      "formattedTime": "Sep 20, 2024",
+      "formattedAxisTime": "Sep 20",
+      "value": [
+        36
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "36"
+      ]
+    },
+    {
+      "time": "1726876800",
+      "formattedTime": "Sep 21, 2024",
+      "formattedAxisTime": "Sep 21",
+      "value": [
+        61
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "61"
+      ]
+    },
+    {
+      "time": "1726963200",
+      "formattedTime": "Sep 22, 2024",
+      "formattedAxisTime": "Sep 22",
+      "value": [
+        51
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "51"
+      ]
+    },
+    {
+      "time": "1727049600",
+      "formattedTime": "Sep 23, 2024",
+      "formattedAxisTime": "Sep 23",
+      "value": [
+        56
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "56"
+      ]
+    },
+    {
+      "time": "1727136000",
+      "formattedTime": "Sep 24, 2024",
+      "formattedAxisTime": "Sep 24",
+      "value": [
+        42
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "42"
+      ]
+    },
+    {
+      "time": "1727222400",
+      "formattedTime": "Sep 25, 2024",
+      "formattedAxisTime": "Sep 25",
+      "value": [
+        48
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "48"
+      ]
+    },
+    {
+      "time": "1727308800",
+      "formattedTime": "Sep 26, 2024",
+      "formattedAxisTime": "Sep 26",
+      "value": [
+        39
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "39"
+      ]
+    },
+    {
+      "time": "1727395200",
+      "formattedTime": "Sep 27, 2024",
+      "formattedAxisTime": "Sep 27",
+      "value": [
+        76
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "76"
+      ]
+    },
+    {
+      "time": "1727481600",
+      "formattedTime": "Sep 28, 2024",
+      "formattedAxisTime": "Sep 28",
+      "value": [
+        51
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "51"
+      ]
+    },
+    {
+      "time": "1727568000",
+      "formattedTime": "Sep 29, 2024",
+      "formattedAxisTime": "Sep 29",
+      "value": [
+        61
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "61"
+      ]
+    },
+    {
+      "time": "1727654400",
+      "formattedTime": "Sep 30, 2024",
+      "formattedAxisTime": "Sep 30",
+      "value": [
+        47
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "47"
+      ]
+    },
+    {
+      "time": "1727740800",
+      "formattedTime": "Oct 1, 2024",
+      "formattedAxisTime": "Oct 1",
+      "value": [
+        71
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "71"
+      ]
+    },
+    {
+      "time": "1727827200",
+      "formattedTime": "Oct 2, 2024",
+      "formattedAxisTime": "Oct 2",
+      "value": [
+        61
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "61"
+      ]
+    },
+    {
+      "time": "1727913600",
+      "formattedTime": "Oct 3, 2024",
+      "formattedAxisTime": "Oct 3",
+      "value": [
+        45
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "45"
+      ]
+    },
+    {
+      "time": "1728000000",
+      "formattedTime": "Oct 4, 2024",
+      "formattedAxisTime": "Oct 4",
+      "value": [
+        66
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "66"
+      ]
+    },
+    {
+      "time": "1728086400",
+      "formattedTime": "Oct 5, 2024",
+      "formattedAxisTime": "Oct 5",
+      "value": [
+        78
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "78"
+      ]
+    },
+    {
+      "time": "1728172800",
+      "formattedTime": "Oct 6, 2024",
+      "formattedAxisTime": "Oct 6",
+      "value": [
+        88
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "88"
+      ]
+    },
+    {
+      "time": "1728259200",
+      "formattedTime": "Oct 7, 2024",
+      "formattedAxisTime": "Oct 7",
+      "value": [
+        50
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "50"
+      ]
+    },
+    {
+      "time": "1728345600",
+      "formattedTime": "Oct 8, 2024",
+      "formattedAxisTime": "Oct 8",
+      "value": [
+        82
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "82"
+      ]
+    },
+    {
+      "time": "1728432000",
+      "formattedTime": "Oct 9, 2024",
+      "formattedAxisTime": "Oct 9",
+      "value": [
+        71
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "71"
+      ]
+    },
+    {
+      "time": "1728518400",
+      "formattedTime": "Oct 10, 2024",
+      "formattedAxisTime": "Oct 10",
+      "value": [
+        62
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "62"
+      ]
+    },
+    {
+      "time": "1728604800",
+      "formattedTime": "Oct 11, 2024",
+      "formattedAxisTime": "Oct 11",
+      "value": [
+        47
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "47"
+      ]
+    },
+    {
+      "time": "1728691200",
+      "formattedTime": "Oct 12, 2024",
+      "formattedAxisTime": "Oct 12",
+      "value": [
+        60
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "60"
+      ]
+    },
+    {
+      "time": "1728777600",
+      "formattedTime": "Oct 13, 2024",
+      "formattedAxisTime": "Oct 13",
+      "value": [
+        81
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "81"
+      ]
+    },
+    {
+      "time": "1728864000",
+      "formattedTime": "Oct 14, 2024",
+      "formattedAxisTime": "Oct 14",
+      "value": [
+        62
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "62"
+      ]
+    },
+    {
+      "time": "1728950400",
+      "formattedTime": "Oct 15, 2024",
+      "formattedAxisTime": "Oct 15",
+      "value": [
+        59
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "59"
+      ]
+    },
+    {
+      "time": "1729036800",
+      "formattedTime": "Oct 16, 2024",
+      "formattedAxisTime": "Oct 16",
+      "value": [
+        62
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "62"
+      ]
+    },
+    {
+      "time": "1729123200",
+      "formattedTime": "Oct 17, 2024",
+      "formattedAxisTime": "Oct 17",
+      "value": [
+        74
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "74"
+      ]
+    },
+    {
+      "time": "1729209600",
+      "formattedTime": "Oct 18, 2024",
+      "formattedAxisTime": "Oct 18",
+      "value": [
+        51
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "51"
+      ]
+    },
+    {
+      "time": "1729296000",
+      "formattedTime": "Oct 19, 2024",
+      "formattedAxisTime": "Oct 19",
+      "value": [
+        63
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "63"
+      ]
+    },
+    {
+      "time": "1729382400",
+      "formattedTime": "Oct 20, 2024",
+      "formattedAxisTime": "Oct 20",
+      "value": [
+        100
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "100"
+      ]
+    },
+    {
+      "time": "1729468800",
+      "formattedTime": "Oct 21, 2024",
+      "formattedAxisTime": "Oct 21",
+      "value": [
+        67
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "67"
+      ]
+    },
+    {
+      "time": "1729555200",
+      "formattedTime": "Oct 22, 2024",
+      "formattedAxisTime": "Oct 22",
+      "value": [
+        53
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "53"
+      ]
+    },
+    {
+      "time": "1729641600",
+      "formattedTime": "Oct 23, 2024",
+      "formattedAxisTime": "Oct 23",
+      "value": [
+        57
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "57"
+      ]
+    },
+    {
+      "time": "1729728000",
+      "formattedTime": "Oct 24, 2024",
+      "formattedAxisTime": "Oct 24",
+      "value": [
+        59
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "59"
+      ]
+    },
+    {
+      "time": "1729814400",
+      "formattedTime": "Oct 25, 2024",
+      "formattedAxisTime": "Oct 25",
+      "value": [
+        63
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "63"
+      ]
+    },
+    {
+      "time": "1729900800",
+      "formattedTime": "Oct 26, 2024",
+      "formattedAxisTime": "Oct 26",
+      "value": [
+        59
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "59"
+      ]
+    },
+    {
+      "time": "1729987200",
+      "formattedTime": "Oct 27, 2024",
+      "formattedAxisTime": "Oct 27",
+      "value": [
+        63
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "63"
+      ]
+    },
+    {
+      "time": "1730073600",
+      "formattedTime": "Oct 28, 2024",
+      "formattedAxisTime": "Oct 28",
+      "value": [
+        54
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "54"
+      ]
+    },
+    {
+      "time": "1730160000",
+      "formattedTime": "Oct 29, 2024",
+      "formattedAxisTime": "Oct 29",
+      "value": [
+        65
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "65"
+      ]
+    },
+    {
+      "time": "1730246400",
+      "formattedTime": "Oct 30, 2024",
+      "formattedAxisTime": "Oct 30",
+      "value": [
+        47
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "47"
+      ]
+    },
+    {
+      "time": "1730332800",
+      "formattedTime": "Oct 31, 2024",
+      "formattedAxisTime": "Oct 31",
+      "value": [
+        43
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "43"
+      ]
+    },
+    {
+      "time": "1730419200",
+      "formattedTime": "Nov 1, 2024",
+      "formattedAxisTime": "Nov 1",
+      "value": [
+        59
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "59"
+      ]
+    },
+    {
+      "time": "1730505600",
+      "formattedTime": "Nov 2, 2024",
+      "formattedAxisTime": "Nov 2",
+      "value": [
+        57
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "57"
+      ]
+    },
+    {
+      "time": "1730592000",
+      "formattedTime": "Nov 3, 2024",
+      "formattedAxisTime": "Nov 3",
+      "value": [
+        60
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "60"
+      ]
+    },
+    {
+      "time": "1730678400",
+      "formattedTime": "Nov 4, 2024",
+      "formattedAxisTime": "Nov 4",
+      "value": [
+        62
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "62"
+      ]
+    },
+    {
+      "time": "1730764800",
+      "formattedTime": "Nov 5, 2024",
+      "formattedAxisTime": "Nov 5",
+      "value": [
+        55
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "55"
+      ]
+    },
+    {
+      "time": "1730851200",
+      "formattedTime": "Nov 6, 2024",
+      "formattedAxisTime": "Nov 6",
+      "value": [
+        58
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "58"
+      ]
+    },
+    {
+      "time": "1730937600",
+      "formattedTime": "Nov 7, 2024",
+      "formattedAxisTime": "Nov 7",
+      "value": [
+        55
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "55"
+      ]
+    },
+    {
+      "time": "1731024000",
+      "formattedTime": "Nov 8, 2024",
+      "formattedAxisTime": "Nov 8",
+      "value": [
+        54
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "54"
+      ]
+    },
+    {
+      "time": "1731110400",
+      "formattedTime": "Nov 9, 2024",
+      "formattedAxisTime": "Nov 9",
+      "value": [
+        56
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "56"
+      ]
+    },
+    {
+      "time": "1731196800",
+      "formattedTime": "Nov 10, 2024",
+      "formattedAxisTime": "Nov 10",
+      "value": [
+        71
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "71"
+      ]
+    },
+    {
+      "time": "1731283200",
+      "formattedTime": "Nov 11, 2024",
+      "formattedAxisTime": "Nov 11",
+      "value": [
+        62
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "62"
+      ]
+    },
+    {
+      "time": "1731369600",
+      "formattedTime": "Nov 12, 2024",
+      "formattedAxisTime": "Nov 12",
+      "value": [
+        52
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "52"
+      ]
+    },
+    {
+      "time": "1731456000",
+      "formattedTime": "Nov 13, 2024",
+      "formattedAxisTime": "Nov 13",
+      "value": [
+        52
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "52"
+      ]
+    },
+    {
+      "time": "1731542400",
+      "formattedTime": "Nov 14, 2024",
+      "formattedAxisTime": "Nov 14",
+      "value": [
+        49
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "49"
+      ]
+    },
+    {
+      "time": "1731628800",
+      "formattedTime": "Nov 15, 2024",
+      "formattedAxisTime": "Nov 15",
+      "value": [
+        41
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "41"
+      ]
+    },
+    {
+      "time": "1731715200",
+      "formattedTime": "Nov 16, 2024",
+      "formattedAxisTime": "Nov 16",
+      "value": [
+        49
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "49"
+      ]
+    },
+    {
+      "time": "1731801600",
+      "formattedTime": "Nov 17, 2024",
+      "formattedAxisTime": "Nov 17",
+      "value": [
+        64
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "64"
+      ]
+    },
+    {
+      "time": "1731888000",
+      "formattedTime": "Nov 18, 2024",
+      "formattedAxisTime": "Nov 18",
+      "value": [
+        48
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "48"
+      ]
+    },
+    {
+      "time": "1731974400",
+      "formattedTime": "Nov 19, 2024",
+      "formattedAxisTime": "Nov 19",
+      "value": [
+        42
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "42"
+      ]
+    },
+    {
+      "time": "1732060800",
+      "formattedTime": "Nov 20, 2024",
+      "formattedAxisTime": "Nov 20",
+      "value": [
+        39
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "39"
+      ]
+    },
+    {
+      "time": "1732147200",
+      "formattedTime": "Nov 21, 2024",
+      "formattedAxisTime": "Nov 21",
+      "value": [
+        42
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "42"
+      ],
+      "isPartial": true
+    }
+  ],
+  "interestOverTime_averages": [],
+  "interestBySubregion": [
+    {
+      "geoCode": "ID-SN",
+      "geoName": "South Sulawesi",
+      "value": [
+        100
+      ],
+      "formattedValue": [
+        "100"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-SR",
+      "geoName": "West Sulawesi",
+      "value": [
+        90
+      ],
+      "formattedValue": [
+        "90"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-SG",
+      "geoName": "South East Sulawesi",
+      "value": [
+        86
+      ],
+      "formattedValue": [
+        "86"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-ST",
+      "geoName": "Central Sulawesi",
+      "value": [
+        85
+      ],
+      "formattedValue": [
+        "85"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-KS",
+      "geoName": "South Kalimantan",
+      "value": [
+        77
+      ],
+      "formattedValue": [
+        "77"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-GO",
+      "geoName": "Gorontalo",
+      "value": [
+        74
+      ],
+      "formattedValue": [
+        "74"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-KR",
+      "geoName": "Riau Islands",
+      "value": [
+        64
+      ],
+      "formattedValue": [
+        "64"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-SA",
+      "geoName": "North Sulawesi",
+      "value": [
+        61
+      ],
+      "formattedValue": [
+        "61"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-KI",
+      "geoName": "East Kalimantan",
+      "value": [
+        61
+      ],
+      "formattedValue": [
+        "61"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-JT",
+      "geoName": "Central Java",
+      "value": [
+        60
+      ],
+      "formattedValue": [
+        "60"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-YO",
+      "geoName": "Special Region of Yogyakarta",
+      "value": [
+        59
+      ],
+      "formattedValue": [
+        "59"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-RI",
+      "geoName": "Riau",
+      "value": [
+        58
+      ],
+      "formattedValue": [
+        "58"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-BA",
+      "geoName": "Bali",
+      "value": [
+        55
+      ],
+      "formattedValue": [
+        "55"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-KB",
+      "geoName": "West Kalimantan",
+      "value": [
+        55
+      ],
+      "formattedValue": [
+        "55"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-JI",
+      "geoName": "East Java",
+      "value": [
+        53
+      ],
+      "formattedValue": [
+        "53"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-BE",
+      "geoName": "Bengkulu",
+      "value": [
+        53
+      ],
+      "formattedValue": [
+        "53"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-NB",
+      "geoName": "West Nusa Tenggara",
+      "value": [
+        53
+      ],
+      "formattedValue": [
+        "53"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-BB",
+      "geoName": "Bangka Belitung Islands",
+      "value": [
+        51
+      ],
+      "formattedValue": [
+        "51"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-LA",
+      "geoName": "Lampung",
+      "value": [
+        51
+      ],
+      "formattedValue": [
+        "51"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-MA",
+      "geoName": "Maluku",
+      "value": [
+        49
+      ],
+      "formattedValue": [
+        "49"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-SB",
+      "geoName": "West Sumatra",
+      "value": [
+        49
+      ],
+      "formattedValue": [
+        "49"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-KT",
+      "geoName": "Central Kalimantan",
+      "value": [
+        49
+      ],
+      "formattedValue": [
+        "49"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-PA",
+      "geoName": "Papua",
+      "value": [
+        46
+      ],
+      "formattedValue": [
+        "46"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-JA",
+      "geoName": "Jambi",
+      "value": [
+        46
+      ],
+      "formattedValue": [
+        "46"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-AC",
+      "geoName": "Aceh",
+      "value": [
+        44
+      ],
+      "formattedValue": [
+        "44"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-NT",
+      "geoName": "East Nusa Tenggara",
+      "value": [
+        43
+      ],
+      "formattedValue": [
+        "43"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-SU",
+      "geoName": "North Sumatra",
+      "value": [
+        41
+      ],
+      "formattedValue": [
+        "41"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-SS",
+      "geoName": "South Sumatra",
+      "value": [
+        38
+      ],
+      "formattedValue": [
+        "38"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-JB",
+      "geoName": "West Java",
+      "value": [
+        36
+      ],
+      "formattedValue": [
+        "36"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-BT",
+      "geoName": "Banten",
+      "value": [
+        30
+      ],
+      "formattedValue": [
+        "30"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-JK",
+      "geoName": "Special Capital Region of Jakarta",
+      "value": [
+        26
+      ],
+      "formattedValue": [
+        "26"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-MU",
+      "geoName": "North Maluku",
+      "value": [
+        9
+      ],
+      "formattedValue": [
+        "9"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-PB",
+      "geoName": "West Papua",
+      "value": [
+        8
+      ],
+      "formattedValue": [
+        "8"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-KU",
+      "geoName": "North Kalimantan",
+      "value": [
+        7
+      ],
+      "formattedValue": [
+        "7"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    }
+  ],
+  "interestByCity": []
+}]
+[2024-11-21T08:44:26.399+0000] {logging_mixin.py:190} INFO - Gagal mengambil dataset untuk sunscreen Azarine
+[2024-11-21T08:44:26.400+0000] {logging_mixin.py:190} INFO - Processing search term: sunscreen skin aqua
+[2024-11-21T08:46:16.275+0000] {logging_mixin.py:190} INFO - Error: 201 - [{
+  "inputUrlOrTerm": "sunscreen skin aqua",
+  "searchTerm": "sunscreen skin aqua",
+  "interestOverTime_timelineData": [
+    {
+      "time": "1724198400",
+      "formattedTime": "Aug 21, 2024",
+      "formattedAxisTime": "Aug 21",
+      "value": [
+        42
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "42"
+      ]
+    },
+    {
+      "time": "1724284800",
+      "formattedTime": "Aug 22, 2024",
+      "formattedAxisTime": "Aug 22",
+      "value": [
+        62
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "62"
+      ]
+    },
+    {
+      "time": "1724371200",
+      "formattedTime": "Aug 23, 2024",
+      "formattedAxisTime": "Aug 23",
+      "value": [
+        57
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "57"
+      ]
+    },
+    {
+      "time": "1724457600",
+      "formattedTime": "Aug 24, 2024",
+      "formattedAxisTime": "Aug 24",
+      "value": [
+        86
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "86"
+      ]
+    },
+    {
+      "time": "1724544000",
+      "formattedTime": "Aug 25, 2024",
+      "formattedAxisTime": "Aug 25",
+      "value": [
+        75
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "75"
+      ]
+    },
+    {
+      "time": "1724630400",
+      "formattedTime": "Aug 26, 2024",
+      "formattedAxisTime": "Aug 26",
+      "value": [
+        44
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "44"
+      ]
+    },
+    {
+      "time": "1724716800",
+      "formattedTime": "Aug 27, 2024",
+      "formattedAxisTime": "Aug 27",
+      "value": [
+        58
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "58"
+      ]
+    },
+    {
+      "time": "1724803200",
+      "formattedTime": "Aug 28, 2024",
+      "formattedAxisTime": "Aug 28",
+      "value": [
+        77
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "77"
+      ]
+    },
+    {
+      "time": "1724889600",
+      "formattedTime": "Aug 29, 2024",
+      "formattedAxisTime": "Aug 29",
+      "value": [
+        56
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "56"
+      ]
+    },
+    {
+      "time": "1724976000",
+      "formattedTime": "Aug 30, 2024",
+      "formattedAxisTime": "Aug 30",
+      "value": [
+        46
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "46"
+      ]
+    },
+    {
+      "time": "1725062400",
+      "formattedTime": "Aug 31, 2024",
+      "formattedAxisTime": "Aug 31",
+      "value": [
+        46
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "46"
+      ]
+    },
+    {
+      "time": "1725148800",
+      "formattedTime": "Sep 1, 2024",
+      "formattedAxisTime": "Sep 1",
+      "value": [
+        100
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "100"
+      ]
+    },
+    {
+      "time": "1725235200",
+      "formattedTime": "Sep 2, 2024",
+      "formattedAxisTime": "Sep 2",
+      "value": [
+        49
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "49"
+      ]
+    },
+    {
+      "time": "1725321600",
+      "formattedTime": "Sep 3, 2024",
+      "formattedAxisTime": "Sep 3",
+      "value": [
+        45
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "45"
+      ]
+    },
+    {
+      "time": "1725408000",
+      "formattedTime": "Sep 4, 2024",
+      "formattedAxisTime": "Sep 4",
+      "value": [
+        56
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "56"
+      ]
+    },
+    {
+      "time": "1725494400",
+      "formattedTime": "Sep 5, 2024",
+      "formattedAxisTime": "Sep 5",
+      "value": [
+        41
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "41"
+      ]
+    },
+    {
+      "time": "1725580800",
+      "formattedTime": "Sep 6, 2024",
+      "formattedAxisTime": "Sep 6",
+      "value": [
+        51
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "51"
+      ]
+    },
+    {
+      "time": "1725667200",
+      "formattedTime": "Sep 7, 2024",
+      "formattedAxisTime": "Sep 7",
+      "value": [
+        43
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "43"
+      ]
+    },
+    {
+      "time": "1725753600",
+      "formattedTime": "Sep 8, 2024",
+      "formattedAxisTime": "Sep 8",
+      "value": [
+        0
+      ],
+      "hasData": [
+        false
+      ],
+      "formattedValue": [
+        "0"
+      ]
+    },
+    {
+      "time": "1725840000",
+      "formattedTime": "Sep 9, 2024",
+      "formattedAxisTime": "Sep 9",
+      "value": [
+        57
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "57"
+      ]
+    },
+    {
+      "time": "1725926400",
+      "formattedTime": "Sep 10, 2024",
+      "formattedAxisTime": "Sep 10",
+      "value": [
+        40
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "40"
+      ]
+    },
+    {
+      "time": "1726012800",
+      "formattedTime": "Sep 11, 2024",
+      "formattedAxisTime": "Sep 11",
+      "value": [
+        0
+      ],
+      "hasData": [
+        false
+      ],
+      "formattedValue": [
+        "0"
+      ]
+    },
+    {
+      "time": "1726099200",
+      "formattedTime": "Sep 12, 2024",
+      "formattedAxisTime": "Sep 12",
+      "value": [
+        0
+      ],
+      "hasData": [
+        false
+      ],
+      "formattedValue": [
+        "0"
+      ]
+    },
+    {
+      "time": "1726185600",
+      "formattedTime": "Sep 13, 2024",
+      "formattedAxisTime": "Sep 13",
+      "value": [
+        0
+      ],
+      "hasData": [
+        false
+      ],
+      "formattedValue": [
+        "0"
+      ]
+    },
+    {
+      "time": "1726272000",
+      "formattedTime": "Sep 14, 2024",
+      "formattedAxisTime": "Sep 14",
+      "value": [
+        0
+      ],
+      "hasData": [
+        false
+      ],
+      "formattedValue": [
+        "0"
+      ]
+    },
+    {
+      "time": "1726358400",
+      "formattedTime": "Sep 15, 2024",
+      "formattedAxisTime": "Sep 15",
+      "value": [
+        50
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "50"
+      ]
+    },
+    {
+      "time": "1726444800",
+      "formattedTime": "Sep 16, 2024",
+      "formattedAxisTime": "Sep 16",
+      "value": [
+        63
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "63"
+      ]
+    },
+    {
+      "time": "1726531200",
+      "formattedTime": "Sep 17, 2024",
+      "formattedAxisTime": "Sep 17",
+      "value": [
+        49
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "49"
+      ]
+    },
+    {
+      "time": "1726617600",
+      "formattedTime": "Sep 18, 2024",
+      "formattedAxisTime": "Sep 18",
+      "value": [
+        43
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "43"
+      ]
+    },
+    {
+      "time": "1726704000",
+      "formattedTime": "Sep 19, 2024",
+      "formattedAxisTime": "Sep 19",
+      "value": [
+        57
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "57"
+      ]
+    },
+    {
+      "time": "1726790400",
+      "formattedTime": "Sep 20, 2024",
+      "formattedAxisTime": "Sep 20",
+      "value": [
+        52
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "52"
+      ]
+    },
+    {
+      "time": "1726876800",
+      "formattedTime": "Sep 21, 2024",
+      "formattedAxisTime": "Sep 21",
+      "value": [
+        48
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "48"
+      ]
+    },
+    {
+      "time": "1726963200",
+      "formattedTime": "Sep 22, 2024",
+      "formattedAxisTime": "Sep 22",
+      "value": [
+        0
+      ],
+      "hasData": [
+        false
+      ],
+      "formattedValue": [
+        "0"
+      ]
+    },
+    {
+      "time": "1727049600",
+      "formattedTime": "Sep 23, 2024",
+      "formattedAxisTime": "Sep 23",
+      "value": [
+        52
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "52"
+      ]
+    },
+    {
+      "time": "1727136000",
+      "formattedTime": "Sep 24, 2024",
+      "formattedAxisTime": "Sep 24",
+      "value": [
+        0
+      ],
+      "hasData": [
+        false
+      ],
+      "formattedValue": [
+        "0"
+      ]
+    },
+    {
+      "time": "1727222400",
+      "formattedTime": "Sep 25, 2024",
+      "formattedAxisTime": "Sep 25",
+      "value": [
+        69
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "69"
+      ]
+    },
+    {
+      "time": "1727308800",
+      "formattedTime": "Sep 26, 2024",
+      "formattedAxisTime": "Sep 26",
+      "value": [
+        0
+      ],
+      "hasData": [
+        false
+      ],
+      "formattedValue": [
+        "0"
+      ]
+    },
+    {
+      "time": "1727395200",
+      "formattedTime": "Sep 27, 2024",
+      "formattedAxisTime": "Sep 27",
+      "value": [
+        0
+      ],
+      "hasData": [
+        false
+      ],
+      "formattedValue": [
+        "0"
+      ]
+    },
+    {
+      "time": "1727481600",
+      "formattedTime": "Sep 28, 2024",
+      "formattedAxisTime": "Sep 28",
+      "value": [
+        42
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "42"
+      ]
+    },
+    {
+      "time": "1727568000",
+      "formattedTime": "Sep 29, 2024",
+      "formattedAxisTime": "Sep 29",
+      "value": [
+        57
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "57"
+      ]
+    },
+    {
+      "time": "1727654400",
+      "formattedTime": "Sep 30, 2024",
+      "formattedAxisTime": "Sep 30",
+      "value": [
+        55
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "55"
+      ]
+    },
+    {
+      "time": "1727740800",
+      "formattedTime": "Oct 1, 2024",
+      "formattedAxisTime": "Oct 1",
+      "value": [
+        0
+      ],
+      "hasData": [
+        false
+      ],
+      "formattedValue": [
+        "0"
+      ]
+    },
+    {
+      "time": "1727827200",
+      "formattedTime": "Oct 2, 2024",
+      "formattedAxisTime": "Oct 2",
+      "value": [
+        41
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "41"
+      ]
+    },
+    {
+      "time": "1727913600",
+      "formattedTime": "Oct 3, 2024",
+      "formattedAxisTime": "Oct 3",
+      "value": [
+        63
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "63"
+      ]
+    },
+    {
+      "time": "1728000000",
+      "formattedTime": "Oct 4, 2024",
+      "formattedAxisTime": "Oct 4",
+      "value": [
+        77
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "77"
+      ]
+    },
+    {
+      "time": "1728086400",
+      "formattedTime": "Oct 5, 2024",
+      "formattedAxisTime": "Oct 5",
+      "value": [
+        43
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "43"
+      ]
+    },
+    {
+      "time": "1728172800",
+      "formattedTime": "Oct 6, 2024",
+      "formattedAxisTime": "Oct 6",
+      "value": [
+        66
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "66"
+      ]
+    },
+    {
+      "time": "1728259200",
+      "formattedTime": "Oct 7, 2024",
+      "formattedAxisTime": "Oct 7",
+      "value": [
+        44
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "44"
+      ]
+    },
+    {
+      "time": "1728345600",
+      "formattedTime": "Oct 8, 2024",
+      "formattedAxisTime": "Oct 8",
+      "value": [
+        62
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "62"
+      ]
+    },
+    {
+      "time": "1728432000",
+      "formattedTime": "Oct 9, 2024",
+      "formattedAxisTime": "Oct 9",
+      "value": [
+        37
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "37"
+      ]
+    },
+    {
+      "time": "1728518400",
+      "formattedTime": "Oct 10, 2024",
+      "formattedAxisTime": "Oct 10",
+      "value": [
+        58
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "58"
+      ]
+    },
+    {
+      "time": "1728604800",
+      "formattedTime": "Oct 11, 2024",
+      "formattedAxisTime": "Oct 11",
+      "value": [
+        46
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "46"
+      ]
+    },
+    {
+      "time": "1728691200",
+      "formattedTime": "Oct 12, 2024",
+      "formattedAxisTime": "Oct 12",
+      "value": [
+        0
+      ],
+      "hasData": [
+        false
+      ],
+      "formattedValue": [
+        "0"
+      ]
+    },
+    {
+      "time": "1728777600",
+      "formattedTime": "Oct 13, 2024",
+      "formattedAxisTime": "Oct 13",
+      "value": [
+        63
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "63"
+      ]
+    },
+    {
+      "time": "1728864000",
+      "formattedTime": "Oct 14, 2024",
+      "formattedAxisTime": "Oct 14",
+      "value": [
+        60
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "60"
+      ]
+    },
+    {
+      "time": "1728950400",
+      "formattedTime": "Oct 15, 2024",
+      "formattedAxisTime": "Oct 15",
+      "value": [
+        61
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "61"
+      ]
+    },
+    {
+      "time": "1729036800",
+      "formattedTime": "Oct 16, 2024",
+      "formattedAxisTime": "Oct 16",
+      "value": [
+        0
+      ],
+      "hasData": [
+        false
+      ],
+      "formattedValue": [
+        "0"
+      ]
+    },
+    {
+      "time": "1729123200",
+      "formattedTime": "Oct 17, 2024",
+      "formattedAxisTime": "Oct 17",
+      "value": [
+        47
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "47"
+      ]
+    },
+    {
+      "time": "1729209600",
+      "formattedTime": "Oct 18, 2024",
+      "formattedAxisTime": "Oct 18",
+      "value": [
+        60
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "60"
+      ]
+    },
+    {
+      "time": "1729296000",
+      "formattedTime": "Oct 19, 2024",
+      "formattedAxisTime": "Oct 19",
+      "value": [
+        0
+      ],
+      "hasData": [
+        false
+      ],
+      "formattedValue": [
+        "0"
+      ]
+    },
+    {
+      "time": "1729382400",
+      "formattedTime": "Oct 20, 2024",
+      "formattedAxisTime": "Oct 20",
+      "value": [
+        64
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "64"
+      ]
+    },
+    {
+      "time": "1729468800",
+      "formattedTime": "Oct 21, 2024",
+      "formattedAxisTime": "Oct 21",
+      "value": [
+        49
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "49"
+      ]
+    },
+    {
+      "time": "1729555200",
+      "formattedTime": "Oct 22, 2024",
+      "formattedAxisTime": "Oct 22",
+      "value": [
+        0
+      ],
+      "hasData": [
+        false
+      ],
+      "formattedValue": [
+        "0"
+      ]
+    },
+    {
+      "time": "1729641600",
+      "formattedTime": "Oct 23, 2024",
+      "formattedAxisTime": "Oct 23",
+      "value": [
+        0
+      ],
+      "hasData": [
+        false
+      ],
+      "formattedValue": [
+        "0"
+      ]
+    },
+    {
+      "time": "1729728000",
+      "formattedTime": "Oct 24, 2024",
+      "formattedAxisTime": "Oct 24",
+      "value": [
+        60
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "60"
+      ]
+    },
+    {
+      "time": "1729814400",
+      "formattedTime": "Oct 25, 2024",
+      "formattedAxisTime": "Oct 25",
+      "value": [
+        0
+      ],
+      "hasData": [
+        false
+      ],
+      "formattedValue": [
+        "0"
+      ]
+    },
+    {
+      "time": "1729900800",
+      "formattedTime": "Oct 26, 2024",
+      "formattedAxisTime": "Oct 26",
+      "value": [
+        0
+      ],
+      "hasData": [
+        false
+      ],
+      "formattedValue": [
+        "0"
+      ]
+    },
+    {
+      "time": "1729987200",
+      "formattedTime": "Oct 27, 2024",
+      "formattedAxisTime": "Oct 27",
+      "value": [
+        63
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "63"
+      ]
+    },
+    {
+      "time": "1730073600",
+      "formattedTime": "Oct 28, 2024",
+      "formattedAxisTime": "Oct 28",
+      "value": [
+        51
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "51"
+      ]
+    },
+    {
+      "time": "1730160000",
+      "formattedTime": "Oct 29, 2024",
+      "formattedAxisTime": "Oct 29",
+      "value": [
+        0
+      ],
+      "hasData": [
+        false
+      ],
+      "formattedValue": [
+        "0"
+      ]
+    },
+    {
+      "time": "1730246400",
+      "formattedTime": "Oct 30, 2024",
+      "formattedAxisTime": "Oct 30",
+      "value": [
+        53
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "53"
+      ]
+    },
+    {
+      "time": "1730332800",
+      "formattedTime": "Oct 31, 2024",
+      "formattedAxisTime": "Oct 31",
+      "value": [
+        0
+      ],
+      "hasData": [
+        false
+      ],
+      "formattedValue": [
+        "0"
+      ]
+    },
+    {
+      "time": "1730419200",
+      "formattedTime": "Nov 1, 2024",
+      "formattedAxisTime": "Nov 1",
+      "value": [
+        0
+      ],
+      "hasData": [
+        false
+      ],
+      "formattedValue": [
+        "0"
+      ]
+    },
+    {
+      "time": "1730505600",
+      "formattedTime": "Nov 2, 2024",
+      "formattedAxisTime": "Nov 2",
+      "value": [
+        0
+      ],
+      "hasData": [
+        false
+      ],
+      "formattedValue": [
+        "0"
+      ]
+    },
+    {
+      "time": "1730592000",
+      "formattedTime": "Nov 3, 2024",
+      "formattedAxisTime": "Nov 3",
+      "value": [
+        0
+      ],
+      "hasData": [
+        false
+      ],
+      "formattedValue": [
+        "0"
+      ]
+    },
+    {
+      "time": "1730678400",
+      "formattedTime": "Nov 4, 2024",
+      "formattedAxisTime": "Nov 4",
+      "value": [
+        54
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "54"
+      ]
+    },
+    {
+      "time": "1730764800",
+      "formattedTime": "Nov 5, 2024",
+      "formattedAxisTime": "Nov 5",
+      "value": [
+        41
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "41"
+      ]
+    },
+    {
+      "time": "1730851200",
+      "formattedTime": "Nov 6, 2024",
+      "formattedAxisTime": "Nov 6",
+      "value": [
+        44
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "44"
+      ]
+    },
+    {
+      "time": "1730937600",
+      "formattedTime": "Nov 7, 2024",
+      "formattedAxisTime": "Nov 7",
+      "value": [
+        36
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "36"
+      ]
+    },
+    {
+      "time": "1731024000",
+      "formattedTime": "Nov 8, 2024",
+      "formattedAxisTime": "Nov 8",
+      "value": [
+        40
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "40"
+      ]
+    },
+    {
+      "time": "1731110400",
+      "formattedTime": "Nov 9, 2024",
+      "formattedAxisTime": "Nov 9",
+      "value": [
+        42
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "42"
+      ]
+    },
+    {
+      "time": "1731196800",
+      "formattedTime": "Nov 10, 2024",
+      "formattedAxisTime": "Nov 10",
+      "value": [
+        51
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "51"
+      ]
+    },
+    {
+      "time": "1731283200",
+      "formattedTime": "Nov 11, 2024",
+      "formattedAxisTime": "Nov 11",
+      "value": [
+        41
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "41"
+      ]
+    },
+    {
+      "time": "1731369600",
+      "formattedTime": "Nov 12, 2024",
+      "formattedAxisTime": "Nov 12",
+      "value": [
+        34
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "34"
+      ]
+    },
+    {
+      "time": "1731456000",
+      "formattedTime": "Nov 13, 2024",
+      "formattedAxisTime": "Nov 13",
+      "value": [
+        36
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "36"
+      ]
+    },
+    {
+      "time": "1731542400",
+      "formattedTime": "Nov 14, 2024",
+      "formattedAxisTime": "Nov 14",
+      "value": [
+        30
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "30"
+      ]
+    },
+    {
+      "time": "1731628800",
+      "formattedTime": "Nov 15, 2024",
+      "formattedAxisTime": "Nov 15",
+      "value": [
+        39
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "39"
+      ]
+    },
+    {
+      "time": "1731715200",
+      "formattedTime": "Nov 16, 2024",
+      "formattedAxisTime": "Nov 16",
+      "value": [
+        41
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "41"
+      ]
+    },
+    {
+      "time": "1731801600",
+      "formattedTime": "Nov 17, 2024",
+      "formattedAxisTime": "Nov 17",
+      "value": [
+        44
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "44"
+      ]
+    },
+    {
+      "time": "1731888000",
+      "formattedTime": "Nov 18, 2024",
+      "formattedAxisTime": "Nov 18",
+      "value": [
+        41
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "41"
+      ]
+    },
+    {
+      "time": "1731974400",
+      "formattedTime": "Nov 19, 2024",
+      "formattedAxisTime": "Nov 19",
+      "value": [
+        30
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "30"
+      ]
+    },
+    {
+      "time": "1732060800",
+      "formattedTime": "Nov 20, 2024",
+      "formattedAxisTime": "Nov 20",
+      "value": [
+        35
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "35"
+      ]
+    },
+    {
+      "time": "1732147200",
+      "formattedTime": "Nov 21, 2024",
+      "formattedAxisTime": "Nov 21",
+      "value": [
+        39
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "39"
+      ],
+      "isPartial": true
+    }
+  ],
+  "interestOverTime_averages": [],
+  "interestBySubregion": [
+    {
+      "geoCode": "ID-SG",
+      "geoName": "South East Sulawesi",
+      "value": [
+        100
+      ],
+      "formattedValue": [
+        "100"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-ST",
+      "geoName": "Central Sulawesi",
+      "value": [
+        90
+      ],
+      "formattedValue": [
+        "90"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-KT",
+      "geoName": "Central Kalimantan",
+      "value": [
+        74
+      ],
+      "formattedValue": [
+        "74"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-SB",
+      "geoName": "West Sumatra",
+      "value": [
+        74
+      ],
+      "formattedValue": [
+        "74"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-RI",
+      "geoName": "Riau",
+      "value": [
+        69
+      ],
+      "formattedValue": [
+        "69"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-JT",
+      "geoName": "Central Java",
+      "value": [
+        67
+      ],
+      "formattedValue": [
+        "67"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-SN",
+      "geoName": "South Sulawesi",
+      "value": [
+        65
+      ],
+      "formattedValue": [
+        "65"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-KB",
+      "geoName": "West Kalimantan",
+      "value": [
+        59
+      ],
+      "formattedValue": [
+        "59"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-KR",
+      "geoName": "Riau Islands",
+      "value": [
+        57
+      ],
+      "formattedValue": [
+        "57"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-SS",
+      "geoName": "South Sumatra",
+      "value": [
+        55
+      ],
+      "formattedValue": [
+        "55"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-LA",
+      "geoName": "Lampung",
+      "value": [
+        53
+      ],
+      "formattedValue": [
+        "53"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-KS",
+      "geoName": "South Kalimantan",
+      "value": [
+        52
+      ],
+      "formattedValue": [
+        "52"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-JI",
+      "geoName": "East Java",
+      "value": [
+        50
+      ],
+      "formattedValue": [
+        "50"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-SU",
+      "geoName": "North Sumatra",
+      "value": [
+        47
+      ],
+      "formattedValue": [
+        "47"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-KI",
+      "geoName": "East Kalimantan",
+      "value": [
+        43
+      ],
+      "formattedValue": [
+        "43"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-JB",
+      "geoName": "West Java",
+      "value": [
+        41
+      ],
+      "formattedValue": [
+        "41"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-BT",
+      "geoName": "Banten",
+      "value": [
+        35
+      ],
+      "formattedValue": [
+        "35"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-JK",
+      "geoName": "Special Capital Region of Jakarta",
+      "value": [
+        33
+      ],
+      "formattedValue": [
+        "33"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-YO",
+      "geoName": "Special Region of Yogyakarta",
+      "value": [
+        31
+      ],
+      "formattedValue": [
+        "31"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-BA",
+      "geoName": "Bali",
+      "value": [
+        28
+      ],
+      "formattedValue": [
+        "28"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-BE",
+      "geoName": "Bengkulu",
+      "value": [
+        8
+      ],
+      "formattedValue": [
+        "8"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-AC",
+      "geoName": "Aceh",
+      "value": [
+        6
+      ],
+      "formattedValue": [
+        "6"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-NB",
+      "geoName": "West Nusa Tenggara",
+      "value": [
+        6
+      ],
+      "formattedValue": [
+        "6"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-JA",
+      "geoName": "Jambi",
+      "value": [
+        4
+      ],
+      "formattedValue": [
+        "4"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-NT",
+      "geoName": "East Nusa Tenggara",
+      "value": [
+        2
+      ],
+      "formattedValue": [
+        "2"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-MU",
+      "geoName": "North Maluku",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "geoCode": "ID-PA",
+      "geoName": "Papua",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "geoCode": "ID-PB",
+      "geoName": "West Papua",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "geoCode": "ID-MA",
+      "geoName": "Maluku",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "geoCode": "ID-SA",
+      "geoName": "North Sulawesi",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "geoCode": "ID-KU",
+      "geoName": "North Kalimantan",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "geoCode": "ID-GO",
+      "geoName": "Gorontalo",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "geoCode": "ID-SR",
+      "geoName": "West Sulawesi",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "geoCode": "ID-BB",
+      "geoName": "Bangka Belitung Islands",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    }
+  ],
+  "interestByCity": [],
+  "relatedTopics_top": [
+    {
+      "topic": {
+        "mid": "/m/01r0j5",
+        "title": "Sunscreen",
+        "type": "Topic"
+      },
+      "value": 100,
+      "formattedValue": "100",
+      "hasData": true,
+      "link": "/trends/explore?q=/m/01r0j5&date=today+3-m&geo=ID"
+    },
+    {
+      "topic": {
+        "mid": "/m/06z04",
+        "title": "Skin",
+        "type": "Topic"
+      },
+      "value": 97,
+      "formattedValue": "97",
+      "hasData": true,
+      "link": "/trends/explore?q=/m/06z04&date=today+3-m&geo=ID"
+    },
+    {
+      "topic": {
+        "mid": "/m/083jv",
+        "title": "White",
+        "type": "Color"
+      },
+      "value": 11,
+      "formattedValue": "11",
+      "hasData": true,
+      "link": "/trends/explore?q=/m/083jv&date=today+3-m&geo=ID"
+    },
+    {
+      "topic": {
+        "mid": "/g/122jqmk9",
+        "title": "sun protection factor",
+        "type": "Topic"
+      },
+      "value": 8,
+      "formattedValue": "8",
+      "hasData": true,
+      "link": "/trends/explore?q=/g/122jqmk9&date=today+3-m&geo=ID"
+    },
+    {
+      "topic": {
+        "mid": "/m/0dzct",
+        "title": "Face",
+        "type": "Topic"
+      },
+      "value": 7,
+      "formattedValue": "7",
+      "hasData": true,
+      "link": "/trends/explore?q=/m/0dzct&date=today+3-m&geo=ID"
+    },
+    {
+      "topic": {
+        "mid": "/m/07xgrh",
+        "title": "Ingredient",
+        "type": "Topic"
+      },
+      "value": 6,
+      "formattedValue": "6",
+      "hasData": true,
+      "link": "/trends/explore?q=/m/07xgrh&date=today+3-m&geo=ID"
+    },
+    {
+      "topic": {
+        "mid": "/m/04k9pm",
+        "title": "Moisturizer",
+        "type": "Topic"
+      },
+      "value": 6,
+      "formattedValue": "6",
+      "hasData": true,
+      "link": "/trends/explore?q=/m/04k9pm&date=today+3-m&geo=ID"
+    },
+    {
+      "topic": {
+        "mid": "/m/01q5f",
+        "title": "Chemical substance",
+        "type": "Topic"
+      },
+      "value": 6,
+      "formattedValue": "6",
+      "hasData": true,
+      "link": "/trends/explore?q=/m/01q5f&date=today+3-m&geo=ID"
+    },
+    {
+      "topic": {
+        "mid": "/m/04zpv",
+        "title": "Milk",
+        "type": "Dairy product"
+      },
+      "value": 6,
+      "formattedValue": "6",
+      "hasData": true,
+      "link": "/trends/explore?q=/m/04zpv&date=today+3-m&geo=ID"
+    },
+    {
+      "topic": {
+        "mid": "/m/07vvp",
+        "title": "Ultraviolet",
+        "type": "Topic"
+      },
+      "value": 5,
+      "formattedValue": "5",
+      "hasData": true,
+      "link": "/trends/explore?q=/m/07vvp&date=today+3-m&geo=ID"
+    },
+    {
+      "topic": {
+        "mid": "/g/11y36vhjxx",
+        "title": "skintific",
+        "type": "Topic"
+      },
+      "value": 5,
+      "formattedValue": "5",
+      "hasData": true,
+      "link": "/trends/explore?q=/g/11y36vhjxx&date=today+3-m&geo=ID"
+    },
+    {
+      "topic": {
+        "mid": "/m/01g5v",
+        "title": "Blue",
+        "type": "Colour"
+      },
+      "value": 5,
+      "formattedValue": "5",
+      "hasData": true,
+      "link": "/trends/explore?q=/m/01g5v&date=today+3-m&geo=ID"
+    },
+    {
+      "topic": {
+        "mid": "/m/0b9c0",
+        "title": "Gel",
+        "type": "Topic"
+      },
+      "value": 4,
+      "formattedValue": "4",
+      "hasData": true,
+      "link": "/trends/explore?q=/m/0b9c0&date=today+3-m&geo=ID"
+    },
+    {
+      "topic": {
+        "mid": "/g/122h6qr3",
+        "title": "Acne",
+        "type": "Condition"
+      },
+      "value": 4,
+      "formattedValue": "4",
+      "hasData": true,
+      "link": "/trends/explore?q=/g/122h6qr3&date=today+3-m&geo=ID"
+    },
+    {
+      "topic": {
+        "mid": "/m/01lj9",
+        "title": "Chemistry",
+        "type": "Field of study"
+      },
+      "value": 4,
+      "formattedValue": "4",
+      "hasData": true,
+      "link": "/trends/explore?q=/m/01lj9&date=today+3-m&geo=ID"
+    },
+    {
+      "topic": {
+        "mid": "/m/0dl9sfn",
+        "title": "Oily skin",
+        "type": "Topic"
+      },
+      "value": 4,
+      "formattedValue": "4",
+      "hasData": true,
+      "link": "/trends/explore?q=/m/0dl9sfn&date=today+3-m&geo=ID"
+    },
+    {
+      "topic": {
+        "mid": "/m/0c00x6",
+        "title": "Skin whitening",
+        "type": "Topic"
+      },
+      "value": 4,
+      "formattedValue": "4",
+      "hasData": true,
+      "link": "/trends/explore?q=/m/0c00x6&date=today+3-m&geo=ID"
+    },
+    {
+      "topic": {
+        "mid": "/g/11fz9ymjdt",
+        "title": "Wardah",
+        "type": "Topic"
+      },
+      "value": 3,
+      "formattedValue": "3",
+      "hasData": true,
+      "link": "/trends/explore?q=/g/11fz9ymjdt&date=today+3-m&geo=ID"
+    },
+    {
+      "topic": {
+        "mid": "/g/122_gf1z",
+        "title": "Skin care",
+        "type": "Topic"
+      },
+      "value": 3,
+      "formattedValue": "3",
+      "hasData": true,
+      "link": "/trends/explore?q=/g/122_gf1z&date=today+3-m&geo=ID"
+    },
+    {
+      "topic": {
+        "mid": "/m/07s8fsr",
+        "title": "Serum",
+        "type": "Blood"
+      },
+      "value": 3,
+      "formattedValue": "3",
+      "hasData": true,
+      "link": "/trends/explore?q=/m/07s8fsr&date=today+3-m&geo=ID"
+    },
+    {
+      "topic": {
+        "mid": "/m/038hg",
+        "title": "Green",
+        "type": "Color"
+      },
+      "value": 3,
+      "formattedValue": "3",
+      "hasData": true,
+      "link": "/trends/explore?q=/m/038hg&date=today+3-m&geo=ID"
+    },
+    {
+      "topic": {
+        "mid": "/m/01fklc",
+        "title": "Pink",
+        "type": "Color"
+      },
+      "value": 2,
+      "formattedValue": "2",
+      "hasData": true,
+      "link": "/trends/explore?q=/m/01fklc&date=today+3-m&geo=ID"
+    },
+    {
+      "topic": {
+        "mid": "/m/05qjt",
+        "title": "Physics",
+        "type": "Professional field"
+      },
+      "value": 2,
+      "formattedValue": "2",
+      "hasData": true,
+      "link": "/trends/explore?q=/m/05qjt&date=today+3-m&geo=ID"
+    },
+    {
+      "topic": {
+        "mid": "/g/11fzbt0jl5",
+        "title": "Hanasui",
+        "type": "Topic"
+      },
+      "value": 2,
+      "formattedValue": "2",
+      "hasData": true,
+      "link": "/trends/explore?q=/g/11fzbt0jl5&date=today+3-m&geo=ID"
+    },
+    {
+      "topic": {
+        "mid": "/g/11g6qlxv86",
+        "title": "BIOAQUA",
+        "type": "Topic"
+      },
+      "value": 2,
+      "formattedValue": "2",
+      "hasData": true,
+      "link": "/trends/explore?q=/g/11g6qlxv86&date=today+3-m&geo=ID"
+    }
+  ],
+  "relatedTopics_rising": [
+    {
+      "topic": {
+        "mid": "/g/11w58prwf8",
+        "title": "Azarine",
+        "type": "Musical artist"
+      },
+      "value": 124550,
+      "formattedValue": "Breakout",
+      "link": "/trends/explore?q=/g/11w58prwf8&date=today+3-m&geo=ID"
+    },
+    {
+      "topic": {
+        "mid": "/m/01kr41",
+        "title": "Mask",
+        "type": "Topic"
+      },
+      "value": 84650,
+      "formattedValue": "Breakout",
+      "link": "/trends/explore?q=/m/01kr41&date=today+3-m&geo=ID"
+    },
+    {
+      "topic": {
+        "mid": "/g/11ddyshmdw",
+        "title": "COSRX",
+        "type": "Topic"
+      },
+      "value": 82750,
+      "formattedValue": "Breakout",
+      "link": "/trends/explore?q=/g/11ddyshmdw&date=today+3-m&geo=ID"
+    },
+    {
+      "topic": {
+        "mid": "/m/069sqv",
+        "title": "Tranexamic acid",
+        "type": "Medication"
+      },
+      "value": 74000,
+      "formattedValue": "Breakout",
+      "link": "/trends/explore?q=/m/069sqv&date=today+3-m&geo=ID"
+    },
+    {
+      "topic": {
+        "mid": "/g/11ltfn3_wl",
+        "title": "Biore UV Aqua Rich Watery Essence PA++++",
+        "type": "Sunscreen"
+      },
+      "value": 67500,
+      "formattedValue": "Breakout",
+      "link": "/trends/explore?q=/g/11ltfn3_wl&date=today+3-m&geo=ID"
+    },
+    {
+      "topic": {
+        "mid": "/g/11kxsf228c",
+        "title": "Wardah UV Shield Active Protection Serum SPF 50 PA ++++",
+        "type": "Sunscreen"
+      },
+      "value": 62850,
+      "formattedValue": "Breakout",
+      "link": "/trends/explore?q=/g/11kxsf228c&date=today+3-m&geo=ID"
+    },
+    {
+      "topic": {
+        "mid": "/m/02rv880",
+        "title": "Foundation",
+        "type": "Cosmetics"
+      },
+      "value": 60000,
+      "formattedValue": "Breakout",
+      "link": "/trends/explore?q=/m/02rv880&date=today+3-m&geo=ID"
+    },
+    {
+      "topic": {
+        "mid": "/m/0lqk",
+        "title": "Alcohol",
+        "type": "Chemistry"
+      },
+      "value": 58000,
+      "formattedValue": "Breakout",
+      "link": "/trends/explore?q=/m/0lqk&date=today+3-m&geo=ID"
+    },
+    {
+      "topic": {
+        "mid": "/g/11qfy03v8m",
+        "title": "KARISMA SKINCARE",
+        "type": "Topic"
+      },
+      "value": 56700,
+      "formattedValue": "Breakout",
+      "link": "/trends/explore?q=/g/11qfy03v8m&date=today+3-m&geo=ID"
+    },
+    {
+      "topic": {
+        "mid": "/m/08xv95",
+        "title": "Xeroderma",
+        "type": "Condition"
+      },
+      "value": 54400,
+      "formattedValue": "Breakout",
+      "link": "/trends/explore?q=/m/08xv95&date=today+3-m&geo=ID"
+    },
+    {
+      "topic": {
+        "mid": "/g/11l65vxz18",
+        "title": "G2G",
+        "type": "Topic"
+      },
+      "value": 51750,
+      "formattedValue": "Breakout",
+      "link": "/trends/explore?q=/g/11l65vxz18&date=today+3-m&geo=ID"
+    },
+    {
+      "topic": {
+        "mid": "/m/02sg06",
+        "title": "Aerosol spray dispenser",
+        "type": "Topic"
+      },
+      "value": 47500,
+      "formattedValue": "Breakout",
+      "link": "/trends/explore?q=/m/02sg06&date=today+3-m&geo=ID"
+    },
+    {
+      "topic": {
+        "mid": "/g/11c4bg3bs9",
+        "title": "Tinted",
+        "type": "Topic"
+      },
+      "value": 45800,
+      "formattedValue": "Breakout",
+      "link": "/trends/explore?q=/g/11c4bg3bs9&date=today+3-m&geo=ID"
+    },
+    {
+      "topic": {
+        "mid": "/m/0642d",
+        "title": "pH",
+        "type": "Topic"
+      },
+      "value": 44400,
+      "formattedValue": "Breakout",
+      "link": "/trends/explore?q=/m/0642d&date=today+3-m&geo=ID"
+    },
+    {
+      "topic": {
+        "mid": "/m/0k0rvyq",
+        "title": "Banana Boat",
+        "type": "Topic"
+      },
+      "value": 41100,
+      "formattedValue": "Breakout",
+      "link": "/trends/explore?q=/m/0k0rvyq&date=today+3-m&geo=ID"
+    },
+    {
+      "topic": {
+        "mid": "/g/11trt2tpdy",
+        "title": "Skin Aqua Tone Up UV Essence Latte Beige 80g",
+        "type": "Sunscreen"
+      },
+      "value": 450,
+      "formattedValue": "+450%",
+      "link": "/trends/explore?q=/g/11trt2tpdy&date=today+3-m&geo=ID"
+    },
+    {
+      "topic": {
+        "mid": "/g/11vm6fg8hw",
+        "title": "UV Mild Milk",
+        "type": "Sunscreen"
+      },
+      "value": 120,
+      "formattedValue": "+120%",
+      "link": "/trends/explore?q=/g/11vm6fg8hw&date=today+3-m&geo=ID"
+    },
+    {
+      "topic": {
+        "mid": "/m/01lj9",
+        "title": "Chemistry",
+        "type": "Field of study"
+      },
+      "value": 70,
+      "formattedValue": "+70%",
+      "link": "/trends/explore?q=/m/01lj9&date=today+3-m&geo=ID"
+    },
+    {
+      "topic": {
+        "mid": "/g/122_gf1z",
+        "title": "Skin care",
+        "type": "Topic"
+      },
+      "value": 70,
+      "formattedValue": "+70%",
+      "link": "/trends/explore?q=/g/122_gf1z&date=today+3-m&geo=ID"
+    },
+    {
+      "topic": {
+        "mid": "/m/02t59k",
+        "title": "Moist",
+        "type": "Topic"
+      },
+      "value": 60,
+      "formattedValue": "+60%",
+      "link": "/trends/explore?q=/m/02t59k&date=today+3-m&geo=ID"
+    },
+    {
+      "topic": {
+        "mid": "/m/07vvp",
+        "title": "Ultraviolet",
+        "type": "Topic"
+      },
+      "value": 50,
+      "formattedValue": "+50%",
+      "link": "/trends/explore?q=/m/07vvp&date=today+3-m&geo=ID"
+    },
+    {
+      "topic": {
+        "mid": "/g/11fzbt0jl5",
+        "title": "Hanasui",
+        "type": "Topic"
+      },
+      "value": 50,
+      "formattedValue": "+50%",
+      "link": "/trends/explore?q=/g/11fzbt0jl5&date=today+3-m&geo=ID"
+    },
+    {
+      "topic": {
+        "mid": "/m/04k9pm",
+        "title": "Moisturizer",
+        "type": "Topic"
+      },
+      "value": 40,
+      "formattedValue": "+40%",
+      "link": "/trends/explore?q=/m/04k9pm&date=today+3-m&geo=ID"
+    }
+  ]
+}]
+[2024-11-21T08:46:16.281+0000] {logging_mixin.py:190} INFO - Gagal mengambil dataset untuk sunscreen skin aqua
+[2024-11-21T08:46:16.300+0000] {python.py:240} INFO - Done. Returned value was: None
+[2024-11-21T08:46:16.644+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-11-21T08:46:16.654+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=etl_pipeline, task_id=extract_google_trends, run_id=manual__2024-11-21T08:42:38.118074+00:00, execution_date=20241121T084238, start_date=20241121T084243, end_date=20241121T084616
+[2024-11-21T08:46:16.767+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2024-11-21T08:46:16.769+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2024-11-21T08:46:16.769+0000] {logging_mixin.py:190} INFO - Dag name:etl_pipeline queued_at:2024-11-21 08:42:38.332226+00:00
+[2024-11-21T08:46:16.770+0000] {logging_mixin.py:190} INFO - Task hostname:7a40aa914b11 operator:PythonOperator
+[2024-11-21T08:46:16.867+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-11-21T08:46:17.042+0000] {taskinstance.py:3895} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-11-21T08:46:17.046+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

@@ -1,0 +1,12 @@
+[2024-11-21T12:25:27.678+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-11-21T12:25:27.695+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_pipeline.extract_google_trends manual__2024-11-21T12:25:18.278769+00:00 [queued]>
+[2024-11-21T12:25:27.704+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_pipeline.extract_google_trends manual__2024-11-21T12:25:18.278769+00:00 [queued]>
+[2024-11-21T12:25:27.705+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 1
+[2024-11-21T12:25:27.735+0000] {taskinstance.py:2889} INFO - Executing <Task(PythonOperator): extract_google_trends> on 2024-11-21 12:25:18.278769+00:00
+[2024-11-21T12:25:27.753+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=4625) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-11-21T12:25:27.755+0000] {standard_task_runner.py:72} INFO - Started process 4637 to run task
+[2024-11-21T12:25:27.755+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'etl_pipeline', 'extract_google_trends', 'manual__2024-11-21T12:25:18.278769+00:00', '--job-id', '258', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmp12drxkrc']
+[2024-11-21T12:25:27.757+0000] {standard_task_runner.py:105} INFO - Job 258: Subtask extract_google_trends
+[2024-11-21T12:25:27.824+0000] {task_command.py:467} INFO - Running <TaskInstance: etl_pipeline.extract_google_trends manual__2024-11-21T12:25:18.278769+00:00 [running]> on host 7a40aa914b11

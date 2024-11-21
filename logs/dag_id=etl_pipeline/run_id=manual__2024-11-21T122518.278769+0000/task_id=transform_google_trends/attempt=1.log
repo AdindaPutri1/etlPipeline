@@ -1,0 +1,32 @@
+[2024-11-21T12:25:34.638+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-11-21T12:25:34.652+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_pipeline.transform_google_trends manual__2024-11-21T12:25:18.278769+00:00 [queued]>
+[2024-11-21T12:25:34.661+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_pipeline.transform_google_trends manual__2024-11-21T12:25:18.278769+00:00 [queued]>
+[2024-11-21T12:25:34.663+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 1
+[2024-11-21T12:25:34.678+0000] {taskinstance.py:2889} INFO - Executing <Task(PythonOperator): transform_google_trends> on 2024-11-21 12:25:18.278769+00:00
+[2024-11-21T12:25:34.687+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=4641) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-11-21T12:25:34.689+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'etl_pipeline', 'transform_google_trends', 'manual__2024-11-21T12:25:18.278769+00:00', '--job-id', '260', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmp3ij35m9e']
+[2024-11-21T12:25:34.689+0000] {standard_task_runner.py:72} INFO - Started process 4643 to run task
+[2024-11-21T12:25:34.690+0000] {standard_task_runner.py:105} INFO - Job 260: Subtask transform_google_trends
+[2024-11-21T12:25:34.737+0000] {task_command.py:467} INFO - Running <TaskInstance: etl_pipeline.transform_google_trends manual__2024-11-21T12:25:18.278769+00:00 [running]> on host 7a40aa914b11
+[2024-11-21T12:25:35.054+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='etl_pipeline' AIRFLOW_CTX_TASK_ID='transform_google_trends' AIRFLOW_CTX_EXECUTION_DATE='2024-11-21T12:25:18.278769+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-11-21T12:25:18.278769+00:00'
+[2024-11-21T12:25:35.056+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2024-11-21T12:25:35.057+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2024-11-21T12:25:35.059+0000] {logging_mixin.py:190} INFO - Current task name:transform_google_trends state:running start_date:2024-11-21 12:25:34.653581+00:00
+[2024-11-21T12:25:35.059+0000] {logging_mixin.py:190} INFO - Dag name:etl_pipeline and current dag run status:running
+[2024-11-21T12:25:35.060+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-11-21T12:25:35.073+0000] {logging_mixin.py:190} INFO - Memproses file: dags/hasil data extract/GoogleTrend_sunscreen_Azarine_interestOverTime.csv
+[2024-11-21T12:25:35.111+0000] {logging_mixin.py:190} INFO - Hasil diproses disimpan di: dags/hasil data transform/GoogleTrend_sunscreen_Azarine_interestOverTime.csv
+[2024-11-21T12:25:35.115+0000] {logging_mixin.py:190} INFO - Memproses file: dags/hasil data extract/GoogleTrend_sunscreen_skin_aqua_interestOverTime.csv
+[2024-11-21T12:25:35.144+0000] {logging_mixin.py:190} INFO - Hasil diproses disimpan di: dags/hasil data transform/GoogleTrend_sunscreen_skin_aqua_interestOverTime.csv
+[2024-11-21T12:25:35.145+0000] {python.py:240} INFO - Done. Returned value was: None
+[2024-11-21T12:25:35.154+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-11-21T12:25:35.156+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=etl_pipeline, task_id=transform_google_trends, run_id=manual__2024-11-21T12:25:18.278769+00:00, execution_date=20241121T122518, start_date=20241121T122534, end_date=20241121T122535
+[2024-11-21T12:25:35.166+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2024-11-21T12:25:35.167+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2024-11-21T12:25:35.167+0000] {logging_mixin.py:190} INFO - Dag name:etl_pipeline queued_at:2024-11-21 12:25:18.811989+00:00
+[2024-11-21T12:25:35.168+0000] {logging_mixin.py:190} INFO - Task hostname:7a40aa914b11 operator:PythonOperator
+[2024-11-21T12:25:35.188+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-11-21T12:25:35.211+0000] {taskinstance.py:3895} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-11-21T12:25:35.215+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

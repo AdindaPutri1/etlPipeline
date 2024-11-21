@@ -3,8 +3,8 @@ import pandas as pd
 
 # Konfigurasi folder
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-DATA_FOLDER = os.path.join(BASE_DIR, "dags/hasil data transform")
-PROCESSED_FOLDER = os.path.join(BASE_DIR, "dags/data/hasil data transform")
+DATA_FOLDER = "dags/hasil data transform"
+PROCESSED_FOLDER = "dags/hasil data transform"
 
 # Pastikan folder untuk hasil yang telah diproses ada
 if not os.path.exists(PROCESSED_FOLDER):
@@ -20,7 +20,10 @@ def read_csv_file(file_path):
 
 # Fungsi untuk membersihkan data
 def clean_data(df):
-    # Mapping untuk kategori umur
+    # Buat salinan DataFrame untuk menghindari peringatan
+    df = df.copy()
+
+    # Mapping kategori umur
     age_mapping = {
         '18 and Under': 'remaja', 
         '19 - 24': 'dewasa muda',  
@@ -32,9 +35,9 @@ def clean_data(df):
     }
     df['age_category'] = df['age'].map(age_mapping)
 
-    # Menghapus nilai yang tidak diinginkan di kolom 'skintype'
+    # Hapus nilai tidak diinginkan di kolom 'profile_description'
     unwanted_values = [',19 - 24', ',25 - 29', ',18 and Under']
-    df = df[~df['profile_description'].isin(unwanted_values)]  # Menyaring baris berdasarkan 'skintype'
+    df = df[~df['profile_description'].isin(unwanted_values)]
 
     # Mapping periode penggunaan
     usage_period_mapping_id = {
@@ -47,22 +50,17 @@ def clean_data(df):
     }
     df['periode_penggunaan'] = df['usage_period'].map(usage_period_mapping_id)
 
-    # Rename beberapa kolom
-    df.rename(columns={'rating_count': 'rating'}, inplace=True)
-    df.rename(columns={'Jenis Produk': 'Jenis_Produk'}, inplace=True)
-    df.rename(columns={'value': 'trend'}, inplace=True)
+    # Rename kolom
+    df = df.rename(columns={'rating_count': 'rating', 'value': 'trend'})
 
-    # Memisahkan kolom 'skintype' berdasarkan koma
-    df[['skintype', 'skintone', 'undertone']] = df['profile_description'].str.split(',', expand=True)
-    df['skintype'] = df['skintype'].str.strip()
-    df['skintone'] = df['skintone'].str.strip()
-    df['undertone'] = df['undertone'].str.strip()
+    # Memisahkan kolom 'profile_description'
+    split_columns = df['profile_description'].str.split(',', expand=True)
+    df['skintype'] = split_columns[0].str.strip()
+    df['skintone'] = split_columns[1].str.strip()
+    df['undertone'] = split_columns[2].str.strip()
 
-    # Menghapus kolom yang tidak diperlukan
-    df.drop(columns=['usage_period'], inplace=True)
-    df.drop(columns=['age'], inplace=True)
-    df.drop(columns=['recommend'], inplace=True)
-    df.drop(columns=['profile_description'], inplace=True)
+    # Hapus kolom yang tidak diperlukan
+    df = df.drop(columns=['usage_period', 'age', 'profile_description'])
 
     return df
 

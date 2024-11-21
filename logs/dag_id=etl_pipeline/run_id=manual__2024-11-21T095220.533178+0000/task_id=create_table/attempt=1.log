@@ -1,0 +1,65 @@
+[2024-11-21T09:56:41.234+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-11-21T09:56:41.256+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_pipeline.create_table manual__2024-11-21T09:52:20.533178+00:00 [queued]>
+[2024-11-21T09:56:41.267+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_pipeline.create_table manual__2024-11-21T09:52:20.533178+00:00 [queued]>
+[2024-11-21T09:56:41.268+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 1
+[2024-11-21T09:56:41.285+0000] {taskinstance.py:2889} INFO - Executing <Task(PostgresOperator): create_table> on 2024-11-21 09:52:20.533178+00:00
+[2024-11-21T09:56:41.294+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=2437) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-11-21T09:56:41.295+0000] {standard_task_runner.py:72} INFO - Started process 2439 to run task
+[2024-11-21T09:56:41.296+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'etl_pipeline', 'create_table', 'manual__2024-11-21T09:52:20.533178+00:00', '--job-id', '184', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmppwdatrei']
+[2024-11-21T09:56:41.297+0000] {standard_task_runner.py:105} INFO - Job 184: Subtask create_table
+[2024-11-21T09:56:41.348+0000] {task_command.py:467} INFO - Running <TaskInstance: etl_pipeline.create_table manual__2024-11-21T09:52:20.533178+00:00 [running]> on host 7a40aa914b11
+[2024-11-21T09:56:41.697+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='etl_pipeline' AIRFLOW_CTX_TASK_ID='create_table' AIRFLOW_CTX_EXECUTION_DATE='2024-11-21T09:52:20.533178+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-11-21T09:52:20.533178+00:00'
+[2024-11-21T09:56:41.698+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2024-11-21T09:56:41.699+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2024-11-21T09:56:41.700+0000] {logging_mixin.py:190} INFO - Current task name:create_table state:running start_date:2024-11-21 09:56:41.257668+00:00
+[2024-11-21T09:56:41.701+0000] {logging_mixin.py:190} INFO - Dag name:etl_pipeline and current dag run status:running
+[2024-11-21T09:56:41.702+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-11-21T09:56:41.703+0000] {sql.py:278} INFO - Executing: 
+        CREATE TABLE IF NOT EXISTS skincare_data (
+				    id SERIAL PRIMARY KEY,
+				    username TEXT NOT NULL,
+				    date TIMESTAMP,
+					review_content TEXT,
+				    purchase_point TEXT,
+				    rating INTEGER,
+				    recommend TEXT,
+					jenis_produk TEXT,
+					trend INTEGER,
+				    age_category TEXT,
+				    periode_penggunaan TEXT,
+				    skintype TEXT,
+				    skintone TEXT,
+				    undertone TEXT
+        );
+        
+[2024-11-21T09:56:41.713+0000] {base.py:84} INFO - Retrieving connection 'skincare_connection'
+[2024-11-21T09:56:41.727+0000] {base.py:84} INFO - Retrieving connection 'skincare_connection'
+[2024-11-21T09:56:41.730+0000] {sql.py:544} INFO - Running statement: 
+        CREATE TABLE IF NOT EXISTS skincare_data (
+				    id SERIAL PRIMARY KEY,
+				    username TEXT NOT NULL,
+				    date TIMESTAMP,
+					review_content TEXT,
+				    purchase_point TEXT,
+				    rating INTEGER,
+				    recommend TEXT,
+					jenis_produk TEXT,
+					trend INTEGER,
+				    age_category TEXT,
+				    periode_penggunaan TEXT,
+				    skintype TEXT,
+				    skintone TEXT,
+				    undertone TEXT
+        );
+        , parameters: None
+[2024-11-21T09:56:41.757+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-11-21T09:56:41.758+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=etl_pipeline, task_id=create_table, run_id=manual__2024-11-21T09:52:20.533178+00:00, execution_date=20241121T095220, start_date=20241121T095641, end_date=20241121T095641
+[2024-11-21T09:56:41.769+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2024-11-21T09:56:41.770+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2024-11-21T09:56:41.771+0000] {logging_mixin.py:190} INFO - Dag name:etl_pipeline queued_at:2024-11-21 09:52:20.609108+00:00
+[2024-11-21T09:56:41.772+0000] {logging_mixin.py:190} INFO - Task hostname:7a40aa914b11 operator:PostgresOperator
+[2024-11-21T09:56:41.795+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-11-21T09:56:41.818+0000] {taskinstance.py:3895} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-11-21T09:56:41.821+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

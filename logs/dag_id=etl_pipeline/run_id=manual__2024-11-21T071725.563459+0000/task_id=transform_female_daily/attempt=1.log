@@ -1,0 +1,55 @@
+[2024-11-21T07:17:38.597+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-11-21T07:17:38.614+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_pipeline.transform_female_daily manual__2024-11-21T07:17:25.563459+00:00 [queued]>
+[2024-11-21T07:17:38.623+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_pipeline.transform_female_daily manual__2024-11-21T07:17:25.563459+00:00 [queued]>
+[2024-11-21T07:17:38.625+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 1
+[2024-11-21T07:17:38.638+0000] {taskinstance.py:2889} INFO - Executing <Task(PythonOperator): transform_female_daily> on 2024-11-21 07:17:25.563459+00:00
+[2024-11-21T07:17:38.649+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=95) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-11-21T07:17:38.651+0000] {standard_task_runner.py:72} INFO - Started process 97 to run task
+[2024-11-21T07:17:38.651+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'etl_pipeline', 'transform_female_daily', 'manual__2024-11-21T07:17:25.563459+00:00', '--job-id', '113', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmpp93g8mgm']
+[2024-11-21T07:17:38.652+0000] {standard_task_runner.py:105} INFO - Job 113: Subtask transform_female_daily
+[2024-11-21T07:17:38.709+0000] {task_command.py:467} INFO - Running <TaskInstance: etl_pipeline.transform_female_daily manual__2024-11-21T07:17:25.563459+00:00 [running]> on host 7a40aa914b11
+[2024-11-21T07:17:38.984+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='etl_pipeline' AIRFLOW_CTX_TASK_ID='transform_female_daily' AIRFLOW_CTX_EXECUTION_DATE='2024-11-21T07:17:25.563459+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-11-21T07:17:25.563459+00:00'
+[2024-11-21T07:17:38.986+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2024-11-21T07:17:38.987+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2024-11-21T07:17:38.988+0000] {logging_mixin.py:190} INFO - Current task name:transform_female_daily state:running start_date:2024-11-21 07:17:38.615947+00:00
+[2024-11-21T07:17:38.989+0000] {logging_mixin.py:190} INFO - Dag name:etl_pipeline and current dag run status:running
+[2024-11-21T07:17:38.990+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-11-21T07:17:39.006+0000] {logging_mixin.py:190} INFO - Memproses file: FemaleDaily_Review Azarine Calm My Acne Sunscreen Moisturizer.csv
+[2024-11-21T07:17:39.090+0000] {logging_mixin.py:190} INFO - Hasil diproses disimpan di: dags/hasil data extract/FemaleDaily_Review Azarine Calm My Acne Sunscreen Moisturizer.csv
+[2024-11-21T07:17:39.091+0000] {logging_mixin.py:190} INFO - Memproses file: FemaleDaily_Review Azarine Hydramax C Sunscreen Serum.csv
+[2024-11-21T07:17:39.128+0000] {logging_mixin.py:190} INFO - Hasil diproses disimpan di: dags/hasil data extract/FemaleDaily_Review Azarine Hydramax C Sunscreen Serum.csv
+[2024-11-21T07:17:39.130+0000] {logging_mixin.py:190} INFO - Memproses file: FemaleDaily_Review Azarine Hydrashoote Sunscreen Gel.csv
+[2024-11-21T07:17:39.175+0000] {logging_mixin.py:190} INFO - Hasil diproses disimpan di: dags/hasil data extract/FemaleDaily_Review Azarine Hydrashoote Sunscreen Gel.csv
+[2024-11-21T07:17:39.176+0000] {logging_mixin.py:190} INFO - Memproses file: FemaleDaily_Review Skinaqua UV Moisture Gel.csv
+[2024-11-21T07:17:39.203+0000] {logging_mixin.py:190} INFO - Hasil diproses disimpan di: dags/hasil data extract/FemaleDaily_Review Skinaqua UV Moisture Gel.csv
+[2024-11-21T07:17:39.204+0000] {logging_mixin.py:190} INFO - Memproses file: FemaleDaily_Review Skinaqua UV Moisture Milk.csv
+[2024-11-21T07:17:39.248+0000] {logging_mixin.py:190} INFO - Hasil diproses disimpan di: dags/hasil data extract/FemaleDaily_Review Skinaqua UV Moisture Milk.csv
+[2024-11-21T07:17:39.249+0000] {logging_mixin.py:190} INFO - Memproses file: FemaleDaily_Review Skinaqua UV Whitening Milk.csv
+[2024-11-21T07:17:39.300+0000] {logging_mixin.py:190} INFO - Hasil diproses disimpan di: dags/hasil data extract/FemaleDaily_Review Skinaqua UV Whitening Milk.csv
+[2024-11-21T07:17:39.302+0000] {logging_mixin.py:190} INFO - Memproses file: FemaleDaily_Sunscreen Azarine.csv
+[2024-11-21T07:17:39.330+0000] {logging_mixin.py:190} INFO - Tidak ada mapping untuk file: FemaleDaily_Sunscreen Azarine.csv
+[2024-11-21T07:17:39.387+0000] {logging_mixin.py:190} INFO - Hasil diproses disimpan di: dags/hasil data extract/FemaleDaily_Sunscreen Azarine.csv
+[2024-11-21T07:17:39.388+0000] {logging_mixin.py:190} INFO - Memproses file: FemaleDaily_Sunscreen Skinaqua.csv
+[2024-11-21T07:17:39.420+0000] {logging_mixin.py:190} INFO - Tidak ada mapping untuk file: FemaleDaily_Sunscreen Skinaqua.csv
+[2024-11-21T07:17:39.471+0000] {logging_mixin.py:190} INFO - Hasil diproses disimpan di: dags/hasil data extract/FemaleDaily_Sunscreen Skinaqua.csv
+[2024-11-21T07:17:39.475+0000] {logging_mixin.py:190} INFO - Membaca file: FemaleDaily_Review Azarine Calm My Acne Sunscreen Moisturizer.csv
+[2024-11-21T07:17:39.503+0000] {logging_mixin.py:190} INFO - Membaca file: FemaleDaily_Review Azarine Hydramax C Sunscreen Serum.csv
+[2024-11-21T07:17:39.523+0000] {logging_mixin.py:190} INFO - Membaca file: FemaleDaily_Review Azarine Hydrashoote Sunscreen Gel.csv
+[2024-11-21T07:17:39.591+0000] {logging_mixin.py:190} INFO - Hasil penggabungan disimpan di: dags/hasil data extract/FemaleDaily_Sunscreen Azarine.csv
+[2024-11-21T07:17:39.597+0000] {logging_mixin.py:190} INFO - Membaca file: FemaleDaily_Review Skinaqua UV Moisture Gel.csv
+[2024-11-21T07:17:39.614+0000] {logging_mixin.py:190} INFO - Membaca file: FemaleDaily_Review Skinaqua UV Moisture Milk.csv
+[2024-11-21T07:17:39.637+0000] {logging_mixin.py:190} INFO - Membaca file: FemaleDaily_Review Skinaqua UV Whitening Milk.csv
+[2024-11-21T07:17:39.698+0000] {logging_mixin.py:190} INFO - Hasil penggabungan disimpan di: dags/hasil data extract/FemaleDaily_Sunscreen Skinaqua.csv
+[2024-11-21T07:17:39.773+0000] {logging_mixin.py:190} INFO - Data berhasil disimpan ke XCom.
+[2024-11-21T07:17:39.775+0000] {python.py:240} INFO - Done. Returned value was: None
+[2024-11-21T07:17:39.782+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-11-21T07:17:39.784+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=etl_pipeline, task_id=transform_female_daily, run_id=manual__2024-11-21T07:17:25.563459+00:00, execution_date=20241121T071725, start_date=20241121T071738, end_date=20241121T071739
+[2024-11-21T07:17:39.794+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2024-11-21T07:17:39.795+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2024-11-21T07:17:39.795+0000] {logging_mixin.py:190} INFO - Dag name:etl_pipeline queued_at:2024-11-21 07:17:25.658607+00:00
+[2024-11-21T07:17:39.796+0000] {logging_mixin.py:190} INFO - Task hostname:7a40aa914b11 operator:PythonOperator
+[2024-11-21T07:17:39.833+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-11-21T07:17:39.854+0000] {taskinstance.py:3895} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-11-21T07:17:39.860+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

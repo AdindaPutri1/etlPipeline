@@ -3,19 +3,19 @@ import pandas as pd
 
 # 1. Tentukan jalur file
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-DATA_FOLDER = os.path.join(BASE_DIR, "dags/hasil data transform")
-MERGE_FOLDER = DATA_FOLDER  # Hasil merge disimpan di folder yang sama
+DATA_FOLDER = "dags/hasil data transform"
+MERGE_FOLDER = "dags/hasil data transform"
 
 # 2. Daftar pasangan file yang akan digabungkan
 FILE_COMBINATIONS = [
     {
         "female_daily_file": "FemaleDaily_Sunscreen Azarine.csv",
-        "pytrends_file": "GoogleTrends_Sunscreen Azarine.csv",
+        "pytrends_file": "GoogleTrend_sunscreen_Azarine_interestOverTime.csv",
         "output_name": "Merged_Sunscreen Azarine.csv"
     },
     {
         "female_daily_file": "FemaleDaily_Sunscreen Skinaqua.csv",
-        "pytrends_file": "GoogleTrends_Sunscreen Skinaqua.csv",
+        "pytrends_file": "GoogleTrend_sunscreen_skin_aqua_interestOverTime.csv",
         "output_name": "Merged_Sunscreen Skinaqua.csv"
     },
 ]

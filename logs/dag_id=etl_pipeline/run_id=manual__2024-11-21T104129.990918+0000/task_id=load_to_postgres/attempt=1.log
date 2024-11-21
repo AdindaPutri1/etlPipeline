@@ -1,0 +1,30 @@
+[2024-11-21T10:45:59.808+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-11-21T10:45:59.824+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_pipeline.load_to_postgres manual__2024-11-21T10:41:29.990918+00:00 [queued]>
+[2024-11-21T10:45:59.833+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_pipeline.load_to_postgres manual__2024-11-21T10:41:29.990918+00:00 [queued]>
+[2024-11-21T10:45:59.834+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 1
+[2024-11-21T10:45:59.846+0000] {taskinstance.py:2889} INFO - Executing <Task(PythonOperator): load_to_postgres> on 2024-11-21 10:41:29.990918+00:00
+[2024-11-21T10:45:59.855+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=3184) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-11-21T10:45:59.858+0000] {standard_task_runner.py:72} INFO - Started process 3186 to run task
+[2024-11-21T10:45:59.857+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'etl_pipeline', 'load_to_postgres', 'manual__2024-11-21T10:41:29.990918+00:00', '--job-id', '215', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmprk7zdbu7']
+[2024-11-21T10:45:59.858+0000] {standard_task_runner.py:105} INFO - Job 215: Subtask load_to_postgres
+[2024-11-21T10:45:59.904+0000] {task_command.py:467} INFO - Running <TaskInstance: etl_pipeline.load_to_postgres manual__2024-11-21T10:41:29.990918+00:00 [running]> on host 7a40aa914b11
+[2024-11-21T10:46:00.214+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='etl_pipeline' AIRFLOW_CTX_TASK_ID='load_to_postgres' AIRFLOW_CTX_EXECUTION_DATE='2024-11-21T10:41:29.990918+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-11-21T10:41:29.990918+00:00'
+[2024-11-21T10:46:00.217+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2024-11-21T10:46:00.219+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2024-11-21T10:46:00.224+0000] {logging_mixin.py:190} INFO - Current task name:load_to_postgres state:running start_date:2024-11-21 10:45:59.825798+00:00
+[2024-11-21T10:46:00.234+0000] {logging_mixin.py:190} INFO - Dag name:etl_pipeline and current dag run status:running
+[2024-11-21T10:46:00.235+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-11-21T10:46:00.274+0000] {base.py:84} INFO - Retrieving connection 'skincare_connection'
+[2024-11-21T10:46:00.278+0000] {load.py:54} ERROR - Error inserting data: 'skincare_content'
+[2024-11-21T10:46:00.279+0000] {python.py:240} INFO - Done. Returned value was: None
+[2024-11-21T10:46:00.289+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-11-21T10:46:00.290+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=etl_pipeline, task_id=load_to_postgres, run_id=manual__2024-11-21T10:41:29.990918+00:00, execution_date=20241121T104129, start_date=20241121T104559, end_date=20241121T104600
+[2024-11-21T10:46:00.303+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2024-11-21T10:46:00.304+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2024-11-21T10:46:00.305+0000] {logging_mixin.py:190} INFO - Dag name:etl_pipeline queued_at:2024-11-21 10:41:30.337704+00:00
+[2024-11-21T10:46:00.305+0000] {logging_mixin.py:190} INFO - Task hostname:7a40aa914b11 operator:PythonOperator
+[2024-11-21T10:46:00.354+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-11-21T10:46:00.375+0000] {taskinstance.py:3895} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-11-21T10:46:00.378+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

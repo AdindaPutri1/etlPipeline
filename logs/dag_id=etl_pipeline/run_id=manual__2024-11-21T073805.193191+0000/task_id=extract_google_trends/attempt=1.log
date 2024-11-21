@@ -1,0 +1,7011 @@
+[2024-11-21T07:38:09.337+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-11-21T07:38:09.350+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_pipeline.extract_google_trends manual__2024-11-21T07:38:05.193191+00:00 [queued]>
+[2024-11-21T07:38:09.357+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_pipeline.extract_google_trends manual__2024-11-21T07:38:05.193191+00:00 [queued]>
+[2024-11-21T07:38:09.358+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 1
+[2024-11-21T07:38:09.370+0000] {taskinstance.py:2889} INFO - Executing <Task(PythonOperator): extract_google_trends> on 2024-11-21 07:38:05.193191+00:00
+[2024-11-21T07:38:09.377+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=397) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-11-21T07:38:09.379+0000] {standard_task_runner.py:72} INFO - Started process 399 to run task
+[2024-11-21T07:38:09.379+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'etl_pipeline', 'extract_google_trends', 'manual__2024-11-21T07:38:05.193191+00:00', '--job-id', '122', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmpyrod8e4v']
+[2024-11-21T07:38:09.380+0000] {standard_task_runner.py:105} INFO - Job 122: Subtask extract_google_trends
+[2024-11-21T07:38:09.424+0000] {task_command.py:467} INFO - Running <TaskInstance: etl_pipeline.extract_google_trends manual__2024-11-21T07:38:05.193191+00:00 [running]> on host 7a40aa914b11
+[2024-11-21T07:38:09.739+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='etl_pipeline' AIRFLOW_CTX_TASK_ID='extract_google_trends' AIRFLOW_CTX_EXECUTION_DATE='2024-11-21T07:38:05.193191+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-11-21T07:38:05.193191+00:00'
+[2024-11-21T07:38:09.740+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2024-11-21T07:38:09.742+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2024-11-21T07:38:09.743+0000] {logging_mixin.py:190} INFO - Current task name:extract_google_trends state:running start_date:2024-11-21 07:38:09.351160+00:00
+[2024-11-21T07:38:09.744+0000] {logging_mixin.py:190} INFO - Dag name:etl_pipeline and current dag run status:running
+[2024-11-21T07:38:09.746+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-11-21T07:38:09.754+0000] {logging_mixin.py:190} INFO - Processing search term: sunscreen Azarine
+[2024-11-21T07:39:52.027+0000] {logging_mixin.py:190} INFO - Error: 201 - [{
+  "inputUrlOrTerm": "sunscreen Azarine",
+  "searchTerm": "sunscreen Azarine",
+  "interestOverTime_timelineData": [
+    {
+      "time": "1724198400",
+      "formattedTime": "Aug 21, 2024",
+      "formattedAxisTime": "Aug 21",
+      "value": [
+        80
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "80"
+      ]
+    },
+    {
+      "time": "1724284800",
+      "formattedTime": "Aug 22, 2024",
+      "formattedAxisTime": "Aug 22",
+      "value": [
+        61
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "61"
+      ]
+    },
+    {
+      "time": "1724371200",
+      "formattedTime": "Aug 23, 2024",
+      "formattedAxisTime": "Aug 23",
+      "value": [
+        78
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "78"
+      ]
+    },
+    {
+      "time": "1724457600",
+      "formattedTime": "Aug 24, 2024",
+      "formattedAxisTime": "Aug 24",
+      "value": [
+        76
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "76"
+      ]
+    },
+    {
+      "time": "1724544000",
+      "formattedTime": "Aug 25, 2024",
+      "formattedAxisTime": "Aug 25",
+      "value": [
+        61
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "61"
+      ]
+    },
+    {
+      "time": "1724630400",
+      "formattedTime": "Aug 26, 2024",
+      "formattedAxisTime": "Aug 26",
+      "value": [
+        64
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "64"
+      ]
+    },
+    {
+      "time": "1724716800",
+      "formattedTime": "Aug 27, 2024",
+      "formattedAxisTime": "Aug 27",
+      "value": [
+        65
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "65"
+      ]
+    },
+    {
+      "time": "1724803200",
+      "formattedTime": "Aug 28, 2024",
+      "formattedAxisTime": "Aug 28",
+      "value": [
+        79
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "79"
+      ]
+    },
+    {
+      "time": "1724889600",
+      "formattedTime": "Aug 29, 2024",
+      "formattedAxisTime": "Aug 29",
+      "value": [
+        67
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "67"
+      ]
+    },
+    {
+      "time": "1724976000",
+      "formattedTime": "Aug 30, 2024",
+      "formattedAxisTime": "Aug 30",
+      "value": [
+        80
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "80"
+      ]
+    },
+    {
+      "time": "1725062400",
+      "formattedTime": "Aug 31, 2024",
+      "formattedAxisTime": "Aug 31",
+      "value": [
+        71
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "71"
+      ]
+    },
+    {
+      "time": "1725148800",
+      "formattedTime": "Sep 1, 2024",
+      "formattedAxisTime": "Sep 1",
+      "value": [
+        88
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "88"
+      ]
+    },
+    {
+      "time": "1725235200",
+      "formattedTime": "Sep 2, 2024",
+      "formattedAxisTime": "Sep 2",
+      "value": [
+        70
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "70"
+      ]
+    },
+    {
+      "time": "1725321600",
+      "formattedTime": "Sep 3, 2024",
+      "formattedAxisTime": "Sep 3",
+      "value": [
+        70
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "70"
+      ]
+    },
+    {
+      "time": "1725408000",
+      "formattedTime": "Sep 4, 2024",
+      "formattedAxisTime": "Sep 4",
+      "value": [
+        54
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "54"
+      ]
+    },
+    {
+      "time": "1725494400",
+      "formattedTime": "Sep 5, 2024",
+      "formattedAxisTime": "Sep 5",
+      "value": [
+        54
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "54"
+      ]
+    },
+    {
+      "time": "1725580800",
+      "formattedTime": "Sep 6, 2024",
+      "formattedAxisTime": "Sep 6",
+      "value": [
+        65
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "65"
+      ]
+    },
+    {
+      "time": "1725667200",
+      "formattedTime": "Sep 7, 2024",
+      "formattedAxisTime": "Sep 7",
+      "value": [
+        59
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "59"
+      ]
+    },
+    {
+      "time": "1725753600",
+      "formattedTime": "Sep 8, 2024",
+      "formattedAxisTime": "Sep 8",
+      "value": [
+        62
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "62"
+      ]
+    },
+    {
+      "time": "1725840000",
+      "formattedTime": "Sep 9, 2024",
+      "formattedAxisTime": "Sep 9",
+      "value": [
+        52
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "52"
+      ]
+    },
+    {
+      "time": "1725926400",
+      "formattedTime": "Sep 10, 2024",
+      "formattedAxisTime": "Sep 10",
+      "value": [
+        59
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "59"
+      ]
+    },
+    {
+      "time": "1726012800",
+      "formattedTime": "Sep 11, 2024",
+      "formattedAxisTime": "Sep 11",
+      "value": [
+        52
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "52"
+      ]
+    },
+    {
+      "time": "1726099200",
+      "formattedTime": "Sep 12, 2024",
+      "formattedAxisTime": "Sep 12",
+      "value": [
+        52
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "52"
+      ]
+    },
+    {
+      "time": "1726185600",
+      "formattedTime": "Sep 13, 2024",
+      "formattedAxisTime": "Sep 13",
+      "value": [
+        45
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "45"
+      ]
+    },
+    {
+      "time": "1726272000",
+      "formattedTime": "Sep 14, 2024",
+      "formattedAxisTime": "Sep 14",
+      "value": [
+        77
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "77"
+      ]
+    },
+    {
+      "time": "1726358400",
+      "formattedTime": "Sep 15, 2024",
+      "formattedAxisTime": "Sep 15",
+      "value": [
+        59
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "59"
+      ]
+    },
+    {
+      "time": "1726444800",
+      "formattedTime": "Sep 16, 2024",
+      "formattedAxisTime": "Sep 16",
+      "value": [
+        74
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "74"
+      ]
+    },
+    {
+      "time": "1726531200",
+      "formattedTime": "Sep 17, 2024",
+      "formattedAxisTime": "Sep 17",
+      "value": [
+        57
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "57"
+      ]
+    },
+    {
+      "time": "1726617600",
+      "formattedTime": "Sep 18, 2024",
+      "formattedAxisTime": "Sep 18",
+      "value": [
+        63
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "63"
+      ]
+    },
+    {
+      "time": "1726704000",
+      "formattedTime": "Sep 19, 2024",
+      "formattedAxisTime": "Sep 19",
+      "value": [
+        65
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "65"
+      ]
+    },
+    {
+      "time": "1726790400",
+      "formattedTime": "Sep 20, 2024",
+      "formattedAxisTime": "Sep 20",
+      "value": [
+        36
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "36"
+      ]
+    },
+    {
+      "time": "1726876800",
+      "formattedTime": "Sep 21, 2024",
+      "formattedAxisTime": "Sep 21",
+      "value": [
+        61
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "61"
+      ]
+    },
+    {
+      "time": "1726963200",
+      "formattedTime": "Sep 22, 2024",
+      "formattedAxisTime": "Sep 22",
+      "value": [
+        51
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "51"
+      ]
+    },
+    {
+      "time": "1727049600",
+      "formattedTime": "Sep 23, 2024",
+      "formattedAxisTime": "Sep 23",
+      "value": [
+        56
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "56"
+      ]
+    },
+    {
+      "time": "1727136000",
+      "formattedTime": "Sep 24, 2024",
+      "formattedAxisTime": "Sep 24",
+      "value": [
+        42
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "42"
+      ]
+    },
+    {
+      "time": "1727222400",
+      "formattedTime": "Sep 25, 2024",
+      "formattedAxisTime": "Sep 25",
+      "value": [
+        48
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "48"
+      ]
+    },
+    {
+      "time": "1727308800",
+      "formattedTime": "Sep 26, 2024",
+      "formattedAxisTime": "Sep 26",
+      "value": [
+        39
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "39"
+      ]
+    },
+    {
+      "time": "1727395200",
+      "formattedTime": "Sep 27, 2024",
+      "formattedAxisTime": "Sep 27",
+      "value": [
+        76
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "76"
+      ]
+    },
+    {
+      "time": "1727481600",
+      "formattedTime": "Sep 28, 2024",
+      "formattedAxisTime": "Sep 28",
+      "value": [
+        51
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "51"
+      ]
+    },
+    {
+      "time": "1727568000",
+      "formattedTime": "Sep 29, 2024",
+      "formattedAxisTime": "Sep 29",
+      "value": [
+        61
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "61"
+      ]
+    },
+    {
+      "time": "1727654400",
+      "formattedTime": "Sep 30, 2024",
+      "formattedAxisTime": "Sep 30",
+      "value": [
+        47
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "47"
+      ]
+    },
+    {
+      "time": "1727740800",
+      "formattedTime": "Oct 1, 2024",
+      "formattedAxisTime": "Oct 1",
+      "value": [
+        71
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "71"
+      ]
+    },
+    {
+      "time": "1727827200",
+      "formattedTime": "Oct 2, 2024",
+      "formattedAxisTime": "Oct 2",
+      "value": [
+        61
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "61"
+      ]
+    },
+    {
+      "time": "1727913600",
+      "formattedTime": "Oct 3, 2024",
+      "formattedAxisTime": "Oct 3",
+      "value": [
+        45
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "45"
+      ]
+    },
+    {
+      "time": "1728000000",
+      "formattedTime": "Oct 4, 2024",
+      "formattedAxisTime": "Oct 4",
+      "value": [
+        66
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "66"
+      ]
+    },
+    {
+      "time": "1728086400",
+      "formattedTime": "Oct 5, 2024",
+      "formattedAxisTime": "Oct 5",
+      "value": [
+        78
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "78"
+      ]
+    },
+    {
+      "time": "1728172800",
+      "formattedTime": "Oct 6, 2024",
+      "formattedAxisTime": "Oct 6",
+      "value": [
+        88
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "88"
+      ]
+    },
+    {
+      "time": "1728259200",
+      "formattedTime": "Oct 7, 2024",
+      "formattedAxisTime": "Oct 7",
+      "value": [
+        50
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "50"
+      ]
+    },
+    {
+      "time": "1728345600",
+      "formattedTime": "Oct 8, 2024",
+      "formattedAxisTime": "Oct 8",
+      "value": [
+        82
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "82"
+      ]
+    },
+    {
+      "time": "1728432000",
+      "formattedTime": "Oct 9, 2024",
+      "formattedAxisTime": "Oct 9",
+      "value": [
+        71
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "71"
+      ]
+    },
+    {
+      "time": "1728518400",
+      "formattedTime": "Oct 10, 2024",
+      "formattedAxisTime": "Oct 10",
+      "value": [
+        62
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "62"
+      ]
+    },
+    {
+      "time": "1728604800",
+      "formattedTime": "Oct 11, 2024",
+      "formattedAxisTime": "Oct 11",
+      "value": [
+        47
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "47"
+      ]
+    },
+    {
+      "time": "1728691200",
+      "formattedTime": "Oct 12, 2024",
+      "formattedAxisTime": "Oct 12",
+      "value": [
+        60
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "60"
+      ]
+    },
+    {
+      "time": "1728777600",
+      "formattedTime": "Oct 13, 2024",
+      "formattedAxisTime": "Oct 13",
+      "value": [
+        81
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "81"
+      ]
+    },
+    {
+      "time": "1728864000",
+      "formattedTime": "Oct 14, 2024",
+      "formattedAxisTime": "Oct 14",
+      "value": [
+        62
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "62"
+      ]
+    },
+    {
+      "time": "1728950400",
+      "formattedTime": "Oct 15, 2024",
+      "formattedAxisTime": "Oct 15",
+      "value": [
+        59
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "59"
+      ]
+    },
+    {
+      "time": "1729036800",
+      "formattedTime": "Oct 16, 2024",
+      "formattedAxisTime": "Oct 16",
+      "value": [
+        62
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "62"
+      ]
+    },
+    {
+      "time": "1729123200",
+      "formattedTime": "Oct 17, 2024",
+      "formattedAxisTime": "Oct 17",
+      "value": [
+        74
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "74"
+      ]
+    },
+    {
+      "time": "1729209600",
+      "formattedTime": "Oct 18, 2024",
+      "formattedAxisTime": "Oct 18",
+      "value": [
+        51
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "51"
+      ]
+    },
+    {
+      "time": "1729296000",
+      "formattedTime": "Oct 19, 2024",
+      "formattedAxisTime": "Oct 19",
+      "value": [
+        63
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "63"
+      ]
+    },
+    {
+      "time": "1729382400",
+      "formattedTime": "Oct 20, 2024",
+      "formattedAxisTime": "Oct 20",
+      "value": [
+        100
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "100"
+      ]
+    },
+    {
+      "time": "1729468800",
+      "formattedTime": "Oct 21, 2024",
+      "formattedAxisTime": "Oct 21",
+      "value": [
+        67
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "67"
+      ]
+    },
+    {
+      "time": "1729555200",
+      "formattedTime": "Oct 22, 2024",
+      "formattedAxisTime": "Oct 22",
+      "value": [
+        53
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "53"
+      ]
+    },
+    {
+      "time": "1729641600",
+      "formattedTime": "Oct 23, 2024",
+      "formattedAxisTime": "Oct 23",
+      "value": [
+        57
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "57"
+      ]
+    },
+    {
+      "time": "1729728000",
+      "formattedTime": "Oct 24, 2024",
+      "formattedAxisTime": "Oct 24",
+      "value": [
+        59
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "59"
+      ]
+    },
+    {
+      "time": "1729814400",
+      "formattedTime": "Oct 25, 2024",
+      "formattedAxisTime": "Oct 25",
+      "value": [
+        63
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "63"
+      ]
+    },
+    {
+      "time": "1729900800",
+      "formattedTime": "Oct 26, 2024",
+      "formattedAxisTime": "Oct 26",
+      "value": [
+        59
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "59"
+      ]
+    },
+    {
+      "time": "1729987200",
+      "formattedTime": "Oct 27, 2024",
+      "formattedAxisTime": "Oct 27",
+      "value": [
+        63
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "63"
+      ]
+    },
+    {
+      "time": "1730073600",
+      "formattedTime": "Oct 28, 2024",
+      "formattedAxisTime": "Oct 28",
+      "value": [
+        54
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "54"
+      ]
+    },
+    {
+      "time": "1730160000",
+      "formattedTime": "Oct 29, 2024",
+      "formattedAxisTime": "Oct 29",
+      "value": [
+        65
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "65"
+      ]
+    },
+    {
+      "time": "1730246400",
+      "formattedTime": "Oct 30, 2024",
+      "formattedAxisTime": "Oct 30",
+      "value": [
+        47
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "47"
+      ]
+    },
+    {
+      "time": "1730332800",
+      "formattedTime": "Oct 31, 2024",
+      "formattedAxisTime": "Oct 31",
+      "value": [
+        43
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "43"
+      ]
+    },
+    {
+      "time": "1730419200",
+      "formattedTime": "Nov 1, 2024",
+      "formattedAxisTime": "Nov 1",
+      "value": [
+        59
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "59"
+      ]
+    },
+    {
+      "time": "1730505600",
+      "formattedTime": "Nov 2, 2024",
+      "formattedAxisTime": "Nov 2",
+      "value": [
+        57
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "57"
+      ]
+    },
+    {
+      "time": "1730592000",
+      "formattedTime": "Nov 3, 2024",
+      "formattedAxisTime": "Nov 3",
+      "value": [
+        60
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "60"
+      ]
+    },
+    {
+      "time": "1730678400",
+      "formattedTime": "Nov 4, 2024",
+      "formattedAxisTime": "Nov 4",
+      "value": [
+        62
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "62"
+      ]
+    },
+    {
+      "time": "1730764800",
+      "formattedTime": "Nov 5, 2024",
+      "formattedAxisTime": "Nov 5",
+      "value": [
+        55
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "55"
+      ]
+    },
+    {
+      "time": "1730851200",
+      "formattedTime": "Nov 6, 2024",
+      "formattedAxisTime": "Nov 6",
+      "value": [
+        58
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "58"
+      ]
+    },
+    {
+      "time": "1730937600",
+      "formattedTime": "Nov 7, 2024",
+      "formattedAxisTime": "Nov 7",
+      "value": [
+        53
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "53"
+      ]
+    },
+    {
+      "time": "1731024000",
+      "formattedTime": "Nov 8, 2024",
+      "formattedAxisTime": "Nov 8",
+      "value": [
+        54
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "54"
+      ]
+    },
+    {
+      "time": "1731110400",
+      "formattedTime": "Nov 9, 2024",
+      "formattedAxisTime": "Nov 9",
+      "value": [
+        55
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "55"
+      ]
+    },
+    {
+      "time": "1731196800",
+      "formattedTime": "Nov 10, 2024",
+      "formattedAxisTime": "Nov 10",
+      "value": [
+        71
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "71"
+      ]
+    },
+    {
+      "time": "1731283200",
+      "formattedTime": "Nov 11, 2024",
+      "formattedAxisTime": "Nov 11",
+      "value": [
+        62
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "62"
+      ]
+    },
+    {
+      "time": "1731369600",
+      "formattedTime": "Nov 12, 2024",
+      "formattedAxisTime": "Nov 12",
+      "value": [
+        52
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "52"
+      ]
+    },
+    {
+      "time": "1731456000",
+      "formattedTime": "Nov 13, 2024",
+      "formattedAxisTime": "Nov 13",
+      "value": [
+        53
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "53"
+      ]
+    },
+    {
+      "time": "1731542400",
+      "formattedTime": "Nov 14, 2024",
+      "formattedAxisTime": "Nov 14",
+      "value": [
+        48
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "48"
+      ]
+    },
+    {
+      "time": "1731628800",
+      "formattedTime": "Nov 15, 2024",
+      "formattedAxisTime": "Nov 15",
+      "value": [
+        42
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "42"
+      ]
+    },
+    {
+      "time": "1731715200",
+      "formattedTime": "Nov 16, 2024",
+      "formattedAxisTime": "Nov 16",
+      "value": [
+        50
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "50"
+      ]
+    },
+    {
+      "time": "1731801600",
+      "formattedTime": "Nov 17, 2024",
+      "formattedAxisTime": "Nov 17",
+      "value": [
+        64
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "64"
+      ]
+    },
+    {
+      "time": "1731888000",
+      "formattedTime": "Nov 18, 2024",
+      "formattedAxisTime": "Nov 18",
+      "value": [
+        48
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "48"
+      ]
+    },
+    {
+      "time": "1731974400",
+      "formattedTime": "Nov 19, 2024",
+      "formattedAxisTime": "Nov 19",
+      "value": [
+        43
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "43"
+      ]
+    },
+    {
+      "time": "1732060800",
+      "formattedTime": "Nov 20, 2024",
+      "formattedAxisTime": "Nov 20",
+      "value": [
+        39
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "39"
+      ]
+    },
+    {
+      "time": "1732147200",
+      "formattedTime": "Nov 21, 2024",
+      "formattedAxisTime": "Nov 21",
+      "value": [
+        43
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "43"
+      ],
+      "isPartial": true
+    }
+  ],
+  "interestOverTime_averages": [],
+  "interestBySubregion": [
+    {
+      "geoCode": "ID-SN",
+      "geoName": "South Sulawesi",
+      "value": [
+        100
+      ],
+      "formattedValue": [
+        "100"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-SR",
+      "geoName": "West Sulawesi",
+      "value": [
+        91
+      ],
+      "formattedValue": [
+        "91"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-SG",
+      "geoName": "South East Sulawesi",
+      "value": [
+        85
+      ],
+      "formattedValue": [
+        "85"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-ST",
+      "geoName": "Central Sulawesi",
+      "value": [
+        85
+      ],
+      "formattedValue": [
+        "85"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-KS",
+      "geoName": "South Kalimantan",
+      "value": [
+        77
+      ],
+      "formattedValue": [
+        "77"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-GO",
+      "geoName": "Gorontalo",
+      "value": [
+        74
+      ],
+      "formattedValue": [
+        "74"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-KR",
+      "geoName": "Riau Islands",
+      "value": [
+        64
+      ],
+      "formattedValue": [
+        "64"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-SA",
+      "geoName": "North Sulawesi",
+      "value": [
+        61
+      ],
+      "formattedValue": [
+        "61"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-KI",
+      "geoName": "East Kalimantan",
+      "value": [
+        61
+      ],
+      "formattedValue": [
+        "61"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-JT",
+      "geoName": "Central Java",
+      "value": [
+        60
+      ],
+      "formattedValue": [
+        "60"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-YO",
+      "geoName": "Special Region of Yogyakarta",
+      "value": [
+        59
+      ],
+      "formattedValue": [
+        "59"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-RI",
+      "geoName": "Riau",
+      "value": [
+        59
+      ],
+      "formattedValue": [
+        "59"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-BA",
+      "geoName": "Bali",
+      "value": [
+        56
+      ],
+      "formattedValue": [
+        "56"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-KB",
+      "geoName": "West Kalimantan",
+      "value": [
+        56
+      ],
+      "formattedValue": [
+        "56"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-JI",
+      "geoName": "East Java",
+      "value": [
+        54
+      ],
+      "formattedValue": [
+        "54"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-BE",
+      "geoName": "Bengkulu",
+      "value": [
+        53
+      ],
+      "formattedValue": [
+        "53"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-NB",
+      "geoName": "West Nusa Tenggara",
+      "value": [
+        53
+      ],
+      "formattedValue": [
+        "53"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-LA",
+      "geoName": "Lampung",
+      "value": [
+        52
+      ],
+      "formattedValue": [
+        "52"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-BB",
+      "geoName": "Bangka Belitung Islands",
+      "value": [
+        51
+      ],
+      "formattedValue": [
+        "51"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-KT",
+      "geoName": "Central Kalimantan",
+      "value": [
+        50
+      ],
+      "formattedValue": [
+        "50"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-SB",
+      "geoName": "West Sumatra",
+      "value": [
+        49
+      ],
+      "formattedValue": [
+        "49"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-MA",
+      "geoName": "Maluku",
+      "value": [
+        48
+      ],
+      "formattedValue": [
+        "48"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-JA",
+      "geoName": "Jambi",
+      "value": [
+        47
+      ],
+      "formattedValue": [
+        "47"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-PA",
+      "geoName": "Papua",
+      "value": [
+        46
+      ],
+      "formattedValue": [
+        "46"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-AC",
+      "geoName": "Aceh",
+      "value": [
+        45
+      ],
+      "formattedValue": [
+        "45"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-NT",
+      "geoName": "East Nusa Tenggara",
+      "value": [
+        42
+      ],
+      "formattedValue": [
+        "42"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-SU",
+      "geoName": "North Sumatra",
+      "value": [
+        41
+      ],
+      "formattedValue": [
+        "41"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-SS",
+      "geoName": "South Sumatra",
+      "value": [
+        38
+      ],
+      "formattedValue": [
+        "38"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-JB",
+      "geoName": "West Java",
+      "value": [
+        36
+      ],
+      "formattedValue": [
+        "36"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-BT",
+      "geoName": "Banten",
+      "value": [
+        31
+      ],
+      "formattedValue": [
+        "31"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-JK",
+      "geoName": "Special Capital Region of Jakarta",
+      "value": [
+        26
+      ],
+      "formattedValue": [
+        "26"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-KU",
+      "geoName": "North Kalimantan",
+      "value": [
+        8
+      ],
+      "formattedValue": [
+        "8"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-MU",
+      "geoName": "North Maluku",
+      "value": [
+        6
+      ],
+      "formattedValue": [
+        "6"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-PB",
+      "geoName": "West Papua",
+      "value": [
+        4
+      ],
+      "formattedValue": [
+        "4"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    }
+  ],
+  "interestByCity": []
+}]
+[2024-11-21T07:39:52.029+0000] {logging_mixin.py:190} INFO - Gagal mengambil dataset untuk sunscreen Azarine
+[2024-11-21T07:39:52.029+0000] {logging_mixin.py:190} INFO - Processing search term: sunscreen skin aqua
+[2024-11-21T07:41:29.459+0000] {logging_mixin.py:190} INFO - Error: 201 - [{
+  "inputUrlOrTerm": "sunscreen skin aqua",
+  "searchTerm": "sunscreen skin aqua",
+  "interestOverTime_timelineData": [
+    {
+      "time": "1724198400",
+      "formattedTime": "Aug 21, 2024",
+      "formattedAxisTime": "Aug 21",
+      "value": [
+        42
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "42"
+      ]
+    },
+    {
+      "time": "1724284800",
+      "formattedTime": "Aug 22, 2024",
+      "formattedAxisTime": "Aug 22",
+      "value": [
+        62
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "62"
+      ]
+    },
+    {
+      "time": "1724371200",
+      "formattedTime": "Aug 23, 2024",
+      "formattedAxisTime": "Aug 23",
+      "value": [
+        57
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "57"
+      ]
+    },
+    {
+      "time": "1724457600",
+      "formattedTime": "Aug 24, 2024",
+      "formattedAxisTime": "Aug 24",
+      "value": [
+        86
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "86"
+      ]
+    },
+    {
+      "time": "1724544000",
+      "formattedTime": "Aug 25, 2024",
+      "formattedAxisTime": "Aug 25",
+      "value": [
+        75
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "75"
+      ]
+    },
+    {
+      "time": "1724630400",
+      "formattedTime": "Aug 26, 2024",
+      "formattedAxisTime": "Aug 26",
+      "value": [
+        44
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "44"
+      ]
+    },
+    {
+      "time": "1724716800",
+      "formattedTime": "Aug 27, 2024",
+      "formattedAxisTime": "Aug 27",
+      "value": [
+        58
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "58"
+      ]
+    },
+    {
+      "time": "1724803200",
+      "formattedTime": "Aug 28, 2024",
+      "formattedAxisTime": "Aug 28",
+      "value": [
+        77
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "77"
+      ]
+    },
+    {
+      "time": "1724889600",
+      "formattedTime": "Aug 29, 2024",
+      "formattedAxisTime": "Aug 29",
+      "value": [
+        56
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "56"
+      ]
+    },
+    {
+      "time": "1724976000",
+      "formattedTime": "Aug 30, 2024",
+      "formattedAxisTime": "Aug 30",
+      "value": [
+        46
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "46"
+      ]
+    },
+    {
+      "time": "1725062400",
+      "formattedTime": "Aug 31, 2024",
+      "formattedAxisTime": "Aug 31",
+      "value": [
+        46
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "46"
+      ]
+    },
+    {
+      "time": "1725148800",
+      "formattedTime": "Sep 1, 2024",
+      "formattedAxisTime": "Sep 1",
+      "value": [
+        100
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "100"
+      ]
+    },
+    {
+      "time": "1725235200",
+      "formattedTime": "Sep 2, 2024",
+      "formattedAxisTime": "Sep 2",
+      "value": [
+        49
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "49"
+      ]
+    },
+    {
+      "time": "1725321600",
+      "formattedTime": "Sep 3, 2024",
+      "formattedAxisTime": "Sep 3",
+      "value": [
+        45
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "45"
+      ]
+    },
+    {
+      "time": "1725408000",
+      "formattedTime": "Sep 4, 2024",
+      "formattedAxisTime": "Sep 4",
+      "value": [
+        56
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "56"
+      ]
+    },
+    {
+      "time": "1725494400",
+      "formattedTime": "Sep 5, 2024",
+      "formattedAxisTime": "Sep 5",
+      "value": [
+        41
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "41"
+      ]
+    },
+    {
+      "time": "1725580800",
+      "formattedTime": "Sep 6, 2024",
+      "formattedAxisTime": "Sep 6",
+      "value": [
+        51
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "51"
+      ]
+    },
+    {
+      "time": "1725667200",
+      "formattedTime": "Sep 7, 2024",
+      "formattedAxisTime": "Sep 7",
+      "value": [
+        43
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "43"
+      ]
+    },
+    {
+      "time": "1725753600",
+      "formattedTime": "Sep 8, 2024",
+      "formattedAxisTime": "Sep 8",
+      "value": [
+        0
+      ],
+      "hasData": [
+        false
+      ],
+      "formattedValue": [
+        "0"
+      ]
+    },
+    {
+      "time": "1725840000",
+      "formattedTime": "Sep 9, 2024",
+      "formattedAxisTime": "Sep 9",
+      "value": [
+        57
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "57"
+      ]
+    },
+    {
+      "time": "1725926400",
+      "formattedTime": "Sep 10, 2024",
+      "formattedAxisTime": "Sep 10",
+      "value": [
+        40
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "40"
+      ]
+    },
+    {
+      "time": "1726012800",
+      "formattedTime": "Sep 11, 2024",
+      "formattedAxisTime": "Sep 11",
+      "value": [
+        0
+      ],
+      "hasData": [
+        false
+      ],
+      "formattedValue": [
+        "0"
+      ]
+    },
+    {
+      "time": "1726099200",
+      "formattedTime": "Sep 12, 2024",
+      "formattedAxisTime": "Sep 12",
+      "value": [
+        0
+      ],
+      "hasData": [
+        false
+      ],
+      "formattedValue": [
+        "0"
+      ]
+    },
+    {
+      "time": "1726185600",
+      "formattedTime": "Sep 13, 2024",
+      "formattedAxisTime": "Sep 13",
+      "value": [
+        0
+      ],
+      "hasData": [
+        false
+      ],
+      "formattedValue": [
+        "0"
+      ]
+    },
+    {
+      "time": "1726272000",
+      "formattedTime": "Sep 14, 2024",
+      "formattedAxisTime": "Sep 14",
+      "value": [
+        0
+      ],
+      "hasData": [
+        false
+      ],
+      "formattedValue": [
+        "0"
+      ]
+    },
+    {
+      "time": "1726358400",
+      "formattedTime": "Sep 15, 2024",
+      "formattedAxisTime": "Sep 15",
+      "value": [
+        50
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "50"
+      ]
+    },
+    {
+      "time": "1726444800",
+      "formattedTime": "Sep 16, 2024",
+      "formattedAxisTime": "Sep 16",
+      "value": [
+        63
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "63"
+      ]
+    },
+    {
+      "time": "1726531200",
+      "formattedTime": "Sep 17, 2024",
+      "formattedAxisTime": "Sep 17",
+      "value": [
+        49
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "49"
+      ]
+    },
+    {
+      "time": "1726617600",
+      "formattedTime": "Sep 18, 2024",
+      "formattedAxisTime": "Sep 18",
+      "value": [
+        43
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "43"
+      ]
+    },
+    {
+      "time": "1726704000",
+      "formattedTime": "Sep 19, 2024",
+      "formattedAxisTime": "Sep 19",
+      "value": [
+        57
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "57"
+      ]
+    },
+    {
+      "time": "1726790400",
+      "formattedTime": "Sep 20, 2024",
+      "formattedAxisTime": "Sep 20",
+      "value": [
+        52
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "52"
+      ]
+    },
+    {
+      "time": "1726876800",
+      "formattedTime": "Sep 21, 2024",
+      "formattedAxisTime": "Sep 21",
+      "value": [
+        48
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "48"
+      ]
+    },
+    {
+      "time": "1726963200",
+      "formattedTime": "Sep 22, 2024",
+      "formattedAxisTime": "Sep 22",
+      "value": [
+        0
+      ],
+      "hasData": [
+        false
+      ],
+      "formattedValue": [
+        "0"
+      ]
+    },
+    {
+      "time": "1727049600",
+      "formattedTime": "Sep 23, 2024",
+      "formattedAxisTime": "Sep 23",
+      "value": [
+        52
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "52"
+      ]
+    },
+    {
+      "time": "1727136000",
+      "formattedTime": "Sep 24, 2024",
+      "formattedAxisTime": "Sep 24",
+      "value": [
+        0
+      ],
+      "hasData": [
+        false
+      ],
+      "formattedValue": [
+        "0"
+      ]
+    },
+    {
+      "time": "1727222400",
+      "formattedTime": "Sep 25, 2024",
+      "formattedAxisTime": "Sep 25",
+      "value": [
+        69
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "69"
+      ]
+    },
+    {
+      "time": "1727308800",
+      "formattedTime": "Sep 26, 2024",
+      "formattedAxisTime": "Sep 26",
+      "value": [
+        0
+      ],
+      "hasData": [
+        false
+      ],
+      "formattedValue": [
+        "0"
+      ]
+    },
+    {
+      "time": "1727395200",
+      "formattedTime": "Sep 27, 2024",
+      "formattedAxisTime": "Sep 27",
+      "value": [
+        0
+      ],
+      "hasData": [
+        false
+      ],
+      "formattedValue": [
+        "0"
+      ]
+    },
+    {
+      "time": "1727481600",
+      "formattedTime": "Sep 28, 2024",
+      "formattedAxisTime": "Sep 28",
+      "value": [
+        42
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "42"
+      ]
+    },
+    {
+      "time": "1727568000",
+      "formattedTime": "Sep 29, 2024",
+      "formattedAxisTime": "Sep 29",
+      "value": [
+        57
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "57"
+      ]
+    },
+    {
+      "time": "1727654400",
+      "formattedTime": "Sep 30, 2024",
+      "formattedAxisTime": "Sep 30",
+      "value": [
+        55
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "55"
+      ]
+    },
+    {
+      "time": "1727740800",
+      "formattedTime": "Oct 1, 2024",
+      "formattedAxisTime": "Oct 1",
+      "value": [
+        0
+      ],
+      "hasData": [
+        false
+      ],
+      "formattedValue": [
+        "0"
+      ]
+    },
+    {
+      "time": "1727827200",
+      "formattedTime": "Oct 2, 2024",
+      "formattedAxisTime": "Oct 2",
+      "value": [
+        41
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "41"
+      ]
+    },
+    {
+      "time": "1727913600",
+      "formattedTime": "Oct 3, 2024",
+      "formattedAxisTime": "Oct 3",
+      "value": [
+        63
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "63"
+      ]
+    },
+    {
+      "time": "1728000000",
+      "formattedTime": "Oct 4, 2024",
+      "formattedAxisTime": "Oct 4",
+      "value": [
+        77
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "77"
+      ]
+    },
+    {
+      "time": "1728086400",
+      "formattedTime": "Oct 5, 2024",
+      "formattedAxisTime": "Oct 5",
+      "value": [
+        43
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "43"
+      ]
+    },
+    {
+      "time": "1728172800",
+      "formattedTime": "Oct 6, 2024",
+      "formattedAxisTime": "Oct 6",
+      "value": [
+        66
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "66"
+      ]
+    },
+    {
+      "time": "1728259200",
+      "formattedTime": "Oct 7, 2024",
+      "formattedAxisTime": "Oct 7",
+      "value": [
+        44
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "44"
+      ]
+    },
+    {
+      "time": "1728345600",
+      "formattedTime": "Oct 8, 2024",
+      "formattedAxisTime": "Oct 8",
+      "value": [
+        62
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "62"
+      ]
+    },
+    {
+      "time": "1728432000",
+      "formattedTime": "Oct 9, 2024",
+      "formattedAxisTime": "Oct 9",
+      "value": [
+        37
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "37"
+      ]
+    },
+    {
+      "time": "1728518400",
+      "formattedTime": "Oct 10, 2024",
+      "formattedAxisTime": "Oct 10",
+      "value": [
+        58
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "58"
+      ]
+    },
+    {
+      "time": "1728604800",
+      "formattedTime": "Oct 11, 2024",
+      "formattedAxisTime": "Oct 11",
+      "value": [
+        46
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "46"
+      ]
+    },
+    {
+      "time": "1728691200",
+      "formattedTime": "Oct 12, 2024",
+      "formattedAxisTime": "Oct 12",
+      "value": [
+        0
+      ],
+      "hasData": [
+        false
+      ],
+      "formattedValue": [
+        "0"
+      ]
+    },
+    {
+      "time": "1728777600",
+      "formattedTime": "Oct 13, 2024",
+      "formattedAxisTime": "Oct 13",
+      "value": [
+        63
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "63"
+      ]
+    },
+    {
+      "time": "1728864000",
+      "formattedTime": "Oct 14, 2024",
+      "formattedAxisTime": "Oct 14",
+      "value": [
+        60
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "60"
+      ]
+    },
+    {
+      "time": "1728950400",
+      "formattedTime": "Oct 15, 2024",
+      "formattedAxisTime": "Oct 15",
+      "value": [
+        61
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "61"
+      ]
+    },
+    {
+      "time": "1729036800",
+      "formattedTime": "Oct 16, 2024",
+      "formattedAxisTime": "Oct 16",
+      "value": [
+        0
+      ],
+      "hasData": [
+        false
+      ],
+      "formattedValue": [
+        "0"
+      ]
+    },
+    {
+      "time": "1729123200",
+      "formattedTime": "Oct 17, 2024",
+      "formattedAxisTime": "Oct 17",
+      "value": [
+        47
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "47"
+      ]
+    },
+    {
+      "time": "1729209600",
+      "formattedTime": "Oct 18, 2024",
+      "formattedAxisTime": "Oct 18",
+      "value": [
+        60
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "60"
+      ]
+    },
+    {
+      "time": "1729296000",
+      "formattedTime": "Oct 19, 2024",
+      "formattedAxisTime": "Oct 19",
+      "value": [
+        0
+      ],
+      "hasData": [
+        false
+      ],
+      "formattedValue": [
+        "0"
+      ]
+    },
+    {
+      "time": "1729382400",
+      "formattedTime": "Oct 20, 2024",
+      "formattedAxisTime": "Oct 20",
+      "value": [
+        64
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "64"
+      ]
+    },
+    {
+      "time": "1729468800",
+      "formattedTime": "Oct 21, 2024",
+      "formattedAxisTime": "Oct 21",
+      "value": [
+        49
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "49"
+      ]
+    },
+    {
+      "time": "1729555200",
+      "formattedTime": "Oct 22, 2024",
+      "formattedAxisTime": "Oct 22",
+      "value": [
+        0
+      ],
+      "hasData": [
+        false
+      ],
+      "formattedValue": [
+        "0"
+      ]
+    },
+    {
+      "time": "1729641600",
+      "formattedTime": "Oct 23, 2024",
+      "formattedAxisTime": "Oct 23",
+      "value": [
+        0
+      ],
+      "hasData": [
+        false
+      ],
+      "formattedValue": [
+        "0"
+      ]
+    },
+    {
+      "time": "1729728000",
+      "formattedTime": "Oct 24, 2024",
+      "formattedAxisTime": "Oct 24",
+      "value": [
+        60
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "60"
+      ]
+    },
+    {
+      "time": "1729814400",
+      "formattedTime": "Oct 25, 2024",
+      "formattedAxisTime": "Oct 25",
+      "value": [
+        0
+      ],
+      "hasData": [
+        false
+      ],
+      "formattedValue": [
+        "0"
+      ]
+    },
+    {
+      "time": "1729900800",
+      "formattedTime": "Oct 26, 2024",
+      "formattedAxisTime": "Oct 26",
+      "value": [
+        0
+      ],
+      "hasData": [
+        false
+      ],
+      "formattedValue": [
+        "0"
+      ]
+    },
+    {
+      "time": "1729987200",
+      "formattedTime": "Oct 27, 2024",
+      "formattedAxisTime": "Oct 27",
+      "value": [
+        63
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "63"
+      ]
+    },
+    {
+      "time": "1730073600",
+      "formattedTime": "Oct 28, 2024",
+      "formattedAxisTime": "Oct 28",
+      "value": [
+        51
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "51"
+      ]
+    },
+    {
+      "time": "1730160000",
+      "formattedTime": "Oct 29, 2024",
+      "formattedAxisTime": "Oct 29",
+      "value": [
+        0
+      ],
+      "hasData": [
+        false
+      ],
+      "formattedValue": [
+        "0"
+      ]
+    },
+    {
+      "time": "1730246400",
+      "formattedTime": "Oct 30, 2024",
+      "formattedAxisTime": "Oct 30",
+      "value": [
+        53
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "53"
+      ]
+    },
+    {
+      "time": "1730332800",
+      "formattedTime": "Oct 31, 2024",
+      "formattedAxisTime": "Oct 31",
+      "value": [
+        0
+      ],
+      "hasData": [
+        false
+      ],
+      "formattedValue": [
+        "0"
+      ]
+    },
+    {
+      "time": "1730419200",
+      "formattedTime": "Nov 1, 2024",
+      "formattedAxisTime": "Nov 1",
+      "value": [
+        0
+      ],
+      "hasData": [
+        false
+      ],
+      "formattedValue": [
+        "0"
+      ]
+    },
+    {
+      "time": "1730505600",
+      "formattedTime": "Nov 2, 2024",
+      "formattedAxisTime": "Nov 2",
+      "value": [
+        0
+      ],
+      "hasData": [
+        false
+      ],
+      "formattedValue": [
+        "0"
+      ]
+    },
+    {
+      "time": "1730592000",
+      "formattedTime": "Nov 3, 2024",
+      "formattedAxisTime": "Nov 3",
+      "value": [
+        0
+      ],
+      "hasData": [
+        false
+      ],
+      "formattedValue": [
+        "0"
+      ]
+    },
+    {
+      "time": "1730678400",
+      "formattedTime": "Nov 4, 2024",
+      "formattedAxisTime": "Nov 4",
+      "value": [
+        54
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "54"
+      ]
+    },
+    {
+      "time": "1730764800",
+      "formattedTime": "Nov 5, 2024",
+      "formattedAxisTime": "Nov 5",
+      "value": [
+        41
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "41"
+      ]
+    },
+    {
+      "time": "1730851200",
+      "formattedTime": "Nov 6, 2024",
+      "formattedAxisTime": "Nov 6",
+      "value": [
+        44
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "44"
+      ]
+    },
+    {
+      "time": "1730937600",
+      "formattedTime": "Nov 7, 2024",
+      "formattedAxisTime": "Nov 7",
+      "value": [
+        33
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "33"
+      ]
+    },
+    {
+      "time": "1731024000",
+      "formattedTime": "Nov 8, 2024",
+      "formattedAxisTime": "Nov 8",
+      "value": [
+        40
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "40"
+      ]
+    },
+    {
+      "time": "1731110400",
+      "formattedTime": "Nov 9, 2024",
+      "formattedAxisTime": "Nov 9",
+      "value": [
+        41
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "41"
+      ]
+    },
+    {
+      "time": "1731196800",
+      "formattedTime": "Nov 10, 2024",
+      "formattedAxisTime": "Nov 10",
+      "value": [
+        50
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "50"
+      ]
+    },
+    {
+      "time": "1731283200",
+      "formattedTime": "Nov 11, 2024",
+      "formattedAxisTime": "Nov 11",
+      "value": [
+        42
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "42"
+      ]
+    },
+    {
+      "time": "1731369600",
+      "formattedTime": "Nov 12, 2024",
+      "formattedAxisTime": "Nov 12",
+      "value": [
+        34
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "34"
+      ]
+    },
+    {
+      "time": "1731456000",
+      "formattedTime": "Nov 13, 2024",
+      "formattedAxisTime": "Nov 13",
+      "value": [
+        37
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "37"
+      ]
+    },
+    {
+      "time": "1731542400",
+      "formattedTime": "Nov 14, 2024",
+      "formattedAxisTime": "Nov 14",
+      "value": [
+        30
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "30"
+      ]
+    },
+    {
+      "time": "1731628800",
+      "formattedTime": "Nov 15, 2024",
+      "formattedAxisTime": "Nov 15",
+      "value": [
+        40
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "40"
+      ]
+    },
+    {
+      "time": "1731715200",
+      "formattedTime": "Nov 16, 2024",
+      "formattedAxisTime": "Nov 16",
+      "value": [
+        42
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "42"
+      ]
+    },
+    {
+      "time": "1731801600",
+      "formattedTime": "Nov 17, 2024",
+      "formattedAxisTime": "Nov 17",
+      "value": [
+        42
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "42"
+      ]
+    },
+    {
+      "time": "1731888000",
+      "formattedTime": "Nov 18, 2024",
+      "formattedAxisTime": "Nov 18",
+      "value": [
+        41
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "41"
+      ]
+    },
+    {
+      "time": "1731974400",
+      "formattedTime": "Nov 19, 2024",
+      "formattedAxisTime": "Nov 19",
+      "value": [
+        31
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "31"
+      ]
+    },
+    {
+      "time": "1732060800",
+      "formattedTime": "Nov 20, 2024",
+      "formattedAxisTime": "Nov 20",
+      "value": [
+        34
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "34"
+      ]
+    },
+    {
+      "time": "1732147200",
+      "formattedTime": "Nov 21, 2024",
+      "formattedAxisTime": "Nov 21",
+      "value": [
+        41
+      ],
+      "hasData": [
+        true
+      ],
+      "formattedValue": [
+        "41"
+      ],
+      "isPartial": true
+    }
+  ],
+  "interestOverTime_averages": [],
+  "interestBySubregion": [
+    {
+      "geoCode": "ID-SG",
+      "geoName": "South East Sulawesi",
+      "value": [
+        100
+      ],
+      "formattedValue": [
+        "100"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-ST",
+      "geoName": "Central Sulawesi",
+      "value": [
+        89
+      ],
+      "formattedValue": [
+        "89"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-KT",
+      "geoName": "Central Kalimantan",
+      "value": [
+        74
+      ],
+      "formattedValue": [
+        "74"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-SB",
+      "geoName": "West Sumatra",
+      "value": [
+        72
+      ],
+      "formattedValue": [
+        "72"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-RI",
+      "geoName": "Riau",
+      "value": [
+        70
+      ],
+      "formattedValue": [
+        "70"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-JT",
+      "geoName": "Central Java",
+      "value": [
+        66
+      ],
+      "formattedValue": [
+        "66"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-SN",
+      "geoName": "South Sulawesi",
+      "value": [
+        65
+      ],
+      "formattedValue": [
+        "65"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-KB",
+      "geoName": "West Kalimantan",
+      "value": [
+        59
+      ],
+      "formattedValue": [
+        "59"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-KR",
+      "geoName": "Riau Islands",
+      "value": [
+        59
+      ],
+      "formattedValue": [
+        "59"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-SS",
+      "geoName": "South Sumatra",
+      "value": [
+        54
+      ],
+      "formattedValue": [
+        "54"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-LA",
+      "geoName": "Lampung",
+      "value": [
+        53
+      ],
+      "formattedValue": [
+        "53"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-KS",
+      "geoName": "South Kalimantan",
+      "value": [
+        51
+      ],
+      "formattedValue": [
+        "51"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-JI",
+      "geoName": "East Java",
+      "value": [
+        49
+      ],
+      "formattedValue": [
+        "49"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-SU",
+      "geoName": "North Sumatra",
+      "value": [
+        46
+      ],
+      "formattedValue": [
+        "46"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-KI",
+      "geoName": "East Kalimantan",
+      "value": [
+        43
+      ],
+      "formattedValue": [
+        "43"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-JB",
+      "geoName": "West Java",
+      "value": [
+        41
+      ],
+      "formattedValue": [
+        "41"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-BT",
+      "geoName": "Banten",
+      "value": [
+        35
+      ],
+      "formattedValue": [
+        "35"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-JK",
+      "geoName": "Special Capital Region of Jakarta",
+      "value": [
+        33
+      ],
+      "formattedValue": [
+        "33"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-YO",
+      "geoName": "Special Region of Yogyakarta",
+      "value": [
+        30
+      ],
+      "formattedValue": [
+        "30"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-BA",
+      "geoName": "Bali",
+      "value": [
+        27
+      ],
+      "formattedValue": [
+        "27"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-GO",
+      "geoName": "Gorontalo",
+      "value": [
+        14
+      ],
+      "formattedValue": [
+        "14"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-KU",
+      "geoName": "North Kalimantan",
+      "value": [
+        12
+      ],
+      "formattedValue": [
+        "12"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-BE",
+      "geoName": "Bengkulu",
+      "value": [
+        6
+      ],
+      "formattedValue": [
+        "6"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-AC",
+      "geoName": "Aceh",
+      "value": [
+        6
+      ],
+      "formattedValue": [
+        "6"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-JA",
+      "geoName": "Jambi",
+      "value": [
+        6
+      ],
+      "formattedValue": [
+        "6"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-NB",
+      "geoName": "West Nusa Tenggara",
+      "value": [
+        5
+      ],
+      "formattedValue": [
+        "5"
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        true
+      ]
+    },
+    {
+      "geoCode": "ID-MU",
+      "geoName": "North Maluku",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "geoCode": "ID-NT",
+      "geoName": "East Nusa Tenggara",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "geoCode": "ID-PA",
+      "geoName": "Papua",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "geoCode": "ID-PB",
+      "geoName": "West Papua",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "geoCode": "ID-MA",
+      "geoName": "Maluku",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "geoCode": "ID-SA",
+      "geoName": "North Sulawesi",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "geoCode": "ID-SR",
+      "geoName": "West Sulawesi",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "geoCode": "ID-BB",
+      "geoName": "Bangka Belitung Islands",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    }
+  ],
+  "interestByCity": [
+    {
+      "coordinates": {
+        "lat": -7.404863,
+        "lng": 110.1759975
+      },
+      "geoName": "Windusari",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -7.0974044,
+        "lng": 107.482896
+      },
+      "geoName": "Pasirjambu",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -3.3722254,
+        "lng": 135.5016253
+      },
+      "geoName": "Nabire",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -6.4376836,
+        "lng": 106.7170506
+      },
+      "geoName": "Parung",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -6.719137,
+        "lng": 108.4703138
+      },
+      "geoName": "Plumbon",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": 0.6713636,
+        "lng": 101.5992634
+      },
+      "geoName": "Jln Koperasi",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -7.1361484,
+        "lng": 110.395438
+      },
+      "geoName": "West Ungaran",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": 0.3413567,
+        "lng": 101.0279545
+      },
+      "geoName": "Bangkinang",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": 1.4403744,
+        "lng": 125.1216524
+      },
+      "geoName": "Bitung",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -6.3971917,
+        "lng": 108.3682501
+      },
+      "geoName": "Balongan",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -8.1186669,
+        "lng": 112.2026347
+      },
+      "geoName": "Kanigoro",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": 1.3486888,
+        "lng": 109.3009955
+      },
+      "geoName": "Sambas",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": 1.6666349,
+        "lng": 101.4001855
+      },
+      "geoName": "Dumai",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": 3.7505313,
+        "lng": 98.4705284
+      },
+      "geoName": "Stabat",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": 3.1059162,
+        "lng": 98.4979672
+      },
+      "geoName": "Kabanjahe",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -7.2267449,
+        "lng": 110.435753
+      },
+      "geoName": "Bawen",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -7.5881153,
+        "lng": 110.2750661
+      },
+      "geoName": "Muntilan",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -7.0849225,
+        "lng": 107.4461432
+      },
+      "geoName": "Ciwidey",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -6.6896538,
+        "lng": 110.7003268
+      },
+      "geoName": "Pecangaan",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -8.4462932,
+        "lng": 115.6127292
+      },
+      "geoName": "Karangasem",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -7.2385805,
+        "lng": 112.2465134
+      },
+      "geoName": "Bulu Plapak",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -1.8786508,
+        "lng": 106.1159149
+      },
+      "geoName": "Sungai Liat",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -4.3139423,
+        "lng": 104.360461
+      },
+      "geoName": "Martapura",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -8.4642661,
+        "lng": 118.7449028
+      },
+      "geoName": "Bima",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -7.5045992,
+        "lng": 112.542328
+      },
+      "geoName": "Mojosari",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -7.1652437,
+        "lng": 112.6519882
+      },
+      "geoName": "Gresik",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -6.6685343,
+        "lng": 108.5402151
+      },
+      "geoName": "Gunungjati",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -6.985371,
+        "lng": 109.1344926
+      },
+      "geoName": "Slawi",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -6.5804981,
+        "lng": 110.6789833
+      },
+      "geoName": "Jepara",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -7.5576602,
+        "lng": 112.628175
+      },
+      "geoName": "Ngoro",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -6.7383663,
+        "lng": 107.4382841
+      },
+      "geoName": "Cikalong Wetan",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -7.6761901,
+        "lng": 109.6636993
+      },
+      "geoName": "Kebumen",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -6.7330976,
+        "lng": 108.4475553
+      },
+      "geoName": "Depok",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -7.419408,
+        "lng": 111.022491
+      },
+      "geoName": "Sragen",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": 0.0632612,
+        "lng": 111.4862054
+      },
+      "geoName": "Sintang",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -0.4652798,
+        "lng": 100.3992289
+      },
+      "geoName": "Padang Panjang",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -6.9391309,
+        "lng": 109.1259181
+      },
+      "geoName": "Adiwerna",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -6.9080448,
+        "lng": 109.7326796
+      },
+      "geoName": "Batang",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -7.0517978,
+        "lng": 107.7458559
+      },
+      "geoName": "Majalaya",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -7.5565354,
+        "lng": 109.2296297
+      },
+      "geoName": "Kebasen",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -0.8819986,
+        "lng": 131.2954834
+      },
+      "geoName": "Sorong",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -7.3298676,
+        "lng": 108.3322547
+      },
+      "geoName": "Ciamis",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -8.1529604,
+        "lng": 113.1832893
+      },
+      "geoName": "Sumbersuko",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -7.6493413,
+        "lng": 111.3381593
+      },
+      "geoName": "Magetan",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -7.385735,
+        "lng": 109.3604296
+      },
+      "geoName": "Purbalingga",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -6.8921607,
+        "lng": 110.6377502
+      },
+      "geoName": "Demak",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -6.6226806,
+        "lng": 110.6787662
+      },
+      "geoName": "Tahunan",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -6.9201316,
+        "lng": 109.370576
+      },
+      "geoName": "Pemalang",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -0.2298336,
+        "lng": 100.6309169
+      },
+      "geoName": "Payakumbuh",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -3.0108458,
+        "lng": 120.2022239
+      },
+      "geoName": "Palopo",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -6.4647391,
+        "lng": 106.7595019
+      },
+      "geoName": "Tajur Halang",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -4.0096221,
+        "lng": 119.6290617
+      },
+      "geoName": "Parepare",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -3.9984597,
+        "lng": 122.5129742
+      },
+      "geoName": "Kendari",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -0.3039178,
+        "lng": 100.383479
+      },
+      "geoName": "Bukittinggi",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -6.4681773,
+        "lng": 107.055686
+      },
+      "geoName": "Jonggol",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -6.395769,
+        "lng": 106.6880841
+      },
+      "geoName": "Gunung Sindur",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -2.1316266,
+        "lng": 106.1169299
+      },
+      "geoName": "Pangkal Pinang",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -6.9153153,
+        "lng": 107.4977752
+      },
+      "geoName": "Batujajar",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": 3.7431465,
+        "lng": 96.8326488
+      },
+      "geoName": "Blang Pidie",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -7.7978518,
+        "lng": 110.9387418
+      },
+      "geoName": "Wonogiri",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -7.9557739,
+        "lng": 110.5974642
+      },
+      "geoName": "Wonosari",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -6.4933318,
+        "lng": 106.8809319
+      },
+      "geoName": "Citeureup",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -7.0872117,
+        "lng": 110.9134113
+      },
+      "geoName": "Purwodadi",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -7.602244,
+        "lng": 110.8101996
+      },
+      "geoName": "Grogol",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -6.7065551,
+        "lng": 111.3372855
+      },
+      "geoName": "Rembang",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -7.1181109,
+        "lng": 112.4149811
+      },
+      "geoName": "Lamongan",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -8.5367146,
+        "lng": 115.3314412
+      },
+      "geoName": "Gianyar",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": 2.9662346,
+        "lng": 99.7985457
+      },
+      "geoName": "Tanjung Balai",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": 0.9185504,
+        "lng": 104.4665072
+      },
+      "geoName": "Tanjung Pinang",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -6.8204128,
+        "lng": 107.1732646
+      },
+      "geoName": "Karangtengah",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -6.9691276,
+        "lng": 111.4186704
+      },
+      "geoName": "Blora",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": 3.3273599,
+        "lng": 117.5785049
+      },
+      "geoName": "Tarakan",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -7.3706874,
+        "lng": 108.5342487
+      },
+      "geoName": "Banjar",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -7.0252822,
+        "lng": 112.7519821
+      },
+      "geoName": "Bangkalan",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -6.5370069,
+        "lng": 106.8276587
+      },
+      "geoName": "Sukaraja",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -3.6553932,
+        "lng": 128.1907723
+      },
+      "geoName": "Teluk Ambon",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -7.2131965,
+        "lng": 107.9487338
+      },
+      "geoName": "Karangpawitan",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -2.2161048,
+        "lng": 113.913977
+      },
+      "geoName": "Palangkaraya",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -7.4473901,
+        "lng": 109.5538573
+      },
+      "geoName": "Banjarnegara",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -7.6070727,
+        "lng": 110.9866942
+      },
+      "geoName": "Karanganyar",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -7.0037585,
+        "lng": 107.6478182
+      },
+      "geoName": "Bojongsoang",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -6.8564212,
+        "lng": 109.0393759
+      },
+      "geoName": "Brebes",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -6.3958742,
+        "lng": 107.4381106
+      },
+      "geoName": "Cikampek",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -7.1784578,
+        "lng": 112.6233911
+      },
+      "geoName": "Kebomas",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -0.9002915,
+        "lng": 119.8779987
+      },
+      "geoName": "Palu",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -7.6292215,
+        "lng": 109.646292
+      },
+      "geoName": "Pejagoan",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -8.543465,
+        "lng": 115.1715794
+      },
+      "geoName": "Mengwi",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -7.0401751,
+        "lng": 107.7132895
+      },
+      "geoName": "Ciparay",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -8.0864098,
+        "lng": 111.7131286
+      },
+      "geoName": "Trenggalek",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -0.5966493,
+        "lng": 100.7356108
+      },
+      "geoName": "Sawahlunto",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -7.1524786,
+        "lng": 111.8869293
+      },
+      "geoName": "Bojonegoro",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": 3.5663315,
+        "lng": 98.8751518
+      },
+      "geoName": "Lubuk Pakam",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -7.4497718,
+        "lng": 112.7015495
+      },
+      "geoName": "Sidoarjo",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -7.9666204,
+        "lng": 112.6326321
+      },
+      "geoName": "Malang",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -7.7735423,
+        "lng": 110.3010938
+      },
+      "geoName": "Godean",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -7.6043721,
+        "lng": 111.8993478
+      },
+      "geoName": "Nganjuk",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -7.6310587,
+        "lng": 111.5300159
+      },
+      "geoName": "Madiun",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -6.0025343,
+        "lng": 106.0111203
+      },
+      "geoName": "Cilegon",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -6.8168237,
+        "lng": 107.1425442
+      },
+      "geoName": "Cianjur",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -8.6430479,
+        "lng": 115.1606014
+      },
+      "geoName": "North Kuta",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -7.739967,
+        "lng": 110.6645683
+      },
+      "geoName": "Klaten",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -6.9316588,
+        "lng": 107.7419708
+      },
+      "geoName": "Cileunyi",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -3.3186067,
+        "lng": 114.5943784
+      },
+      "geoName": "Banjarmasin",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": 0.5070677,
+        "lng": 101.4477793
+      },
+      "geoName": "Pekanbaru",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -0.9470832,
+        "lng": 100.417181
+      },
+      "geoName": "Padang",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -7.3733711,
+        "lng": 110.3252208
+      },
+      "geoName": "Grabag",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -7.5754887,
+        "lng": 110.8243272
+      },
+      "geoName": "Surakarta",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -2.9760735,
+        "lng": 104.7754307
+      },
+      "geoName": "Palembang",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -6.5406665,
+        "lng": 107.4462717
+      },
+      "geoName": "Purwakarta",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -7.3505808,
+        "lng": 108.2171633
+      },
+      "geoName": "Tasikmalaya",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -6.3681068,
+        "lng": 106.5533873
+      },
+      "geoName": "Parung Panjang",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -0.0263303,
+        "lng": 109.3425039
+      },
+      "geoName": "Pontianak",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -7.0051453,
+        "lng": 110.4381254
+      },
+      "geoName": "Semarang",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -3.7928451,
+        "lng": 102.2607641
+      },
+      "geoName": "Bengkulu",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -6.9277361,
+        "lng": 106.9299579
+      },
+      "geoName": "Sukabumi",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -7.8480156,
+        "lng": 112.0178286
+      },
+      "geoName": "Kediri",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -8.7948842,
+        "lng": 115.1988563
+      },
+      "geoName": "South Kuta",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -8.5769951,
+        "lng": 116.1004894
+      },
+      "geoName": "Mataram",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -6.3054002,
+        "lng": 107.3202333
+      },
+      "geoName": "Karawang",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -8.1733118,
+        "lng": 113.7009312
+      },
+      "geoName": "Jember",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -6.8898362,
+        "lng": 109.6745916
+      },
+      "geoName": "Pekalongan",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -3.4572422,
+        "lng": 114.8103181
+      },
+      "geoName": "Banjarbaru",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -6.2796619,
+        "lng": 106.3521164
+      },
+      "geoName": "Jawilan",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -4.7515364,
+        "lng": 104.8603389
+      },
+      "geoName": "North Kotabumi",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -1.2379274,
+        "lng": 116.8528526
+      },
+      "geoName": "Balikpapan",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -6.2382699,
+        "lng": 106.9755726
+      },
+      "geoName": "Bekasi",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": 5.5482904,
+        "lng": 95.3237559
+      },
+      "geoName": "Banda Aceh",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -5.1476651,
+        "lng": 119.4327314
+      },
+      "geoName": "Makassar",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -7.7586898,
+        "lng": 110.3947016
+      },
+      "geoName": "Depok",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -7.7955798,
+        "lng": 110.3694896
+      },
+      "geoName": "Yogyakarta",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -7.2574719,
+        "lng": 112.7520883
+      },
+      "geoName": "Surabaya",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -6.8840816,
+        "lng": 107.5413039
+      },
+      "geoName": "Cimahi",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": 3.5951956,
+        "lng": 98.6722227
+      },
+      "geoName": "Medan",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": 2.6223648,
+        "lng": 98.7170036
+      },
+      "geoName": "Pangururan",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": 1.0456264,
+        "lng": 104.0304535
+      },
+      "geoName": "Batam",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -6.2835218,
+        "lng": 106.7112933
+      },
+      "geoName": "South Tangerang",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -6.4660737,
+        "lng": 106.4536971
+      },
+      "geoName": "Jasinga",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -6.5739203,
+        "lng": 106.6326192
+      },
+      "geoName": "Leuwiliang",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -6.9174639,
+        "lng": 107.6191228
+      },
+      "geoName": "Bandung",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -8.091221,
+        "lng": 111.9641728
+      },
+      "geoName": "Tulungagung",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -5.3971396,
+        "lng": 105.2667887
+      },
+      "geoName": "Bandar Lampung",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -6.2023936,
+        "lng": 106.6527099
+      },
+      "geoName": "Tangerang",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -1.6596733,
+        "lng": 103.2778918
+      },
+      "geoName": "Muara Bulian",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -6.4024844,
+        "lng": 106.7942405
+      },
+      "geoName": "Depok",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -6.6965155,
+        "lng": 108.5017948
+      },
+      "geoName": "Plered",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -6.2474466,
+        "lng": 107.1484521
+      },
+      "geoName": "Bekasi",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -6.2087634,
+        "lng": 106.845599
+      },
+      "geoName": "Jakarta",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -6.859079,
+        "lng": 107.9202767
+      },
+      "geoName": "South Sumedang",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -6.9479393,
+        "lng": 107.497265
+      },
+      "geoName": "Cihampelas",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -6.8031088,
+        "lng": 108.4017049
+      },
+      "geoName": "Padaherang",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -8.6704582,
+        "lng": 115.2126293
+      },
+      "geoName": "Denpasar",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -6.5277643,
+        "lng": 110.7095788
+      },
+      "geoName": "Mlonggo",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": 1.4748305,
+        "lng": 124.8420794
+      },
+      "geoName": "Manado",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -6.7311989,
+        "lng": 106.797352
+      },
+      "geoName": "Cigombong",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -6.4872416,
+        "lng": 110.8036437
+      },
+      "geoName": "Kembang",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": 0.7898868,
+        "lng": 127.3753792
+      },
+      "geoName": "Ternate",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -6.7353587,
+        "lng": 110.694367
+      },
+      "geoName": "Kalinyamatan",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -7.4015003,
+        "lng": 110.2474787
+      },
+      "geoName": "Secang",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -0.7885335,
+        "lng": 100.6549823
+      },
+      "geoName": "Solok",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -6.1801188,
+        "lng": 107.2946735
+      },
+      "geoName": "Rengasdengklok",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -6.8364221,
+        "lng": 108.2274234
+      },
+      "geoName": "Majalengka",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -6.2833616,
+        "lng": 106.1181459
+      },
+      "geoName": "Karangtanjung",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -3.2995858,
+        "lng": 102.857236
+      },
+      "geoName": "Lubuklinggau",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -8.1213758,
+        "lng": 115.0781804
+      },
+      "geoName": "Buleleng",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -1.6101229,
+        "lng": 103.6131203
+      },
+      "geoName": "Jambi",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": 4.1436951,
+        "lng": 96.1281146
+      },
+      "geoName": "Meulaboh",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": 2.7439024,
+        "lng": 98.3143192
+      },
+      "geoName": "Sidikalang",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -0.3146004,
+        "lng": 103.1567337
+      },
+      "geoName": "Tembilahan",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -7.8706488,
+        "lng": 110.1611064
+      },
+      "geoName": "Wates",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -4.8453481,
+        "lng": 104.8980058
+      },
+      "geoName": "South Kotabumi",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -7.3555775,
+        "lng": 109.9139594
+      },
+      "geoName": "Wonosobo",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -0.4329135,
+        "lng": 116.989678
+      },
+      "geoName": "Tenggarong",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -8.0954627,
+        "lng": 112.1609056
+      },
+      "geoName": "Blitar",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -7.3178564,
+        "lng": 110.1779144
+      },
+      "geoName": "Temanggung",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -6.6413647,
+        "lng": 111.0651145
+      },
+      "geoName": "Karangwage",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -7.8326183,
+        "lng": 110.4101221
+      },
+      "geoName": "Banguntapan",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -7.0358633,
+        "lng": 109.5739667
+      },
+      "geoName": "Kajen",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -6.7750282,
+        "lng": 108.5849064
+      },
+      "geoName": "Mundu",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -6.4022718,
+        "lng": 106.9704941
+      },
+      "geoName": "Cileungsi",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -7.4797342,
+        "lng": 110.2176941
+      },
+      "geoName": "Magelang",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -7.154249,
+        "lng": 113.4739105
+      },
+      "geoName": "Pamekasan",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -6.3341381,
+        "lng": 107.2932069
+      },
+      "geoName": "East Telukjambe",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -6.6403371,
+        "lng": 108.4023837
+      },
+      "geoName": "Arjawinangun",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -7.8666877,
+        "lng": 111.4666099
+      },
+      "geoName": "Ponorogo",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -0.6115939,
+        "lng": 100.1336713
+      },
+      "geoName": "Pariaman",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -5.4700112,
+        "lng": 122.5976841
+      },
+      "geoName": "Bau-bau",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -6.5753118,
+        "lng": 106.6939625
+      },
+      "geoName": "Ciampea",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -7.0157916,
+        "lng": 107.8761588
+      },
+      "geoName": "Nagreg",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -6.8739583,
+        "lng": 107.6589922
+      },
+      "geoName": "Cimenyan",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -6.7320229,
+        "lng": 108.5523164
+      },
+      "geoName": "Cirebon",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -6.9318012,
+        "lng": 110.2028022
+      },
+      "geoName": "Kendal",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -7.4242782,
+        "lng": 109.2396366
+      },
+      "geoName": "Purwokerto",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -6.8293742,
+        "lng": 107.9116474
+      },
+      "geoName": "North Sumedang",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -7.6247732,
+        "lng": 110.2951364
+      },
+      "geoName": "Salam",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -6.954021,
+        "lng": 107.5573539
+      },
+      "geoName": "Margaasih",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -6.9834497,
+        "lng": 107.4533635
+      },
+      "geoName": "Cililin",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -8.2192335,
+        "lng": 114.3692267
+      },
+      "geoName": "Banyuwangi",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -8.5431782,
+        "lng": 115.2170334
+      },
+      "geoName": "Abiansemal",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -7.52053,
+        "lng": 110.595023
+      },
+      "geoName": "Boyolali",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": -8.5375566,
+        "lng": 115.1246918
+      },
+      "geoName": "Tabanan",
+      "value": [
+        0
+      ],
+      "formattedValue": [
+        ""
+      ],
+      "maxValueIndex": 0,
+      "hasData": [
+        false
+      ]
+    }
+  ]
+}]
+[2024-11-21T07:41:29.464+0000] {logging_mixin.py:190} INFO - Gagal mengambil dataset untuk sunscreen skin aqua
+[2024-11-21T07:41:29.466+0000] {python.py:240} INFO - Done. Returned value was: None
+[2024-11-21T07:41:29.477+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-11-21T07:41:29.479+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=etl_pipeline, task_id=extract_google_trends, run_id=manual__2024-11-21T07:38:05.193191+00:00, execution_date=20241121T073805, start_date=20241121T073809, end_date=20241121T074129
+[2024-11-21T07:41:29.499+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2024-11-21T07:41:29.500+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2024-11-21T07:41:29.501+0000] {logging_mixin.py:190} INFO - Dag name:etl_pipeline queued_at:2024-11-21 07:38:05.527954+00:00
+[2024-11-21T07:41:29.502+0000] {logging_mixin.py:190} INFO - Task hostname:7a40aa914b11 operator:PythonOperator
+[2024-11-21T07:41:29.518+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-11-21T07:41:29.543+0000] {taskinstance.py:3895} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-11-21T07:41:29.549+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

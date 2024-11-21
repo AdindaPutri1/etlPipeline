@@ -1,0 +1,147 @@
+[2024-11-21T12:28:57.039+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-11-21T12:28:57.053+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_pipeline.transform_cleaning manual__2024-11-21T12:28:43.371314+00:00 [queued]>
+[2024-11-21T12:28:57.061+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_pipeline.transform_cleaning manual__2024-11-21T12:28:43.371314+00:00 [queued]>
+[2024-11-21T12:28:57.063+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 1
+[2024-11-21T12:28:57.076+0000] {taskinstance.py:2889} INFO - Executing <Task(PythonOperator): transform_cleaning> on 2024-11-21 12:28:43.371314+00:00
+[2024-11-21T12:28:57.085+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=4711) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-11-21T12:28:57.087+0000] {standard_task_runner.py:72} INFO - Started process 4713 to run task
+[2024-11-21T12:28:57.087+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'etl_pipeline', 'transform_cleaning', 'manual__2024-11-21T12:28:43.371314+00:00', '--job-id', '267', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmpu3ys7ytu']
+[2024-11-21T12:28:57.089+0000] {standard_task_runner.py:105} INFO - Job 267: Subtask transform_cleaning
+[2024-11-21T12:28:57.135+0000] {task_command.py:467} INFO - Running <TaskInstance: etl_pipeline.transform_cleaning manual__2024-11-21T12:28:43.371314+00:00 [running]> on host 7a40aa914b11
+[2024-11-21T12:28:57.404+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='etl_pipeline' AIRFLOW_CTX_TASK_ID='transform_cleaning' AIRFLOW_CTX_EXECUTION_DATE='2024-11-21T12:28:43.371314+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-11-21T12:28:43.371314+00:00'
+[2024-11-21T12:28:57.406+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2024-11-21T12:28:57.407+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2024-11-21T12:28:57.408+0000] {logging_mixin.py:190} INFO - Current task name:transform_cleaning state:running start_date:2024-11-21 12:28:57.055070+00:00
+[2024-11-21T12:28:57.410+0000] {logging_mixin.py:190} INFO - Dag name:etl_pipeline and current dag run status:running
+[2024-11-21T12:28:57.411+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-11-21T12:28:57.412+0000] {logging_mixin.py:190} INFO - Memproses file 'Merged_Sunscreen Azarine.csv'...
+[2024-11-21T12:28:57.445+0000] {warnings.py:112} WARNING - /opt/***/dags/etl/transform_cleaning.py:48: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df.loc[:, 'periode_penggunaan'] = df['usage_period'].map(usage_period_mapping_id)
+
+[2024-11-21T12:28:57.446+0000] {warnings.py:112} WARNING - /opt/***/dags/etl/transform_cleaning.py:51: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df.rename(columns={'rating_count': 'rating'}, inplace=True)
+
+[2024-11-21T12:28:57.448+0000] {warnings.py:112} WARNING - /opt/***/dags/etl/transform_cleaning.py:52: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df.rename(columns={'value': 'trend'}, inplace=True)  # Pastikan 'value' diganti menjadi 'trend'
+
+[2024-11-21T12:28:57.451+0000] {warnings.py:112} WARNING - /opt/***/dags/etl/transform_cleaning.py:55: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df[['skintype', 'skintone', 'undertone']] = df['profile_description'].str.split(',', expand=True)
+
+[2024-11-21T12:28:57.452+0000] {warnings.py:112} WARNING - /opt/***/dags/etl/transform_cleaning.py:55: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df[['skintype', 'skintone', 'undertone']] = df['profile_description'].str.split(',', expand=True)
+
+[2024-11-21T12:28:57.454+0000] {warnings.py:112} WARNING - /opt/***/dags/etl/transform_cleaning.py:55: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df[['skintype', 'skintone', 'undertone']] = df['profile_description'].str.split(',', expand=True)
+
+[2024-11-21T12:28:57.457+0000] {warnings.py:112} WARNING - /opt/***/dags/etl/transform_cleaning.py:61: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df.drop(columns=['usage_period'], inplace=True)
+
+[2024-11-21T12:28:57.459+0000] {warnings.py:112} WARNING - /opt/***/dags/etl/transform_cleaning.py:62: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df.drop(columns=['age'], inplace=True)
+
+[2024-11-21T12:28:57.461+0000] {warnings.py:112} WARNING - /opt/***/dags/etl/transform_cleaning.py:63: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df.drop(columns=['profile_description'], inplace=True)
+
+[2024-11-21T12:28:57.489+0000] {logging_mixin.py:190} INFO - Data telah disimpan di: dags/hasil data transform/Clean_Sunscreen Azarine.csv
+[2024-11-21T12:28:57.490+0000] {logging_mixin.py:190} INFO - Memproses file 'Merged_Sunscreen Skinaqua.csv'...
+[2024-11-21T12:28:57.514+0000] {warnings.py:112} WARNING - /opt/***/dags/etl/transform_cleaning.py:48: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df.loc[:, 'periode_penggunaan'] = df['usage_period'].map(usage_period_mapping_id)
+
+[2024-11-21T12:28:57.516+0000] {warnings.py:112} WARNING - /opt/***/dags/etl/transform_cleaning.py:51: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df.rename(columns={'rating_count': 'rating'}, inplace=True)
+
+[2024-11-21T12:28:57.517+0000] {warnings.py:112} WARNING - /opt/***/dags/etl/transform_cleaning.py:52: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df.rename(columns={'value': 'trend'}, inplace=True)  # Pastikan 'value' diganti menjadi 'trend'
+
+[2024-11-21T12:28:57.519+0000] {warnings.py:112} WARNING - /opt/***/dags/etl/transform_cleaning.py:55: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df[['skintype', 'skintone', 'undertone']] = df['profile_description'].str.split(',', expand=True)
+
+[2024-11-21T12:28:57.520+0000] {warnings.py:112} WARNING - /opt/***/dags/etl/transform_cleaning.py:55: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df[['skintype', 'skintone', 'undertone']] = df['profile_description'].str.split(',', expand=True)
+
+[2024-11-21T12:28:57.522+0000] {warnings.py:112} WARNING - /opt/***/dags/etl/transform_cleaning.py:55: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df[['skintype', 'skintone', 'undertone']] = df['profile_description'].str.split(',', expand=True)
+
+[2024-11-21T12:28:57.525+0000] {warnings.py:112} WARNING - /opt/***/dags/etl/transform_cleaning.py:61: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df.drop(columns=['usage_period'], inplace=True)
+
+[2024-11-21T12:28:57.527+0000] {warnings.py:112} WARNING - /opt/***/dags/etl/transform_cleaning.py:62: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df.drop(columns=['age'], inplace=True)
+
+[2024-11-21T12:28:57.529+0000] {warnings.py:112} WARNING - /opt/***/dags/etl/transform_cleaning.py:63: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df.drop(columns=['profile_description'], inplace=True)
+
+[2024-11-21T12:28:57.546+0000] {logging_mixin.py:190} INFO - Data telah disimpan di: dags/hasil data transform/Clean_Sunscreen Skinaqua.csv
+[2024-11-21T12:28:57.547+0000] {python.py:240} INFO - Done. Returned value was: None
+[2024-11-21T12:28:57.556+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-11-21T12:28:57.558+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=etl_pipeline, task_id=transform_cleaning, run_id=manual__2024-11-21T12:28:43.371314+00:00, execution_date=20241121T122843, start_date=20241121T122857, end_date=20241121T122857
+[2024-11-21T12:28:57.568+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2024-11-21T12:28:57.569+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2024-11-21T12:28:57.569+0000] {logging_mixin.py:190} INFO - Dag name:etl_pipeline queued_at:2024-11-21 12:28:43.500846+00:00
+[2024-11-21T12:28:57.570+0000] {logging_mixin.py:190} INFO - Task hostname:7a40aa914b11 operator:PythonOperator
+[2024-11-21T12:28:57.626+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-11-21T12:28:57.662+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
