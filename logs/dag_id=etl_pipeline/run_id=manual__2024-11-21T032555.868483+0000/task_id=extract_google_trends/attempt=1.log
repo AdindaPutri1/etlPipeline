@@ -1,0 +1,1044 @@
+[2024-11-21T03:25:58.849+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-11-21T03:25:58.864+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_pipeline.extract_google_trends manual__2024-11-21T03:25:55.868483+00:00 [queued]>
+[2024-11-21T03:25:58.871+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_pipeline.extract_google_trends manual__2024-11-21T03:25:55.868483+00:00 [queued]>
+[2024-11-21T03:25:58.873+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 1
+[2024-11-21T03:25:58.885+0000] {taskinstance.py:2889} INFO - Executing <Task(PythonOperator): extract_google_trends> on 2024-11-21 03:25:55.868483+00:00
+[2024-11-21T03:25:58.892+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=657) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-11-21T03:25:58.894+0000] {standard_task_runner.py:72} INFO - Started process 661 to run task
+[2024-11-21T03:25:58.894+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'etl_pipeline', 'extract_google_trends', 'manual__2024-11-21T03:25:55.868483+00:00', '--job-id', '95', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmptgaxo0t0']
+[2024-11-21T03:25:58.895+0000] {standard_task_runner.py:105} INFO - Job 95: Subtask extract_google_trends
+[2024-11-21T03:25:58.938+0000] {task_command.py:467} INFO - Running <TaskInstance: etl_pipeline.extract_google_trends manual__2024-11-21T03:25:55.868483+00:00 [running]> on host d5003ff2a60e
+[2024-11-21T03:25:59.741+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='etl_pipeline' AIRFLOW_CTX_TASK_ID='extract_google_trends' AIRFLOW_CTX_EXECUTION_DATE='2024-11-21T03:25:55.868483+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-11-21T03:25:55.868483+00:00'
+[2024-11-21T03:25:59.742+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2024-11-21T03:25:59.743+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2024-11-21T03:25:59.743+0000] {logging_mixin.py:190} INFO - Current task name:extract_google_trends state:running start_date:2024-11-21 03:25:58.865384+00:00
+[2024-11-21T03:25:59.744+0000] {logging_mixin.py:190} INFO - Dag name:etl_pipeline and current dag run status:running
+[2024-11-21T03:25:59.744+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-11-21T03:25:59.748+0000] {logging_mixin.py:190} INFO - Menjalankan Actor di Apify untuk 'sunscreen Skin Aqua'...
+[2024-11-21T03:25:59.748+0000] {logging_mixin.py:190} INFO - Menjalankan Actor di Apify untuk 'sunscreen Azarine'...
+[2024-11-21T03:26:01.057+0000] {logging_mixin.py:190} INFO - Actor dijalankan dengan run_id: lPko9BU5ah2FBOVVg
+[2024-11-21T03:26:01.061+0000] {logging_mixin.py:190} INFO - Actor dijalankan dengan run_id: 4WikOrgDyCghSrMrd
+[2024-11-21T03:26:01.978+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:26:01.979+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:26:01.980+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:26:01.981+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:26:32.989+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:26:32.995+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:26:32.995+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:26:32.996+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:27:03.977+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:27:03.978+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:27:04.145+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:27:04.146+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:27:35.125+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:27:35.128+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:27:35.195+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:27:35.198+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:28:06.256+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:28:06.257+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:28:06.258+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:28:06.259+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:28:37.470+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:28:37.471+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:28:37.478+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:28:37.479+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:29:08.820+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:29:08.821+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:29:08.823+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:29:08.824+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:29:40.017+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:29:40.018+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:29:40.018+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:29:40.019+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:30:11.129+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:30:11.131+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:30:11.130+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:30:11.132+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:30:42.254+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:30:42.255+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:30:42.256+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:30:42.257+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:31:13.293+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:31:13.295+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:31:13.295+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:31:13.298+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:31:44.329+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:31:44.335+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:31:44.335+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:31:44.336+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:32:15.322+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:32:15.324+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:32:15.325+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:32:15.325+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:32:46.310+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:32:46.310+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:32:46.311+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:32:46.312+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:33:17.243+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:33:17.248+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:33:17.250+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:33:17.251+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:33:48.209+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:33:48.211+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:33:48.224+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:33:48.228+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:34:19.402+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:34:19.405+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:34:19.409+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:34:19.414+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:34:50.381+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:34:50.384+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:34:50.385+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:34:50.386+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:35:21.896+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:35:21.897+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:35:21.897+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:35:21.898+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:35:52.966+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:35:52.967+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:35:52.968+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:35:52.969+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:36:24.115+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:36:24.115+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:36:24.117+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:36:24.118+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:36:55.247+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:36:55.248+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:36:55.249+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:36:55.249+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:37:26.252+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:37:26.253+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:37:26.258+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:37:26.264+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:37:58.134+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:37:58.135+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:37:58.136+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:37:58.137+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:38:30.586+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:38:30.587+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:38:30.588+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:38:30.588+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:39:01.611+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:39:01.613+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:39:01.622+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:39:01.623+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:39:32.876+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:39:32.879+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:39:32.881+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:39:32.882+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:40:04.045+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:40:04.049+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:40:04.049+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:40:04.051+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:40:35.184+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:40:35.186+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:40:35.202+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:40:35.204+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:41:06.260+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:41:06.261+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:41:06.284+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:41:06.285+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:41:37.844+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:41:37.845+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:41:37.846+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:41:37.847+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:42:08.983+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:42:08.987+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:42:09.007+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:42:09.008+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:42:40.892+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:42:40.895+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:42:40.897+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:42:40.897+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:43:12.011+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:43:12.017+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:43:12.019+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:43:12.020+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:43:43.194+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:43:43.195+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:43:43.198+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:43:43.199+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:44:14.545+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:44:14.548+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:44:14.548+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:44:14.550+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:44:46.297+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:44:46.297+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:44:46.299+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:44:46.300+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:45:17.894+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:45:17.895+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:45:17.896+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:45:17.896+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:45:49.078+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:45:49.079+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:45:49.080+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:45:49.080+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:46:20.231+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:46:20.233+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:46:20.237+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:46:20.238+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:46:51.264+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:46:51.263+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:46:51.266+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:46:51.266+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:47:22.297+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:47:22.302+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:47:22.303+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:47:22.304+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:47:53.354+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:47:53.358+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:47:53.419+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:47:53.427+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:48:24.479+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:48:24.484+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:48:24.530+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:48:24.532+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:48:56.372+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:48:56.381+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:48:56.437+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:48:56.439+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:49:27.428+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:49:27.432+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:49:28.097+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:49:28.102+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:49:58.415+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:49:58.417+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:49:59.078+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:49:59.080+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:50:29.501+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:50:29.502+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:50:30.178+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:50:30.180+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:51:00.495+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:51:00.499+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:51:01.186+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:51:01.190+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:51:31.522+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:51:31.524+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:51:32.215+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:51:32.218+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:52:02.525+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:52:02.527+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:52:03.183+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:52:03.184+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:52:33.502+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:52:33.507+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:52:34.201+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:52:34.210+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:53:04.644+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:53:04.645+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:53:05.289+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:53:05.290+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:53:35.606+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:53:35.608+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:53:36.290+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:53:36.299+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:54:06.765+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:54:06.766+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:54:07.431+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:54:07.434+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:54:38.112+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:54:38.113+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:54:38.616+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:54:38.620+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:55:09.063+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:55:09.063+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:55:09.551+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:55:09.552+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:55:40.037+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:55:40.038+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:55:40.528+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:55:40.531+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:56:11.044+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:56:11.048+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:56:11.518+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:56:11.519+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:56:41.983+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:56:41.989+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:56:42.452+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:56:42.454+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:57:13.010+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:57:13.015+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:57:13.433+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:57:13.436+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:57:44.237+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:57:44.239+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:57:44.592+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:57:44.594+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:58:15.249+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:58:15.250+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:58:15.636+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:58:15.637+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:58:46.337+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:58:46.339+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:58:46.702+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:58:46.703+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:59:17.301+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:59:17.302+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:59:17.636+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:59:17.637+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:59:48.439+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:59:48.440+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T03:59:48.633+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T03:59:48.635+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T04:00:19.450+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T04:00:19.452+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T04:00:19.614+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T04:00:19.616+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T04:00:50.453+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T04:00:50.455+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T04:00:50.590+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T04:00:50.591+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T04:01:21.476+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T04:01:21.477+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T04:01:21.565+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T04:01:21.566+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T04:01:52.428+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T04:01:52.429+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T04:01:52.507+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T04:01:52.509+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T04:02:23.431+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T04:02:23.434+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T04:02:23.475+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T04:02:23.476+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T04:02:54.438+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T04:02:54.440+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T04:02:54.477+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T04:02:54.479+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T04:03:25.495+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T04:03:25.497+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-21T04:03:25.498+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-21T04:03:25.498+0000] {logging_mixin.py:190} INFO - Unknown status: None

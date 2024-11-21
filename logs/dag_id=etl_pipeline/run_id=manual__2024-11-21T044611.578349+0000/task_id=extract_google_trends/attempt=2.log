@@ -1,0 +1,20 @@
+[2024-11-21T04:53:23.681+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-11-21T04:53:23.699+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_pipeline.extract_google_trends manual__2024-11-21T04:46:11.578349+00:00 [queued]>
+[2024-11-21T04:53:23.708+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_pipeline.extract_google_trends manual__2024-11-21T04:46:11.578349+00:00 [queued]>
+[2024-11-21T04:53:23.711+0000] {taskinstance.py:2866} INFO - Starting attempt 2 of 1
+[2024-11-21T04:53:23.729+0000] {taskinstance.py:2889} INFO - Executing <Task(PythonOperator): extract_google_trends> on 2024-11-21 04:46:11.578349+00:00
+[2024-11-21T04:53:23.740+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=647) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-11-21T04:53:23.743+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'etl_pipeline', 'extract_google_trends', 'manual__2024-11-21T04:46:11.578349+00:00', '--job-id', '109', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmpfs7c8186']
+[2024-11-21T04:53:23.744+0000] {standard_task_runner.py:72} INFO - Started process 649 to run task
+[2024-11-21T04:53:23.745+0000] {standard_task_runner.py:105} INFO - Job 109: Subtask extract_google_trends
+[2024-11-21T04:53:23.815+0000] {task_command.py:467} INFO - Running <TaskInstance: etl_pipeline.extract_google_trends manual__2024-11-21T04:46:11.578349+00:00 [running]> on host 03a340403ece
+[2024-11-21T04:53:24.191+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='etl_pipeline' AIRFLOW_CTX_TASK_ID='extract_google_trends' AIRFLOW_CTX_EXECUTION_DATE='2024-11-21T04:46:11.578349+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-11-21T04:46:11.578349+00:00'
+[2024-11-21T04:53:24.193+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2024-11-21T04:53:24.194+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2024-11-21T04:53:24.195+0000] {logging_mixin.py:190} INFO - Current task name:extract_google_trends state:running start_date:2024-11-21 04:53:23.700386+00:00
+[2024-11-21T04:53:24.197+0000] {logging_mixin.py:190} INFO - Dag name:etl_pipeline and current dag run status:running
+[2024-11-21T04:53:24.198+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-11-21T04:53:24.201+0000] {logging_mixin.py:190} INFO - Menjalankan Actor di Apify untuk 'sunscreen Azarine'...
+[2024-11-21T04:53:24.202+0000] {logging_mixin.py:190} INFO - Menjalankan Actor di Apify untuk 'sunscreen Skin Aqua'...

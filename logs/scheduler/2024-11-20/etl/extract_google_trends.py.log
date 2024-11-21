@@ -1,0 +1,118 @@
+[2024-11-20T20:23:30.386+0000] {processor.py:186} INFO - Started process (PID=10724) to work on /opt/airflow/dags/etl/extract_google_trends.py
+[2024-11-20T20:23:30.387+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl/extract_google_trends.py for tasks to queue
+[2024-11-20T20:23:30.390+0000] {logging_mixin.py:190} INFO - [2024-11-20T20:23:30.390+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl/extract_google_trends.py
+[2024-11-20T20:23:30.510+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/etl/extract_google_trends.py
+[2024-11-20T20:23:30.530+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl/extract_google_trends.py took 0.150 seconds
+[2024-11-20T20:24:01.094+0000] {processor.py:186} INFO - Started process (PID=10789) to work on /opt/airflow/dags/etl/extract_google_trends.py
+[2024-11-20T20:24:01.096+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl/extract_google_trends.py for tasks to queue
+[2024-11-20T20:24:01.101+0000] {logging_mixin.py:190} INFO - [2024-11-20T20:24:01.100+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl/extract_google_trends.py
+[2024-11-20T20:24:01.151+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/etl/extract_google_trends.py
+[2024-11-20T20:24:01.169+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl/extract_google_trends.py took 0.090 seconds
+[2024-11-20T20:24:31.344+0000] {processor.py:186} INFO - Started process (PID=10856) to work on /opt/airflow/dags/etl/extract_google_trends.py
+[2024-11-20T20:24:31.346+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl/extract_google_trends.py for tasks to queue
+[2024-11-20T20:24:31.349+0000] {logging_mixin.py:190} INFO - [2024-11-20T20:24:31.348+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl/extract_google_trends.py
+[2024-11-20T20:24:31.386+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/etl/extract_google_trends.py
+[2024-11-20T20:24:31.399+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl/extract_google_trends.py took 0.061 seconds
+[2024-11-20T20:25:02.290+0000] {processor.py:186} INFO - Started process (PID=10921) to work on /opt/airflow/dags/etl/extract_google_trends.py
+[2024-11-20T20:25:02.292+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl/extract_google_trends.py for tasks to queue
+[2024-11-20T20:25:02.295+0000] {logging_mixin.py:190} INFO - [2024-11-20T20:25:02.294+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl/extract_google_trends.py
+[2024-11-20T20:25:02.337+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/etl/extract_google_trends.py
+[2024-11-20T20:25:02.354+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl/extract_google_trends.py took 0.078 seconds
+[2024-11-20T20:25:32.952+0000] {processor.py:186} INFO - Started process (PID=10985) to work on /opt/airflow/dags/etl/extract_google_trends.py
+[2024-11-20T20:25:32.954+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl/extract_google_trends.py for tasks to queue
+[2024-11-20T20:25:32.957+0000] {logging_mixin.py:190} INFO - [2024-11-20T20:25:32.956+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl/extract_google_trends.py
+[2024-11-20T20:25:32.992+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/etl/extract_google_trends.py
+[2024-11-20T20:25:33.007+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl/extract_google_trends.py took 0.060 seconds
+[2024-11-20T20:26:03.708+0000] {processor.py:186} INFO - Started process (PID=11050) to work on /opt/airflow/dags/etl/extract_google_trends.py
+[2024-11-20T20:26:03.709+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl/extract_google_trends.py for tasks to queue
+[2024-11-20T20:26:03.712+0000] {logging_mixin.py:190} INFO - [2024-11-20T20:26:03.712+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl/extract_google_trends.py
+[2024-11-20T20:26:03.743+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/etl/extract_google_trends.py
+[2024-11-20T20:26:03.759+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl/extract_google_trends.py took 0.057 seconds
+[2024-11-20T20:26:33.985+0000] {processor.py:186} INFO - Started process (PID=11115) to work on /opt/airflow/dags/etl/extract_google_trends.py
+[2024-11-20T20:26:33.987+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl/extract_google_trends.py for tasks to queue
+[2024-11-20T20:26:33.990+0000] {logging_mixin.py:190} INFO - [2024-11-20T20:26:33.989+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl/extract_google_trends.py
+[2024-11-20T20:26:34.018+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/etl/extract_google_trends.py
+[2024-11-20T20:26:34.031+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl/extract_google_trends.py took 0.052 seconds
+[2024-11-20T20:27:04.328+0000] {processor.py:186} INFO - Started process (PID=11180) to work on /opt/airflow/dags/etl/extract_google_trends.py
+[2024-11-20T20:27:04.329+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl/extract_google_trends.py for tasks to queue
+[2024-11-20T20:27:04.332+0000] {logging_mixin.py:190} INFO - [2024-11-20T20:27:04.332+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl/extract_google_trends.py
+[2024-11-20T20:27:04.357+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/etl/extract_google_trends.py
+[2024-11-20T20:27:04.375+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl/extract_google_trends.py took 0.054 seconds
+[2024-11-20T20:27:34.942+0000] {processor.py:186} INFO - Started process (PID=11245) to work on /opt/airflow/dags/etl/extract_google_trends.py
+[2024-11-20T20:27:34.943+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl/extract_google_trends.py for tasks to queue
+[2024-11-20T20:27:34.946+0000] {logging_mixin.py:190} INFO - [2024-11-20T20:27:34.946+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl/extract_google_trends.py
+[2024-11-20T20:27:34.974+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/etl/extract_google_trends.py
+[2024-11-20T20:27:34.990+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl/extract_google_trends.py took 0.055 seconds
+[2024-11-20T20:28:05.064+0000] {processor.py:186} INFO - Started process (PID=11309) to work on /opt/airflow/dags/etl/extract_google_trends.py
+[2024-11-20T20:28:05.065+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl/extract_google_trends.py for tasks to queue
+[2024-11-20T20:28:05.067+0000] {logging_mixin.py:190} INFO - [2024-11-20T20:28:05.067+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl/extract_google_trends.py
+[2024-11-20T20:28:05.091+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/etl/extract_google_trends.py
+[2024-11-20T20:28:05.105+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl/extract_google_trends.py took 0.047 seconds
+[2024-11-20T20:28:35.423+0000] {processor.py:186} INFO - Started process (PID=11380) to work on /opt/airflow/dags/etl/extract_google_trends.py
+[2024-11-20T20:28:35.424+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl/extract_google_trends.py for tasks to queue
+[2024-11-20T20:28:35.428+0000] {logging_mixin.py:190} INFO - [2024-11-20T20:28:35.427+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl/extract_google_trends.py
+[2024-11-20T20:28:35.481+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/etl/extract_google_trends.py
+[2024-11-20T20:28:35.504+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl/extract_google_trends.py took 0.089 seconds
+[2024-11-20T20:29:05.989+0000] {processor.py:186} INFO - Started process (PID=11445) to work on /opt/airflow/dags/etl/extract_google_trends.py
+[2024-11-20T20:29:05.991+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl/extract_google_trends.py for tasks to queue
+[2024-11-20T20:29:05.995+0000] {logging_mixin.py:190} INFO - [2024-11-20T20:29:05.994+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl/extract_google_trends.py
+[2024-11-20T20:29:06.062+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/etl/extract_google_trends.py
+[2024-11-20T20:29:06.090+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl/extract_google_trends.py took 0.110 seconds
+[2024-11-20T20:29:37.018+0000] {processor.py:186} INFO - Started process (PID=11510) to work on /opt/airflow/dags/etl/extract_google_trends.py
+[2024-11-20T20:29:37.020+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl/extract_google_trends.py for tasks to queue
+[2024-11-20T20:29:37.024+0000] {logging_mixin.py:190} INFO - [2024-11-20T20:29:37.023+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl/extract_google_trends.py
+[2024-11-20T20:29:37.094+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/etl/extract_google_trends.py
+[2024-11-20T20:29:37.121+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl/extract_google_trends.py took 0.113 seconds
+[2024-11-20T20:30:07.800+0000] {processor.py:186} INFO - Started process (PID=11575) to work on /opt/airflow/dags/etl/extract_google_trends.py
+[2024-11-20T20:30:07.802+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl/extract_google_trends.py for tasks to queue
+[2024-11-20T20:30:07.805+0000] {logging_mixin.py:190} INFO - [2024-11-20T20:30:07.805+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl/extract_google_trends.py
+[2024-11-20T20:30:07.851+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/etl/extract_google_trends.py
+[2024-11-20T20:30:07.868+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl/extract_google_trends.py took 0.075 seconds
+[2024-11-20T20:30:24.516+0000] {processor.py:186} INFO - Started process (PID=11580) to work on /opt/airflow/dags/etl/extract_google_trends.py
+[2024-11-20T20:30:24.517+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl/extract_google_trends.py for tasks to queue
+[2024-11-20T20:30:24.520+0000] {logging_mixin.py:190} INFO - [2024-11-20T20:30:24.520+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl/extract_google_trends.py
+[2024-11-20T20:30:24.534+0000] {logging_mixin.py:190} INFO - [2024-11-20T20:30:24.534+0000] {dagbag.py:366} INFO - File /opt/airflow/dags/etl/extract_google_trends.py assumed to contain no DAGs. Skipping.
+[2024-11-20T20:30:24.535+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/etl/extract_google_trends.py
+[2024-11-20T20:30:24.549+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl/extract_google_trends.py took 0.040 seconds
+[2024-11-20T20:30:44.685+0000] {processor.py:186} INFO - Started process (PID=11641) to work on /opt/airflow/dags/etl/extract_google_trends.py
+[2024-11-20T20:30:44.687+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl/extract_google_trends.py for tasks to queue
+[2024-11-20T20:30:44.691+0000] {logging_mixin.py:190} INFO - [2024-11-20T20:30:44.691+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl/extract_google_trends.py
+[2024-11-20T20:30:44.712+0000] {logging_mixin.py:190} INFO - [2024-11-20T20:30:44.711+0000] {dagbag.py:366} INFO - File /opt/airflow/dags/etl/extract_google_trends.py assumed to contain no DAGs. Skipping.
+[2024-11-20T20:30:44.713+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/etl/extract_google_trends.py
+[2024-11-20T20:30:44.739+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl/extract_google_trends.py took 0.069 seconds
+[2024-11-20T20:31:15.267+0000] {processor.py:186} INFO - Started process (PID=11706) to work on /opt/airflow/dags/etl/extract_google_trends.py
+[2024-11-20T20:31:15.269+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl/extract_google_trends.py for tasks to queue
+[2024-11-20T20:31:15.277+0000] {logging_mixin.py:190} INFO - [2024-11-20T20:31:15.276+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl/extract_google_trends.py
+[2024-11-20T20:31:15.295+0000] {logging_mixin.py:190} INFO - [2024-11-20T20:31:15.294+0000] {dagbag.py:366} INFO - File /opt/airflow/dags/etl/extract_google_trends.py assumed to contain no DAGs. Skipping.
+[2024-11-20T20:31:15.296+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/etl/extract_google_trends.py
+[2024-11-20T20:31:15.314+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl/extract_google_trends.py took 0.055 seconds
+[2024-11-20T20:31:46.214+0000] {processor.py:186} INFO - Started process (PID=11771) to work on /opt/airflow/dags/etl/extract_google_trends.py
+[2024-11-20T20:31:46.216+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl/extract_google_trends.py for tasks to queue
+[2024-11-20T20:31:46.219+0000] {logging_mixin.py:190} INFO - [2024-11-20T20:31:46.219+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl/extract_google_trends.py
+[2024-11-20T20:31:46.256+0000] {logging_mixin.py:190} INFO - [2024-11-20T20:31:46.256+0000] {dagbag.py:366} INFO - File /opt/airflow/dags/etl/extract_google_trends.py assumed to contain no DAGs. Skipping.
+[2024-11-20T20:31:46.257+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/etl/extract_google_trends.py
+[2024-11-20T20:31:46.273+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl/extract_google_trends.py took 0.069 seconds
+[2024-11-20T20:32:16.575+0000] {processor.py:186} INFO - Started process (PID=11836) to work on /opt/airflow/dags/etl/extract_google_trends.py
+[2024-11-20T20:32:16.577+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl/extract_google_trends.py for tasks to queue
+[2024-11-20T20:32:16.584+0000] {logging_mixin.py:190} INFO - [2024-11-20T20:32:16.583+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl/extract_google_trends.py
+[2024-11-20T20:32:16.601+0000] {logging_mixin.py:190} INFO - [2024-11-20T20:32:16.600+0000] {dagbag.py:366} INFO - File /opt/airflow/dags/etl/extract_google_trends.py assumed to contain no DAGs. Skipping.
+[2024-11-20T20:32:16.601+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/etl/extract_google_trends.py
+[2024-11-20T20:32:16.628+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl/extract_google_trends.py took 0.064 seconds
+[2024-11-20T20:32:46.934+0000] {processor.py:186} INFO - Started process (PID=11902) to work on /opt/airflow/dags/etl/extract_google_trends.py
+[2024-11-20T20:32:46.936+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl/extract_google_trends.py for tasks to queue
+[2024-11-20T20:32:46.939+0000] {logging_mixin.py:190} INFO - [2024-11-20T20:32:46.939+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl/extract_google_trends.py
+[2024-11-20T20:32:46.969+0000] {logging_mixin.py:190} INFO - [2024-11-20T20:32:46.968+0000] {dagbag.py:366} INFO - File /opt/airflow/dags/etl/extract_google_trends.py assumed to contain no DAGs. Skipping.
+[2024-11-20T20:32:46.969+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/etl/extract_google_trends.py
+[2024-11-20T20:32:46.996+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl/extract_google_trends.py took 0.068 seconds
+[2024-11-20T20:33:17.507+0000] {processor.py:186} INFO - Started process (PID=11967) to work on /opt/airflow/dags/etl/extract_google_trends.py
+[2024-11-20T20:33:17.509+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl/extract_google_trends.py for tasks to queue
+[2024-11-20T20:33:17.512+0000] {logging_mixin.py:190} INFO - [2024-11-20T20:33:17.512+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl/extract_google_trends.py
+[2024-11-20T20:33:17.543+0000] {logging_mixin.py:190} INFO - [2024-11-20T20:33:17.543+0000] {dagbag.py:366} INFO - File /opt/airflow/dags/etl/extract_google_trends.py assumed to contain no DAGs. Skipping.
+[2024-11-20T20:33:17.544+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/etl/extract_google_trends.py
+[2024-11-20T20:33:17.570+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl/extract_google_trends.py took 0.069 seconds
+[2024-11-20T20:33:23.609+0000] {processor.py:186} INFO - Started process (PID=11968) to work on /opt/airflow/dags/etl/extract_google_trends.py
+[2024-11-20T20:33:23.611+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl/extract_google_trends.py for tasks to queue
+[2024-11-20T20:33:23.615+0000] {logging_mixin.py:190} INFO - [2024-11-20T20:33:23.615+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl/extract_google_trends.py
+[2024-11-20T20:33:23.638+0000] {logging_mixin.py:190} INFO - [2024-11-20T20:33:23.637+0000] {dagbag.py:366} INFO - File /opt/airflow/dags/etl/extract_google_trends.py assumed to contain no DAGs. Skipping.
+[2024-11-20T20:33:23.639+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/etl/extract_google_trends.py
+[2024-11-20T20:33:23.656+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl/extract_google_trends.py took 0.056 seconds

@@ -1,0 +1,125 @@
+[2024-11-20T20:33:57.113+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-11-20T20:33:57.136+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_pipeline.extract_google_trends manual__2024-11-20T20:33:54.468617+00:00 [queued]>
+[2024-11-20T20:33:57.149+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_pipeline.extract_google_trends manual__2024-11-20T20:33:54.468617+00:00 [queued]>
+[2024-11-20T20:33:57.151+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 1
+[2024-11-20T20:33:57.170+0000] {taskinstance.py:2889} INFO - Executing <Task(PythonOperator): extract_google_trends> on 2024-11-20 20:33:54.468617+00:00
+[2024-11-20T20:33:57.179+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=1429) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-11-20T20:33:57.181+0000] {standard_task_runner.py:72} INFO - Started process 1431 to run task
+[2024-11-20T20:33:57.181+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'etl_pipeline', 'extract_google_trends', 'manual__2024-11-20T20:33:54.468617+00:00', '--job-id', '85', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmppmmpj_gt']
+[2024-11-20T20:33:57.183+0000] {standard_task_runner.py:105} INFO - Job 85: Subtask extract_google_trends
+[2024-11-20T20:33:57.239+0000] {task_command.py:467} INFO - Running <TaskInstance: etl_pipeline.extract_google_trends manual__2024-11-20T20:33:54.468617+00:00 [running]> on host 9d6dc26aeebb
+[2024-11-20T20:33:57.683+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='etl_pipeline' AIRFLOW_CTX_TASK_ID='extract_google_trends' AIRFLOW_CTX_EXECUTION_DATE='2024-11-20T20:33:54.468617+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-11-20T20:33:54.468617+00:00'
+[2024-11-20T20:33:57.684+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2024-11-20T20:33:57.685+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2024-11-20T20:33:57.686+0000] {logging_mixin.py:190} INFO - Current task name:extract_google_trends state:running start_date:2024-11-20 20:33:57.137753+00:00
+[2024-11-20T20:33:57.687+0000] {logging_mixin.py:190} INFO - Dag name:etl_pipeline and current dag run status:running
+[2024-11-20T20:33:57.688+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-11-20T20:33:57.689+0000] {logging_mixin.py:190} INFO - Menjalankan Actor di Apify untuk 'sunscreen Azarine'...
+[2024-11-20T20:34:03.347+0000] {logging_mixin.py:190} INFO - Actor dijalankan dengan run_id: Hxd20o7gkC88C1JGr
+[2024-11-20T20:34:08.061+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-20T20:34:08.063+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-20T20:34:40.320+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-20T20:34:40.322+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-20T20:35:11.848+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-20T20:35:11.849+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-20T20:35:43.998+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-20T20:35:44.000+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-20T20:36:15.436+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-20T20:36:15.438+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-20T20:36:46.576+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-20T20:36:46.578+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-20T20:37:17.797+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-20T20:37:17.799+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-20T20:37:49.746+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-20T20:37:49.750+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-20T20:38:21.283+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-20T20:38:21.286+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-20T20:38:53.562+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-20T20:38:53.580+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-20T20:39:24.932+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-20T20:39:24.938+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-20T20:39:56.270+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-20T20:39:56.275+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-20T20:40:27.551+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-20T20:40:27.558+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-20T20:40:59.804+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-20T20:40:59.809+0000] {logging_mixin.py:190} INFO - Unknown status: None
+[2024-11-20T20:41:30.983+0000] {logging_mixin.py:190} INFO - Error checking status: 404 - {
+  "error": {
+    "type": "page-not-found",
+    "message": "We have bad news: there is no API endpoint at this URL. Did you specify it correctly?"
+  }
+}
+[2024-11-20T20:41:30.986+0000] {logging_mixin.py:190} INFO - Unknown status: None
