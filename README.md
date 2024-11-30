@@ -19,3 +19,47 @@ https://www.notion.so/End-to-End-Data-Engineering-1436080924fb8078acb2fc862763c5
 ## Link Gdrive Demo
 https://drive.google.com/drive/folders/10lOyUo3pMAfyQwT6nLOAulwJYQHKxvqV?usp=sharing
 
+## Prerequisities
+1. **Install Docker Desktop**  
+   Ensure Docker Desktop is installed and running.  
+   [Download Docker Desktop](https://www.docker.com/products/docker-desktop)
+
+2. **Install Python 3.12.3**  
+   Ensure Python is installed on your system.  
+   [Download Python](https://www.python.org/downloads/)
+
+## Setup Instructions
+
+### Step 1: Create Virtual Environment
+
+1. Open your terminal and navigate to the project directory.
+2. Create a virtual environment:
+   ```bash
+   python -m venv venv
+3. Activate the virtual environment:
+   ```bash
+   venv\Scripts\activate
+
+### Step 2: Follow Apache Airflow Docker Setup
+1. Go to the [Airflow Docker Compose Setup Guide](https://airflow.apache.org/docs/apache-airflow/stable/howto/docker-compose/index.html).
+2. Follow the setup steps as per the guide and adjust commands based on your terminal or operating system.
+
+### Step 3: Initialize the Database
+    ```bash
+    docker compose up airflow-init
+
+### Step 4: Start Airflow
+    ```bash
+    docker compose up
+
+### Step 5: Chech the DAG
+Open [http://localhost:8080] to see the dag with name 'etl_pipeline'
+
+### Step 6: Adjust Code
+1. Go to file extract_google_trends and create your own api token at [Apify](https://apify.com/emastra/google-trends-scraper), insert the api token on the requested field
+2. This scheduling is set on daily with data for 3 month, adjust the timeRange in file extract_google_trends with today. If you want to get the data for daily you can add the task for extract_female_daily and adjust the range of the page you want to get and rename the output file. Dont forget to install library dependencies with pip install selenium and pip install beautifulsoup4
+3. to see if it's already created on the database, you can login at [http://localhost:5050] and enter email and password as you defined in docker-compose.yaml. For this case the email is admin@admin.com and the password is root
+
+### Note:
+For troubleshooting, you can check the logs folder to identify what happened or what errors occurred.
+
