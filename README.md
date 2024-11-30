@@ -45,11 +45,9 @@ https://drive.google.com/drive/folders/10lOyUo3pMAfyQwT6nLOAulwJYQHKxvqV?usp=sha
 2. Follow the setup steps as per the guide and adjust commands based on your terminal or operating system.
 
 ### Step 3: Initialize the Database
-    ```
     docker compose up airflow-init
 
 ### Step 4: Start Airflow
-    ```
     docker compose up
 
 ### Step 5: Chech the DAG
