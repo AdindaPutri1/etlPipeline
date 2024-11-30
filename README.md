@@ -50,13 +50,13 @@ https://drive.google.com/drive/folders/10lOyUo3pMAfyQwT6nLOAulwJYQHKxvqV?usp=sha
 ### Step 4: Start Airflow
     docker compose up
 
-### Step 5: Chech the DAG
+### Step 5: Check the DAG
 Open http://localhost:8080 to see the dag with the name 'etl_pipeline'
 
 ### Step 6: Adjust Code
 1. Go to file extract_google_trends and create your own api token at [Apify](https://apify.com/emastra/google-trends-scraper), insert the api token on the requested field
 2. This scheduling is set on daily with data for 3 month, adjust the timeRange in file extract_google_trends with today. If you want to get the data for daily, you can add the task for extract_female_daily and adjust the range of the page you want to get and rename the output file. Don't forget to install library dependencies with pip install selenium and pip install beautifulsoup4
-3. To see if it's already created on the database, you can login at http://localhost:5050 and enter email and password as you defined in docker-compose.yaml. For this case the email is admin@admin.com and the password is root
+3. To see if it's already created on the database, you can login at http://localhost:5050 and enter email and password as you defined in docker-compose.yaml. For this case the email is admin@admin.com and the password is root. Also don't forget to add the database connection in the Airflow.
 
 ### Note:
 For troubleshooting, you can check the logs folder to identify what happened or what errors occurred.
